@@ -1,0 +1,264 @@
+.searchInput {
+  width: 40%;
+  min-width: 200px;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid var(--blue);
+  padding: 10px;
+  font-size: 14px;
+  &:focus {
+    border-color: var(--green);
+  }
+}
+
+//   button {
+//     height: 40px;
+//     border-radius: 4px;
+//     margin-top: 10px;
+//     font-size: 15px;
+//     display: inline-block;
+//     text-align: center;
+//     user-select: none;
+//     font-weight: 600;
+//     border-radius: 4px;
+//     color: #ffffff;
+//     border: 1px solid #14877c;
+//     background-color: #14877c;
+//     cursor: pointer;
+//     margin: 0px 15px;
+//     min-width: 100px;
+//   }
+
+//   button:hover {
+//     background: #14877c;
+//     color: #ffffff;
+//   }
+
+.details {
+  position: relative;
+
+  width: 100%;
+
+  padding: 40px;
+
+  // display: grid;
+
+  // grid-template-columns: 2fr 1fr;
+
+  // grid-gap: 30px;
+
+  margin-top: 5px;
+
+  .details_requests {
+    position: relative;
+
+    display: grid;
+
+    grid-template-rows: 0.1fr 0.1fr 1fr;
+
+    // min-height: 450px;
+
+    background: var(--white);
+
+    padding: 20px 30px;
+
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+    border-radius: 20px;
+
+    table {
+      width: 100%;
+      padding: 1em;
+      margin: 20px 0;
+      border-collapse: collapse;
+      box-shadow: 0 1px 2px 0 #c6e8c9;
+      thead {
+        display: table;
+        width: 100%;
+        height: 50px;
+        table-layout: fixed;
+        background-color: var(--blue);
+        font-size: 16px;
+        color: var(--white);
+        td {
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .img_th {
+          width: 140px;
+        }
+      }
+      tbody {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        tr {
+          display: table;
+          table-layout: fixed;
+          width: 100%;
+          height: 50px;
+          .img_td {
+            width: 140px;
+          }
+          td {
+            text-align: center;
+            white-space: nowrap;
+            max-width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 10px;
+            padding-right: 10px;
+            cursor: context-menu;
+            &:nth-child(1) {
+              text-align: left;
+              padding-left: 50px;
+            }
+            &:nth-child(2) {
+              text-align: left;
+              padding-left: 40px;
+            }
+            &:nth-last-child(2) {
+              text-align: right;
+              padding-right: 80px;
+            }
+          }
+        }
+
+        tr:nth-child(even) {
+          background-color: #e0e0e0;
+        }
+      }
+    }
+  }
+}
+
+.imgBx {
+  position: relative;
+
+  width: 35px;
+
+  height: 35px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  img {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.cardHeader {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  height: 40px;
+  margin-bottom: 15px;
+  padding-right: 30px;
+
+  h3 {
+    font-size: 1.5em;
+
+    font-weight: 650;
+  }
+}
+
+.cardHeader_btn {
+  font-size: 0.9em;
+
+  font-weight: 600;
+
+  position: relative;
+
+  color: #0f0f90;
+  margin-top: 8px;
+
+  // padding: 5px 10px;
+
+  // background: var(--blue);
+
+  // text-decoration: none;
+
+  // color: var(--white);
+
+  // border-radius: 6px;
+
+  cursor: pointer;
+
+  &:hover {
+    color: green;
+  }
+}
+
+.imgBx {
+  position: relative;
+
+  width: 35px;
+
+  height: 35px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  img {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.searchArea {
+  position: relative;
+  ion-icon {
+    position: absolute;
+    left: 37%;
+    top: 14px;
+  }
+}
+
+@import '../common/ButtonStyle.scss';
+
+.deletePrescriptionButton {
+  @include buttonStyle;
+  width: 85px;
+  padding: 5px;
+  background-color: var(--black2);
+  margin-right: 10px !important;
+  &:hover {
+    color: #ff9999;
+  }
+}
+
+.assignServiceButton {
+  @include buttonStyle;
+  width: 85px;
+  padding: 5px;
+  background-color: var(--green);
+  margin-right: 0 !important;
+  &:hover {
+    color: yellow;
+  }
+}

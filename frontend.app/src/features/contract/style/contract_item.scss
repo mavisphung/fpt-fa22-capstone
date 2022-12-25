@@ -1,0 +1,76 @@
+@import 'mixin.module';
+.contract_supervisor {
+  @include radius-border-box(150px, 25px, 40px);
+  border-radius: 0px;
+  border: 0px;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+  display: block;
+  text-align: left;
+}
+$item_height: 220px;
+$item_width: 332px;
+.contract_item {
+  @include flexbox(row, flex-start, $item_width, $item_height);
+  //   background-color: rgb(160, 238, 210);
+  background-color: var(--grey);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin: 4px;
+  &__summary {
+    @include content_box($item_width, calc(100%), 0px, 0px);
+    &__detail {
+      h5 {
+        font-size: 1.2em;
+      }
+      @include content_box(calc($item_width - 16px * 2), calc(100% - 16px * 2 - 60px), 8px, 8px);
+      &__text {
+        display: flex;
+      }
+      &__label {
+        @include content_box(calc($item_width - 32px), 40px, 0px, 0px);
+        position: relative;
+        &__content {
+          text-align: center;
+          @include radius-border-box(110px, 30px, 34px);
+          padding: 2px;
+          margin: 0px;
+          display: block;
+          position: absolute;
+          top: 1px;
+          left: 1px;
+        }
+      }
+    }
+    &__action {
+      @include flexbox(row, flex-start, calc(100%), calc(60px));
+      padding-left: 8px;
+      &__button {
+        @include border-box(150px, 40px);
+        border: 0px;
+        &__text {
+          margin-left: 4px;
+        }
+      }
+      &__button--info {
+        background-color: #0793f7;
+        color: white;
+      }
+      &__button--cancel {
+        background-color: #ff0000;
+        color: white;
+      }
+    }
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}

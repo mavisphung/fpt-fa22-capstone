@@ -1,0 +1,35 @@
+[2022-11-09 06:54:51,922] WARNING [django.request.log_response:241] Unauthorized: /appointments/
+[2022-11-09 06:55:09,438] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-09 06:55:47,370] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-09 06:57:25,558] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-09 06:57:55,158] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-09 07:25:05,272] WARNING [appointment.serializers.perform_check_appointment:94] Invalid field name(s) given in select_related: 'package'. Choices are: doctor, patient, booker, service
+[2022-11-09 07:25:06,164] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=160 | run_date=2022-11-09 07:25:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-11-09 07:25:06,474] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=160 | run_date=2022-11-09 07:25:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-11-09 07:25:48,844] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-09 07:28:06,070] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=161 | run_date=2022-11-09 07:28:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-11-09 07:28:06,378] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=161 | run_date=2022-11-09 07:28:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-11-09 07:29:18,827] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-11-09 07:31:01,261] WARNING [django.request.log_response:241] Not Found: /appointments/patient/
+[2022-11-09 07:31:09,336] WARNING [django.request.log_response:241] Forbidden: /appointments/doctor/
+[2022-11-09 07:31:24,476] ERROR [django.request.log_response:241] Internal Server Error: /user/me/appointments/
+[2022-11-09 09:19:04,579] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-11-09 09:21:08,355] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-11-09 09:23:03,202] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-11-09 09:24:12,465] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-11-09 12:33:04,012] ERROR [auth.views.perform_login_with_google:68] Login with Google API has occured error with status code 401
+[2022-11-09 12:33:04,024] WARNING [django.request.log_response:241] Unauthorized: /social-login/
+[2022-11-09 12:34:27,633] ERROR [auth.views.perform_login_with_google:68] Login with Google API has occured error with status code 401
+[2022-11-09 12:34:27,639] WARNING [django.request.log_response:241] Unauthorized: /social-login/
+[2022-11-09 12:38:42,380] ERROR [auth.views.perform_login_with_google:68] Login with Google API has occured error with status code 401
+[2022-11-09 12:38:42,397] WARNING [django.request.log_response:241] Unauthorized: /social-login/
+[2022-11-09 12:50:01,315] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-11-09 15:59:00,893] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-11-09 16:05:40,818] ERROR [auth.views.perform_login_with_google:68] Login with Google API has occured error with status code 401
+[2022-11-09 16:05:40,825] WARNING [django.request.log_response:241] Unauthorized: /social-login/
+[2022-11-09 16:05:44,759] ERROR [auth.views.perform_login_with_google:68] Login with Google API has occured error with status code 401
+[2022-11-09 16:05:44,760] WARNING [django.request.log_response:241] Unauthorized: /social-login/
+[2022-11-09 16:05:49,141] ERROR [auth.views.perform_login_with_google:68] Login with Google API has occured error with status code 401
+[2022-11-09 16:05:49,142] WARNING [django.request.log_response:241] Unauthorized: /social-login/
+[2022-11-09 16:09:29,492] ERROR [auth.views.perform_login_with_google:68] Login with Google API has occured error with status code 401
+[2022-11-09 16:09:29,500] WARNING [django.request.log_response:241] Unauthorized: /social-login/

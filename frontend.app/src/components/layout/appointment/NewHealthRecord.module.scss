@@ -1,0 +1,199 @@
+@import '../../common/ButtonStyle.scss';
+
+.detail_area {
+  position: relative;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.healthRecords {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .record {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 20px;
+    .childRecord {
+      height: 100px;
+      width: 35%;
+      margin-bottom: 8px;
+      margin-right: 50px;
+    }
+    .titleRecord {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+      &::after {
+        content: '*';
+        color: red;
+      }
+    }
+    .titleNote {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .inputDiv {
+      height: 40px;
+      width: 80%;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding-left: 15px;
+      font-size: 16px;
+      border-bottom-width: 2px;
+      transition: all 0.3s ease;
+      &:focus {
+        border-color: var(--green);
+      }
+    }
+    .inputDateDiv {
+      height: 40px;
+      width: 50%;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding-left: 15px;
+      font-size: 16px;
+      border-bottom-width: 2px;
+      transition: all 0.3s ease;
+      &:focus {
+        border-color: var(--green);
+      }
+    }
+  }
+  .buttonSubmit {
+    height: 40px;
+    width: 20%;
+    margin: 4px auto;
+    align-items: center;
+    justify-content: center;
+    .btnSave {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      color: var(--white);
+      border: none;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      background: var(--blue);
+      &:hover {
+        color: greenyellow;
+      }
+      span {
+        padding: 0 6px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      ion-icon {
+        font-size: 1.2em;
+        vertical-align: middle;
+        color: greenyellow;
+      }
+    }
+  }
+}
+
+.prescriptionArea {
+  position: relative;
+  display: grid;
+  grid-template-rows: 0.1fr 1fr;
+  background: var(--white);
+  padding: 20px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    margin-left: -40px;
+    thead {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      tr {
+        border-bottom: 0.5px solid gainsboro;
+        th {
+          height: 60px;
+          padding: 10px;
+          font-weight: 600;
+          color: var(--black2);
+          text-align: center;
+        }
+      }
+    }
+    tbody {
+      display: block;
+      width: 100%;
+      height: 182px;
+      overflow: auto;
+      tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        text-align: center;
+        color: #0f0f90;
+        border-bottom: 0.5px solid gainsboro;
+        border-radius: 20px;
+        td {
+          height: 60px;
+          padding: 10px;
+          text-align: center;
+        }
+      }
+      tr:last-child {
+        border-bottom: none !important;
+      }
+    }
+  }
+}
+
+.headerPrescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 40px;
+  padding-right: 60px;
+  margin-bottom: 10px;
+  h3 {
+    font-size: 1.4em;
+    font-weight: 650;
+  }
+}
+
+.addPrescriptionButton {
+  font-size: 0.9em;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 10px;
+  background: var(--blue);
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: var(--white);
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover {
+    color: green;
+  }
+}
+
+.customPrescriptionModal {
+  width: 750px !important;
+}
+
+.deletePrescriptionButton {
+  @include buttonStyle;
+  width: 80px;
+  padding: 5px;
+  background-color: var(--black2);
+  margin-right: 0 !important;
+  &:hover {
+    color: #ff9999;
+  }
+}

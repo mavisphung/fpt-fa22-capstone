@@ -1,0 +1,94 @@
+[2022-06-19 01:38:42,227] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 01:40:31,328] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 01:41:22,025] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 01:42:35,776] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 01:43:24,684] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 01:43:46,490] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 01:43:58,859] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 01:44:28,111] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 01:44:50,225] ERROR [django.request.log_response:241] Internal Server Error: /register/
+[2022-06-19 01:46:12,455] ERROR [user.serializers.validate_email:24] Email validation failed
+[2022-06-19 01:46:12,490] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 02:51:37,274] WARNING [django.request.log_response:241] Method Not Allowed: /register/
+[2022-06-19 02:51:37,573] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-06-19 03:04:41,163] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 03:07:18,010] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 03:07:41,290] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 03:07:49,644] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 03:10:26,660] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 03:11:39,583] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 03:11:59,977] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-19 03:22:31,391] WARNING [django.request.log_response:241] Not Found: /user/me/
+[2022-06-19 03:31:32,747] WARNING [django.request.log_response:241] Not Found: /user/me/
+[2022-06-19 03:32:32,645] WARNING [django.request.log_response:241] Unauthorized: /user/me/
+[2022-06-19 03:32:42,439] WARNING [django.request.log_response:241] Unauthorized: /user/me/
+[2022-06-19 03:37:29,687] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-19 03:43:42,135] WARNING [django.request.log_response:241] Bad Request: /user/me/
+[2022-06-19 03:45:03,963] ERROR [django.request.log_response:241] Internal Server Error: /user/me/
+[2022-06-19 03:45:34,793] WARNING [django.request.log_response:241] Bad Request: /user/me/
+[2022-06-19 03:45:36,981] WARNING [django.request.log_response:241] Bad Request: /user/me/
+[2022-06-19 03:45:39,113] WARNING [django.request.log_response:241] Bad Request: /user/me/
+[2022-06-19 03:47:41,192] WARNING [django.request.log_response:241] Bad Request: /user/me/
+[2022-06-19 03:47:58,802] WARNING [django.request.log_response:241] Bad Request: /user/me/
+[2022-06-19 03:48:16,929] ERROR [django.request.log_response:241] Internal Server Error: /user/me/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 255, in put
+    return self.update(request, *args, **kwargs)
+  File "/usr/src/app/user/views.py", line 36, in update
+    serializer.is_valid(raise_exception = True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'errors': [ErrorDetail(string='Can not fully blanked', code='invalid')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 117, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+UnboundLocalError: local variable 'response' referenced before assignment
+[2022-06-19 03:48:35,662] ERROR [django.request.log_response:241] Internal Server Error: /user/me/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 255, in put
+    return self.update(request, *args, **kwargs)
+  File "/usr/src/app/user/views.py", line 36, in update
+    serializer.is_valid(raise_exception = True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'errors': [ErrorDetail(string='Can not fully blanked', code='invalid')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 117, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+UnboundLocalError: local variable 'response' referenced before assignment
+[2022-06-19 03:48:59,370] WARNING [django.request.log_response:241] Bad Request: /user/me/
+[2022-06-19 03:49:02,711] WARNING [django.request.log_response:241] Bad Request: /user/me/

@@ -1,0 +1,37 @@
+[2022-10-04 12:49:04,313] WARNING [django.request.log_response:241] Not Found: /prescription/doctor/:healthRecord/
+[2022-10-04 12:49:16,783] WARNING [django.request.log_response:241] Unauthorized: /prescription/doctor/1/
+[2022-10-04 12:49:37,620] WARNING [django.request.log_response:241] Forbidden: /prescription/doctor/1/
+[2022-10-04 13:27:44,896] ERROR [shared.exception_handler.__handle_attribute_error:122] Cannot find 'prescription_detail' on Prescription object, 'prescription_detail' is an invalid parameter to prefetch_related()
+[2022-10-04 13:27:44,903] ERROR [django.request.log_response:241] Internal Server Error: /health-records/1/
+[2022-10-04 12:48:01,722] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=106 | run_date=2022-10-03 19:59:00+00:00' no longer exists! Skipping logging of job execution...
+[2022-10-04 12:48:02,593] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=107 | run_date=2022-10-03 20:19:00+00:00' no longer exists! Skipping logging of job execution...
+[2022-10-04 12:48:02,961] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=106 | run_date=2022-10-03 19:59:00+00:00' no longer exists! Skipping logging of job execution...
+[2022-10-04 12:48:03,325] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=107 | run_date=2022-10-03 20:19:00+00:00' no longer exists! Skipping logging of job execution...
+[2022-10-04 12:56:16,924] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 12:56:16,927] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 12:56:16,930] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 12:56:16,933] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 12:56:32,307] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 12:56:32,311] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 12:56:32,313] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 12:56:32,317] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 12:56:38,958] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 12:56:39,973] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-10-04 12:59:14,462] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/1/
+[2022-10-04 23:20:58,285] WARNING [django.request.log_response:241] Unauthorized: /doctor/instruction/
+[2022-10-04 23:21:55,757] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-10-04 23:22:26,957] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-10-04 23:27:34,714] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-10-04 23:30:12,559] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-10-04 23:30:41,630] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'name'
+[2022-10-04 23:30:41,634] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-10-04 23:38:14,537] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-10-04 23:43:06,102] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-10-04 23:44:04,743] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-10-04 23:44:28,448] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-10-04 23:46:13,169] WARNING [django.request.log_response:241] Not Found: /doctor/action/instruction/
+[2022-10-04 23:46:35,890] ERROR [django.request.log_response:241] Internal Server Error: /doctor/action/instruction/
+[2022-10-04 23:47:02,466] ERROR [django.request.log_response:241] Internal Server Error: /doctor/action/instruction/
+[2022-10-04 23:47:36,384] ERROR [django.request.log_response:241] Internal Server Error: /doctor/action/instruction/
+[2022-10-04 23:49:30,811] ERROR [django.request.log_response:241] Internal Server Error: /doctor/action/instruction/
+[2022-10-04 23:51:22,018] ERROR [django.request.log_response:241] Internal Server Error: /doctor/action/instruction/

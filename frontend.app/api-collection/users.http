@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:3000/auth
+
+# Users
+
+# @name checkLogin
+
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "",
+    "password": ""
+}

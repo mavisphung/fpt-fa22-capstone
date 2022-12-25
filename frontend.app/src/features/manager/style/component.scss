@@ -1,0 +1,142 @@
+$margin_top: 8px;
+
+
+
+
+@mixin cen_style (){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin radius_left($color){
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 0.2px solid $color;
+    height: 100%;
+}
+
+@mixin radius_right($color) {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 0.2px solid $color;
+    height: 100%;
+}
+
+@mixin cen_vertical_style (){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+
+@mixin border_style(){
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card{
+    width: 250px;
+    height: 290px;
+    border-radius: 12px;
+    background-color: aqua;
+    @include border_style();
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        position: relative;
+        &__label{
+            box-sizing: border-box;
+            padding: 2px;
+            width: 100%;
+            position: relative;
+            &__wrapper{
+                @include radius_left(#000000);
+                @include radius_right(#000000);
+                position: absolute;
+                top: -30px;
+                right: -10px;
+                background-color: aqua;
+                width: fit-content;
+                height: 40px;
+                padding: 8px;
+            }
+            margin: $margin_top;
+        }
+        .footer{
+            box-sizing: content-box;
+            width: 100%;
+            height: 50px;
+            .action {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+        }
+        .header {
+            margin: $margin_top;
+            box-sizing: border-box;
+            width: 100%;
+            height: 50px;
+            h5, h6{
+                font-weight: 600;
+            }
+        }
+        .body{
+            margin: $margin_top;
+            box-sizing: border-box;
+            width: 100%;
+            height:fit-content;
+            &__row{
+                @include radius_left(#000000);
+                @include radius_right(#000000);
+                display: flex;
+                flex-direction: row;
+                width: fit-content;
+                height: 40px;
+                padding: 8px;
+                margin-top: 8px;
+                .content{
+                    position: relative;
+                    min-width: 90px;
+                    span{
+                        display: block;
+                        @include cen_vertical_style();
+                    }
+
+                }
+                .content--fit_content{
+                    display: block;
+                    width: fit-content;
+                    min-width: 60px;
+                    span{
+                        display: block;
+                        max-width: 50px;
+                        width: fit-content;
+                        padding: 0;
+                    }
+                }
+                .icon{
+                    position: relative;
+                    display: block;
+                    width: 24px;
+                    svg{
+                        @include cen_style();
+                    }
+                }
+            }
+        }
+    }
+}
+
+.button{
+    width: 150px;
+    padding: 10px;
+    margin: 4px;
+    @include radius_left(#000000);
+    @include radius_right(#000000);
+    &__text{
+        margin-left: 8px;
+    }
+}

@@ -1,0 +1,142 @@
+.wtMain {
+  position: relative;
+  width: 70%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 10px;
+  .wtMain_workingTimesArea {
+    position: relative;
+    // display: grid;
+    // grid-template-rows: 0.1fr 1fr;
+    height: 600px;
+    width: 100%;
+    background: var(--white);
+    padding: 20px 30px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    .form_div {
+      height: 83%;
+
+      overflow-y: auto;
+      padding-top: 8px;
+      table {
+        width: 90%;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        tbody {
+          border-collapse: separate;
+          border-spacing: 7px;
+          tr {
+            text-align: left;
+            td {
+              width: 100px;
+            }
+            td:nth-child(1) {
+              width: 80px !important;
+              font-weight: 550;
+              color: #607d8b;
+            }
+            td:nth-child(2),
+            td:nth-child(4) {
+              width: 40px !important;
+            }
+            td:nth-child(6) {
+              width: 60px !important;
+            }
+            td:nth-child(7) {
+              width: 50px !important;
+              button {
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                outline: none;
+                border: none;
+                background-color: white;
+                ion-icon {
+                  width: 100%;
+                  height: 100%;
+                  pointer-events: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnSaveTime {
+      position: absolute;
+      right: 3%;
+      bottom: 20px;
+      button {
+        outline: none;
+        border: none;
+        width: 80px;
+        padding: 6px;
+        color: var(--white);
+        background-color: var(--blue);
+        border-radius: 6px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        &:hover {
+          background-color: #00dbde;
+        }
+      }
+    }
+  }
+}
+
+.cardTitle {
+  height: 40px;
+  border-bottom: 1px solid #999;
+  h5 {
+    font-weight: 500;
+  }
+}
+
+.inputTimes {
+  width: 110px;
+  height: 32px;
+  border: 1px solid #607d8b;
+  border-radius: 5px;
+  padding-left: 6px;
+}
+.spanTwoDots {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .wtMain {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .wtMain_workingTimesArea {
+    height: 560px !important;
+    padding-bottom: 20px;
+    .form_div {
+      height: 82% !important;
+      overflow-y: auto;
+      table {
+        width: 100% !important;
+      }
+    }
+    .btnSaveTime {
+      position: fixed !important;
+      right: 7% !important;
+      bottom: 36px !important;
+      button {
+        width: 70px !important;
+        padding: 5px !important;
+      }
+    }
+  }
+  .cardTitle {
+    height: 30px;
+    border-bottom: 1px solid #999;
+    h5 {
+      font-weight: 500;
+      font-size: 1em;
+    }
+  }
+}

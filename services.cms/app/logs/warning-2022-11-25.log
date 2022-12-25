@@ -1,0 +1,85 @@
+[2022-11-25 12:53:17,335] WARNING [django.request.log_response:241] Unauthorized: /appointments/182/cancel/
+[2022-11-25 12:56:01,249] ERROR [shared.exception_handler.__handle_attribute_error:122] 'GenericRelatedObjectManager' object has no attribute 'delete'
+[2022-11-25 12:56:01,254] ERROR [django.request.log_response:241] Internal Server Error: /appointments/182/cancel/
+[2022-11-25 13:33:12,234] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list
+Traceback (most recent call last):
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/contract/doctor/list/?startedAt__gte=2022-01-01&startedAt__lte=2022-12-31&status=PENDING (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2022-11-25 13:33:28,436] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-11-25 13:33:40,709] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list
+Traceback (most recent call last):
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/contract/doctor/list/?startedAt__gte=2022-01-01&startedAt__lte=2022-12-31&status=PENDING (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2022-11-25 13:33:53,263] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-11-25 13:34:29,893] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:36:02,870] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:36:36,918] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:37:57,954] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:45:36,051] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:46:59,008] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:48:08,317] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:48:59,647] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:50:57,791] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:51:24,023] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:52:14,983] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:52:53,574] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:53:33,352] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:54:28,303] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 13:55:15,696] WARNING [django.request.log_response:241] Forbidden: /contract/
+[2022-11-25 13:55:29,834] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'pops'
+[2022-11-25 13:55:29,835] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 13:57:07,830] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-11-25 13:57:07,833] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-11-25 13:57:23,072] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-11-25 13:57:23,073] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-11-25 13:58:38,878] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-11-25 14:05:33,179] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-11-25 14:07:30,008] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/list/
+[2022-11-25 14:07:40,860] ERROR [shared.exception_handler.__handle_attribute_error:122] 'TreatmentContract' object has no attribute 'healthRecord'
+[2022-11-25 14:07:40,861] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 14:13:08,690] ERROR [shared.exception_handler.__handle_attribute_error:122] 'TreatmentContract' object has no attribute 'healthRecord'
+[2022-11-25 14:13:08,692] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 14:18:05,298] ERROR [shared.exception_handler.__handle_attribute_error:122] 'HealthRecord' object has no attribute 'status'
+[2022-11-25 14:18:05,300] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 14:30:01,152] WARNING [django.request.log_response:241] Forbidden: /contract/
+[2022-11-25 14:30:58,526] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 14:31:12,146] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 14:31:24,371] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-25 14:31:36,036] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-25 14:31:46,943] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-25 14:32:53,886] ERROR [shared.exception_handler.__handle_attribute_error:122] 'TreatmentContract' object has no attribute 'healthRecord'
+[2022-11-25 14:32:53,891] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 14:34:17,484] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-25 14:34:29,867] ERROR [shared.exception_handler.__handle_attribute_error:122] 'TreatmentContract' object has no attribute 'healthRecord'
+[2022-11-25 14:34:29,868] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 14:37:20,707] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-11-25 14:37:20,712] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 14:39:21,289] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-25 14:42:51,315] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 15:03:20,251] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-11-25 15:04:03,148] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/list/
+[2022-11-25 15:04:17,864] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-25 15:13:19,515] WARNING [django.request.log_response:241] Forbidden: /contract/
+[2022-11-25 15:13:32,366] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'save'
+[2022-11-25 15:13:32,367] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 15:16:12,035] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-25 15:20:55,000] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 15:24:55,761] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'save'
+[2022-11-25 15:24:55,766] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-25 15:28:08,386] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-11-25 15:28:08,388] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-11-25 15:46:13,664] WARNING [django.request.log_response:241] Bad Request: /contract/

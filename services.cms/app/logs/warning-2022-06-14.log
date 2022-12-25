@@ -1,0 +1,746 @@
+[2022-06-14 06:41:33,403] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-06-14 12:47:26,142] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-06-14 12:49:26,587] ERROR [django.request.log_response:241] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/src/app/hello_world/views.py", line 27, in create
+    raise exceptions.APIException('Testing Error')
+rest_framework.exceptions.APIException: Testing Error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 53, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context)
+TypeError: __handle_APIException() takes 0 positional arguments but 2 were given
+[2022-06-14 12:50:08,735] ERROR [django.request.log_response:241] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/src/app/hello_world/views.py", line 27, in create
+    raise exceptions.APIException(detail = 'Testing Error')
+rest_framework.exceptions.APIException: Testing Error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 53, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context)
+TypeError: __handle_APIException() takes 0 positional arguments but 2 were given
+[2022-06-14 12:56:32,924] ERROR [django.request.log_response:241] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/src/app/hello_world/views.py", line 27, in create
+    raise exceptions.APIException(detail = 'Testing Error')
+rest_framework.exceptions.APIException: Testing Error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 58, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context)
+  File "/usr/src/app/shared/exception_handler.py", line 12, in __handle_APIException
+    data = exc.detail
+AttributeError: 'Response' object has no attribute 'detail'
+[2022-06-14 12:59:59,345] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:01:19,909] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:01:30,553] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:01:33,163] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:11:46,408] ERROR [django.request.log_response:241] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/src/app/hello_world/views.py", line 27, in create
+    raise exceptions.APIException(detail = 'Testing Error')
+rest_framework.exceptions.APIException: Testing Error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 471, in handle_exception
+    response.exception = True
+AttributeError: 'dict' object has no attribute 'exception'
+[2022-06-14 13:15:08,546] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:15:12,223] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:15:16,148] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:15:17,199] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:15:17,712] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:15:18,050] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:15:18,368] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:15:18,753] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 13:15:19,110] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 14:01:31,698] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-14 14:11:55,376] WARNING [django.request.log_response:241] Method Not Allowed: /login/
+[2022-06-14 14:25:01,230] WARNING [django.request.log_response:241] Bad Request: /login/
+[2022-06-14 14:36:46,226] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 15, in post
+    serializer = self.get_serializer(data = request.data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "/usr/src/app/auth/serializers.py", line 48, in __init__
+    self.fields['type'] = rest_serializers.CharField(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 778, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'choices'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 62, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+  File "/usr/src/app/shared/exception_handler.py", line 20, in __handle_type_error
+    message = exc.status_text,
+AttributeError: 'NoneType' object has no attribute 'status_text'
+[2022-06-14 14:37:29,229] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 15, in post
+    serializer = self.get_serializer(data = request.data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "/usr/src/app/auth/serializers.py", line 48, in __init__
+    self.fields['type'] = rest_serializers.CharField(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 778, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'choices'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 62, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+  File "/usr/src/app/shared/exception_handler.py", line 21, in __handle_type_error
+    data = exc.data
+AttributeError: 'NoneType' object has no attribute 'data'
+[2022-06-14 14:37:41,970] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 554, in get_raw_data_form
+    serializer = view.get_serializer()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "/usr/src/app/auth/serializers.py", line 48, in __init__
+    self.fields['type'] = rest_serializers.CharField(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 778, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'choices'
+[2022-06-14 14:40:03,645] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 554, in get_raw_data_form
+    serializer = view.get_serializer()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "/usr/src/app/auth/serializers.py", line 48, in __init__
+    self.fields['type'] = rest_serializers.CharField(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 778, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'choices'
+[2022-06-14 14:40:24,736] WARNING [django.request.log_response:241] Bad Request: /login/
+[2022-06-14 14:45:04,359] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 24, in post
+    data = serializer.data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 255, in data
+    self._data = self.to_representation(self.validated_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `CustomTokenObtainSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
+[2022-06-14 14:49:01,149] WARNING [django.request.log_response:241] Bad Request: /login/
+[2022-06-14 14:49:10,119] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 24, in post
+    data = serializer.data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 255, in data
+    self._data = self.to_representation(self.validated_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `CustomTokenObtainSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
+[2022-06-14 14:50:08,797] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 24, in post
+    data = serializer.data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 255, in data
+    self._data = self.to_representation(self.validated_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `CustomTokenObtainSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
+[2022-06-14 14:51:49,814] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 24, in post
+    data = serializer.data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 255, in data
+    self._data = self.to_representation(self.validated_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `CustomTokenObtainSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 79, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+  File "/usr/src/app/shared/exception_handler.py", line 39, in __handle_key_error
+    data = exc.detail
+AttributeError: 'NoneType' object has no attribute 'detail'
+[2022-06-14 14:52:11,372] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 24, in post
+    data = serializer.data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 255, in data
+    self._data = self.to_representation(self.validated_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `CustomTokenObtainSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 80, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+  File "/usr/src/app/shared/exception_handler.py", line 39, in __handle_key_error
+    data = exc.detail
+AttributeError: 'NoneType' object has no attribute 'detail'
+[2022-06-14 14:53:19,140] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 24, in post
+    data = serializer.data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 255, in data
+    self._data = self.to_representation(self.validated_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `CustomTokenObtainSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 80, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+  File "/usr/src/app/shared/exception_handler.py", line 40, in __handle_key_error
+    data = exc.detail
+AttributeError: 'NoneType' object has no attribute 'detail'
+[2022-06-14 14:54:02,146] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 14:55:00,158] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 24, in post
+    data = serializer.data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 255, in data
+    self._data = self.to_representation(self.validated_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `CustomTokenObtainSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 79, in custom_exception_handler
+    return Response(response, response.get('status'))
+UnboundLocalError: local variable 'response' referenced before assignment
+[2022-06-14 14:55:59,274] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 24, in post
+    data = serializer.data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 255, in data
+    self._data = self.to_representation(self.validated_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `CustomTokenObtainSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 83, in custom_exception_handler
+    data = exc.detail
+AttributeError: 'KeyError' object has no attribute 'detail'
+[2022-06-14 14:56:44,999] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 14:57:17,730] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type KeyError is not JSON serializable
+[2022-06-14 14:57:51,633] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:01:27,210] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:02:59,888] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:03:02,077] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:13:27,562] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:16:57,551] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:17:45,427] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:22:51,403] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:25:11,285] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 19, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "/usr/src/app/auth/serializers.py", line 76, in validate
+    raise exceptions.PermissionDenied()
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 88, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+  File "/usr/src/app/shared/exception_handler.py", line 58, in __handle_permissions_denied
+    data = exc.detail
+AttributeError: 'Response' object has no attribute 'detail'
+[2022-06-14 15:26:05,218] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 19, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "/usr/src/app/auth/serializers.py", line 76, in validate
+    raise exceptions.PermissionDenied()
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 89, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+  File "/usr/src/app/shared/exception_handler.py", line 59, in __handle_permissions_denied
+    data = exc.detail
+AttributeError: 'Response' object has no attribute 'detail'
+[2022-06-14 15:26:32,649] WARNING [django.request.log_response:241] Forbidden: /login/
+[2022-06-14 15:27:27,224] WARNING [django.request.log_response:241] Bad Request: /login/
+[2022-06-14 15:27:49,602] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:29:30,063] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 19, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "/usr/src/app/auth/serializers.py", line 75, in validate
+    raise exceptions.AuthenticationFailed(
+rest_framework.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='Wrong email or password', code='authentication_failed')}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 88, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context, response)
+  File "/usr/src/app/shared/exception_handler.py", line 48, in __handle_authentication_failed
+    data = exc.detail
+AttributeError: 'Response' object has no attribute 'detail'
+[2022-06-14 15:29:52,279] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-14 15:41:01,580] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-14 15:49:54,404] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 15:50:33,670] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 15:50:34,862] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 15:50:36,713] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 15:50:47,551] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 15:51:19,559] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 15:51:36,526] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 15:53:29,914] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 15:54:00,605] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:54:15,701] ERROR [django.request.log_response:241] Internal Server Error: /
+[2022-06-14 15:54:37,846] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:55:45,920] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:56:00,248] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:58:08,171] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:58:10,600] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:58:11,507] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:58:12,363] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:58:30,756] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:58:32,579] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:58:45,790] WARNING [django.request.log_response:241] Unauthorized: /
+[2022-06-14 15:59:06,765] ERROR [user.serializers.validate_email:21] Email validation failed
+[2022-06-14 15:59:06,768] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-14 16:04:11,391] WARNING [django.request.log_response:241] Unauthorized: /

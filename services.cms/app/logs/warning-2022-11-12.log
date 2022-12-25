@@ -1,0 +1,12 @@
+[2022-11-12 15:43:50,633] WARNING [django.request.log_response:241] Unauthorized: /doctor/5/packages/
+[2022-11-12 15:51:05,096] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 15:56:01,540] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 15:58:06,366] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 16:00:34,657] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 16:02:01,459] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 16:05:15,270] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 16:05:31,211] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 16:05:42,583] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 16:06:55,547] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 16:07:11,876] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-11-12 16:08:04,446] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctor/:doctorId/

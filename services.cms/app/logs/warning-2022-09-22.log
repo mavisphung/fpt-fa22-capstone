@@ -1,0 +1,56 @@
+[2022-09-22 07:04:34,618] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'weekday'
+[2022-09-22 07:04:34,626] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-22 07:05:22,325] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-22 07:05:47,610] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-22 07:06:17,730] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-22 07:06:58,226] ERROR [shared.exception_handler.__handle_attribute_error:122] type object 'datetime.datetime' has no attribute 'selected_date'
+[2022-09-22 07:06:58,235] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-22 07:07:50,556] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-22 07:07:56,675] ERROR [shared.exception_handler.__handle_attribute_error:122] type object 'datetime.datetime' has no attribute 'selected_date'
+[2022-09-22 07:07:56,678] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-22 10:41:28,789] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-22 10:41:35,967] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-22 10:43:15,856] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-22 10:43:29,709] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-22 10:44:13,200] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-22 10:44:22,443] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-22 10:45:59,697] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'query'
+[2022-09-22 10:45:59,715] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-22 10:46:23,953] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-22 10:47:45,219] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-22 10:48:53,540] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-22 10:50:17,032] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-22 10:52:15,635] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-22 12:23:23,248] WARNING [django.request.log_response:241] Bad Request: /image-to-string/
+[2022-09-22 12:23:55,394] WARNING [django.request.log_response:241] Bad Request: /image-to-string/
+[2022-09-22 12:24:43,894] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:26:45,842] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:27:19,788] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:36:46,689] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:36:49,445] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:40:17,402] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:40:38,140] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:42:06,165] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:45:42,964] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:45:45,372] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:49:45,332] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 12:49:56,053] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:02:03,397] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:06:09,123] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:09:24,563] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:10:02,620] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:11:47,329] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:14:24,024] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:14:26,394] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:14:32,520] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:15:03,595] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:15:05,177] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:15:06,618] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:15:07,690] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:15:24,581] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:15:56,617] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:16:25,521] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:16:41,557] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:16:55,478] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:17:54,041] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/
+[2022-09-22 13:21:39,772] ERROR [django.request.log_response:241] Internal Server Error: /image-to-string/

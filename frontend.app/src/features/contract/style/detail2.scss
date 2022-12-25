@@ -1,0 +1,215 @@
+// @import '../../../../src/style/mixin.module.scss';
+
+// $m: 8px;
+// $p: 8px;
+// $r: 10px;
+// $r0: 0px;
+
+// div.page {
+//     @include box-sizing(calc(100% - $m * 2), calc(100% - $m * 2), $m, $p, $r0);
+//     background-color: #F2F5FA;
+// }
+
+// button {
+//     border-radius: 10px;
+//     width: 80px;
+//     background-color: var(--blue);
+//     border: 0px solid;
+// }
+
+
+// .contract_short_info {
+//     // @include box-sizing(calc(50% - $m * 4), fit-content, $m, $p, 0px);
+//     @include box-sizing(calc(50% - $m * 2), fit-content, $m * 2, $p, 0px);
+//     display: flex;
+//     flex-direction: column;
+
+//     .button {
+//         @include box-sizing(calc(50% - $m * 4), fit-content, 0px, $p, 10px);
+//         background-color: var(--blue);
+//         color: var(--white);
+//         outline: none;
+//         border: none;
+//     }
+
+//     .button {
+//         @include box-sizing(calc(50% - $m * 4), fit-content, 0px, $p, 10px);
+//         background-color: var(--blue);
+//         color: var(--white);
+//         outline: none;
+//         border: none;
+//     }
+// }
+
+// .label_status {
+//     @include box-sizing(calc(100% - $m * 2), calc(100px - $m * 2), $m, $p, $r0);
+
+//     span.label span.status {
+//         display: block;
+//     }
+
+//     span.label {
+//         @include box-sizing(calc(100px), calc(100% - $p * 2), $m, $p, $r0);
+//     }
+
+//     span.label {
+//         @include box-sizing(calc(100px), calc(100% - $p * 2), $m, $p, $r0);
+//     }
+
+// }
+
+// .info_summary_action {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     // background-color: var(--blue);
+
+//     .summary {
+//         @include box-sizing(calc(50%), calc(80px), 0, 0, 0);
+//         display: flex;
+
+//         .avatar {
+//             @include box-sizing(calc(80px), calc(100%), 0, 0, 0);
+//             position: relative;
+
+//             .circle {
+//                 @include box-sizing(calc(60px), calc(60px), 0, 0, 50%);
+//                 @include center(50%);
+//             }
+//         }
+
+//         .fullname {
+//             @include box-sizing(calc(100% - 80px), calc(100%), 0, 0, 0);
+//             position: relative;
+
+//             .wrapper {
+//                 @include center(45%);
+//                 left: 8px;
+//                 transform: translateY(-45%);
+//                 width: fit-content;
+//             }
+//         }
+//     }
+
+//     .actions {
+//         @include box-sizing(calc(50%), calc(80px), 0, 0, 0);
+//         position: relative;
+//         div.btn-group-center{
+//             display: flex;
+//             justify-content: flex-end;
+//             @include box-sizing(calc(100% - $m * 2), calc(40px),0,0px, $r);
+//             position: absolute;
+//             @include center(50%);
+//             button.action_button {
+//                 @include box-sizing(calc(100px), calc(40px), $m, $p, $r);
+//                 margin-top: 0px;
+//                 margin-top: 0px;
+//                 background-color: aqua;
+//             }
+//         }
+//     }
+// }
+
+// .tab{
+//     background-color: #FFFFFF;
+// }
+
+// .personal_detail {
+//     display: flex;
+//     justify-content: flex-start;
+//     flex-wrap: wrap;
+//     @include box-sizing(calc(100% - $m * 2), calc(400px - $m * 2), $m, $p, $r0);
+
+//     .contract_short_info {
+//         // @include box-sizing(calc(50% - $m * 4), fit-content, $m, $p, 0px);
+//         @include box-sizing(calc(50% - $m * 2), fit-content, $m, $p, 0px);
+//         display: flex;
+//         flex-direction: column;
+
+//         .button {
+//             @include box-sizing(calc(50% - $m * 4), fit-content, 0px, $p, 10px);
+//             background-color: var(--blue);
+//             color: var(--white);
+//             outline: none;
+//             border: none;
+//         }
+//     }
+// }
+
+// .schedule {
+//     @include box-sizing(calc(100% - $m * 2), calc(100% - $m * 2), $m, $p, $r0);
+
+//     .action_bar {
+//         @include box-sizing(calc(100% - $m * 2), calc(100px - $m * 2), 0px, 0px, $r0);
+//         display: flex;
+//         justify-content: flex-end;
+//         .action_button {
+//             @include box-sizing(calc(150px), calc(40px), 0, 0, $r);
+//         }
+//     }
+
+//     .schedule_content {
+//         @include box-sizing(calc(100% - $m * 2), fit-content, 0px, $p, $r0);
+//         overflow-y: scroll;
+
+//         .session {
+//             @include box-sizing(calc(100% - $m * 2), fit-content, $m, 0px, $r0);
+//             display: flex;
+//             justify-content: flex-start;
+//             position: relative;
+//             align-items: stretch;
+
+//             div.break {
+//                 width: 2px;
+//                 background-color: var(--blue);
+//             }
+
+//             &__datetime {
+//                 @include box-sizing(calc(150px), 120px, 0px, 0px, $r0);
+//                 margin-right: 8px;
+//             }
+
+//             &__content {
+//                 @include box-sizing(calc(100% - 150px), fit-content, 0px, 0px, $r0);
+//                 max-height: 50%;
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: flex-start;
+
+//                 div.session_assetment {
+//                     &__title {
+//                         font-weight: bold !important;
+//                     }
+
+//                     @include box-sizing(calc(100% - $m * 2), fit-content, $m, 0px, $r0);
+//                     margin-top: 0px;
+
+//                 }
+
+//                 div.session_note {
+//                     @include box-sizing(calc(100% - $m * 2), fit-content, $m, 0px, $r0);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// div.btn-group {
+//     width: 200px;
+//     height: 40px;
+//     button{
+//         width: 100px;
+//         height: 30px;
+//         margin: 8px;
+//     }
+// }
+
+// div.btn-group--disable{
+//     button{
+//         width: 100px;
+//         height: 30px;
+//         margin: 8px;
+//         opacity: 0.5;
+//     }
+// }

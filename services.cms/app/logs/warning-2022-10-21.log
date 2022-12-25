@@ -1,0 +1,11 @@
+[2022-10-21 15:32:26,858] WARNING [django.request.log_response:241] Unauthorized: /appointments/
+[2022-10-21 15:32:39,898] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-21 15:35:12,290] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-10-21 15:40:13,392] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-10-21 15:40:57,212] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-10-21 15:46:37,957] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-21 15:47:08,418] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-10-21 16:10:51,901] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-21 16:11:17,517] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-21 16:11:30,220] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-21 16:11:47,366] WARNING [django.request.log_response:241] Bad Request: /appointments/

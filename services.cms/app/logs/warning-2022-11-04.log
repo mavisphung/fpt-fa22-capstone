@@ -1,0 +1,17 @@
+[2022-11-04 08:44:18,512] ERROR [django.request.log_response:241] Internal Server Error: /doctor/21/
+[2022-11-04 08:44:56,642] ERROR [shared.exception_handler.__handle_http404:112] Doctor matching query does not exist.
+[2022-11-04 08:44:56,645] WARNING [django.request.log_response:241] Not Found: /doctor/21/
+[2022-11-04 21:50:14,202] WARNING [django.request.log_response:241] Unauthorized: /user
+[2022-11-04 21:50:23,894] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'join'
+[2022-11-04 21:50:23,895] ERROR [django.request.log_response:241] Internal Server Error: /user
+[2022-11-04 21:51:23,784] ERROR [django.request.log_response:241] Internal Server Error: /user
+[2022-11-04 21:51:49,518] WARNING [django.request.log_response:241] Not Found: /user
+[2022-11-04 21:56:52,888] WARNING [django.request.log_response:241] Not Found: /user
+[2022-11-04 22:01:46,241] ERROR [django.request.log_response:241] Internal Server Error: /user
+[2022-11-04 22:01:53,266] ERROR [django.request.log_response:241] Internal Server Error: /user
+[2022-11-04 22:02:18,894] WARNING [django.request.log_response:241] Not Found: /user
+[2022-11-04 22:02:49,778] WARNING [django.request.log_response:241] Not Found: /user
+[2022-11-04 22:03:05,333] WARNING [django.request.log_response:241] Not Found: /user
+[2022-11-04 22:03:51,980] WARNING [django.request.log_response:241] Not Found: /user
+[2022-11-04 22:04:11,450] WARNING [django.request.log_response:241] Not Found: /user
+[2022-11-04 22:05:03,152] ERROR [django.request.log_response:241] Internal Server Error: /user

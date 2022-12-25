@@ -1,0 +1,46 @@
+[2022-12-15 03:14:11,306] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-12-15 03:17:42,908] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-12-15 03:18:36,435] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Doctor' object has no attribute 'account_id'
+[2022-12-15 03:18:36,439] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-12-15 03:18:59,302] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-12-15 03:20:58,977] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-12-15 03:21:39,872] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-12-15 08:57:31,823] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing 'update_job' ((2013, 'Lost connection to MySQL server during query')). Retrying with a new DB connection...
+[2022-12-15 13:29:35,691] WARNING [django.request.log_response:241] Unauthorized: /send-me/
+[2022-12-15 13:30:04,738] WARNING [django.request.log_response:241] Unauthorized: /send-me/
+[2022-12-15 13:30:50,245] WARNING [django.request.log_response:241] Unauthorized: /send-me/
+[2022-12-15 13:31:37,358] WARNING [django.request.log_response:241] Unauthorized: /send-me/
+[2022-12-15 13:31:48,999] WARNING [django.request.log_response:241] Unauthorized: /send-me/
+[2022-12-15 13:32:08,287] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:32:58,766] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:47:19,967] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:47:53,662] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:48:51,769] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:50:23,511] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:50:25,088] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:50:25,913] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:50:26,679] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:50:27,549] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:50:28,297] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:50:39,998] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:50:40,949] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:50:41,728] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:51:34,759] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:52:21,412] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:52:23,314] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:53:38,003] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 13:53:39,318] ERROR [django.request.log_response:241] Internal Server Error: /send-me/
+[2022-12-15 19:43:19,716] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))")). Retrying with a new DB connection...
+[2022-12-15 20:26:17,283] WARNING [django.request.log_response:241] Unauthorized: /api/suggest/doctor/5/
+[2022-12-15 20:26:23,471] WARNING [django.request.log_response:241] Unauthorized: /api/suggest/doctor/5/
+[2022-12-15 20:26:42,143] WARNING [django.request.log_response:241] Unauthorized: /api/suggest/doctor/5/
+[2022-12-15 22:13:35,288] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2013, 'Lost connection to MySQL server during query ([WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond)')). Retrying with a new DB connection...
+[2022-12-15 23:07:37,729] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-15 23:07:37,732] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-12-15 23:07:45,090] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-15 23:07:45,092] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-12-15 23:12:31,957] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/list/
+[2022-12-15 23:12:39,362] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-15 23:12:39,365] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-12-15 23:13:29,404] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-15 23:13:29,406] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/

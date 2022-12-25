@@ -1,0 +1,109 @@
+[2022-09-17 06:44:59,898] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-09-17 07:29:39,723] ERROR [django.request.log_response:241] Internal Server Error: /register/device/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.9/site-packages/django/urls/resolvers.py", line 651, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python3.9/site-packages/django/urls/resolvers.py", line 651, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python3.9/site-packages/django/urls/resolvers.py", line 421, in resolve
+    kwargs.update(self.default_args)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+[2022-09-17 07:29:53,120] ERROR [django.request.log_response:241] Internal Server Error: /register/device/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.9/site-packages/django/urls/resolvers.py", line 651, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python3.9/site-packages/django/urls/resolvers.py", line 651, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python3.9/site-packages/django/urls/resolvers.py", line 421, in resolve
+    kwargs.update(self.default_args)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+[2022-09-17 07:30:39,266] ERROR [django.request.log_response:241] Internal Server Error: /register/device/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.9/site-packages/django/urls/resolvers.py", line 651, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python3.9/site-packages/django/urls/resolvers.py", line 651, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python3.9/site-packages/django/urls/resolvers.py", line 421, in resolve
+    kwargs.update(self.default_args)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+[2022-09-17 07:47:21,687] WARNING [django.request.log_response:241] Bad Request: /register/device/
+[2022-09-17 07:57:14,503] WARNING [django.request.log_response:241] Unauthorized: /appointments/
+[2022-09-17 07:57:31,726] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-17 07:58:15,693] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-17 07:58:26,081] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-09-17 08:55:30,313] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-17 08:55:43,728] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-09-17 09:01:43,611] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-17 09:11:41,267] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:28:19,685] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:28:57,224] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:28:58,942] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:29:28,718] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:29:45,639] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:30:06,409] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=69 | run_date=2022-09-17 09:30:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-17 09:30:06,700] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=69 | run_date=2022-09-17 09:30:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-17 09:33:24,660] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:33:25,850] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:33:26,499] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:34:29,856] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:47,611] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:48,960] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:49,527] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:49,977] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:50,500] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:51,018] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:51,453] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:51,927] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:52,416] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:52,896] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:53,452] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:36:53,898] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:37:22,995] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:37:34,214] WARNING [django.request.log_response:241] Not Found: /api2/suggest/doctors/5/
+[2022-09-17 09:38:14,641] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:38:24,738] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:38:45,839] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:39:23,093] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:39:54,429] WARNING [django.request.log_response:241] Not Found: /suggest/doctors/5/
+[2022-09-17 09:40:05,399] WARNING [django.request.log_response:241] Not Found: /suggest/doctors/5
+[2022-09-17 09:40:15,213] WARNING [django.request.log_response:241] Not Found: /suggest/doctors/5/
+[2022-09-17 09:40:47,271] WARNING [django.request.log_response:241] Not Found: /suggest/doctors/5/
+[2022-09-17 09:42:44,541] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:42:48,865] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctors/5/
+[2022-09-17 09:43:07,989] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctor/5/
+[2022-09-17 09:44:58,820] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctor/5/
+[2022-09-17 09:45:21,663] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctor/5/
+[2022-09-17 09:45:31,568] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctor/5/
+[2022-09-17 09:45:35,163] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctor/:doctorId/
+[2022-09-17 09:45:38,339] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctor/:doctorId/
+[2022-09-17 09:46:05,454] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctor/5/
+[2022-09-17 09:48:53,954] WARNING [django.request.log_response:241] Not Found: /api/suggest/doctor/:doctorId/
+[2022-09-17 10:00:05,596] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-09-17 10:00:06,999] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=70 | run_date=2022-09-17 10:00:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-17 10:00:07,286] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=70 | run_date=2022-09-17 10:00:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-17 15:59:26,010] WARNING [django.request.log_response:241] Not Found: /appointments/doctor/
+[2022-09-17 17:12:51,468] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/
+[2022-09-17 17:13:30,238] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/
+[2022-09-17 17:14:00,783] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/
+[2022-09-17 17:14:12,977] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/
+[2022-09-17 17:14:54,451] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/
+[2022-09-17 17:14:55,456] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/
+[2022-09-17 17:16:09,757] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/

@@ -1,0 +1,18 @@
+[2022-11-01 07:41:45,307] WARNING [django.request.log_response:241] Unauthorized: /user/health-records/
+[2022-11-01 07:41:58,924] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-11-01 07:42:25,738] WARNING [django.request.log_response:241] Bad Request: /user/health-records/
+[2022-11-01 07:42:32,503] WARNING [django.request.log_response:241] Bad Request: /user/health-records/
+[2022-11-01 07:45:13,512] WARNING [django.request.log_response:241] Bad Request: /user/health-records/
+[2022-11-01 21:41:45,284] WARNING [django.request.log_response:241] Unauthorized: /ipn
+[2022-11-01 21:42:32,591] WARNING [django.request.log_response:241] Unauthorized: /ipn
+[2022-11-01 21:42:50,158] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:44:52,743] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:45:32,412] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:46:14,026] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:49:12,560] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:49:41,870] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:50:54,423] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:56:59,107] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:57:24,261] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:58:41,453] ERROR [django.request.log_response:241] Internal Server Error: /ipn
+[2022-11-01 21:59:25,387] ERROR [django.request.log_response:241] Internal Server Error: /ipn

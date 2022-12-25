@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./app
+    image: capstone-service:0.0.1
+    # command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./app/:/usr/src/app/
+    ports:
+      # - 8080:80
+      - 8000:8000
+      - 6969:6969
+    env_file:
+      - ./.env
+  # db:
+  #   image: postgres:14
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data/
+  #   environment:
+  #     - POSTGRES_USER=hello_django
+  #     - POSTGRES_PASSWORD=hello_django
+  #     - POSTGRES_DB=hello_django_dev
+
+# volumes:
+#   postgres_data:

@@ -1,0 +1,271 @@
+p{
+    color: #AFB6BD;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page{
+    background-color: #F2F5F9;
+    width: calc(100% - 60px);
+    position: fixed;
+    left: 60px;
+    height: 100%;
+    &__heading{
+        height: 12%;
+        background-color: blanchedalmond;
+    }
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    position: relative;
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    .col{
+        margin-left: 20px;
+        min-height: 40px;
+        height: max-content;
+        .content{
+            width: 98%;
+        }
+    }
+    .col--third{
+        width: 30%;
+    }
+    .col--ten{
+        width: 5%;
+    }
+    .col--fourth{
+        width: 22.5%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .col--prescription{
+        height: 50px;
+    }
+    .col--prescription:last-child{
+        display: flex;
+    }
+}
+
+.br{
+    border: 0.2px solid #E7E5E5;
+    width: 1px;
+    height: 50%;
+}
+
+.main_section{
+    width: 70%;
+    height: 88%;
+    background-color: #F2F5F9;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &__half{
+        margin-top: 16px;
+    }
+    &__half:nth-of-type(1){
+        min-height: 220px;
+        width: 100%;
+        position: relative;
+    }
+    &__half:nth-of-type(2){
+        height: 55%;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.patient_info{
+    width: 90%;
+    min-height: 230px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    &__summary{
+        background-color: #FFFFFF;
+        margin-right: 2px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        width: 220px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: relative;
+        &__row{
+            position: relative;
+            width: 100%;
+            height: 130px;
+            &__avatar{
+                position: absolute;
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+                top: 32px;
+                left: 50%;    
+                transform: translateX(-50%);  
+            }
+            h3{
+                position: absolute;
+                width: 100%;
+                top: calc(20% + 70px);
+                left: 50%;    
+                transform: translateX(-50%) translateY(-20%);  
+                text-align: center;
+            }
+        }
+        &__row--horizontal_stack{
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            .col{
+                height: fit-content;
+                h4{
+                    width: 100%;
+                    text-align: center;
+                }
+                p{
+                    width: 100%;
+                    padding: 0px;
+                    text-align: center;
+                }
+            }
+            .col--half{
+                width: 50%;
+            }
+        }
+        &__row--fitcontent{
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .btn{
+                margin-top: 8px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                border-radius: 4px;
+                background-color: #FFFFFF;
+                width: 90%;
+                height: 30px;
+                text-align: center;
+            }
+        }
+    }
+    &__detail{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        width: 80%;
+
+        background-color: #FFFFFF;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .wrapper{
+            width: 100%;
+            display: flex;
+            height: 30%;
+            position: relative;
+            .row{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                display: flex;
+                height: fit-content;
+                p{
+                    padding: 0;
+                }
+                .col{
+                    margin-left: 30px;
+                    height: 40px;
+                }
+                .col--third{
+                    width: 30%;
+                }
+                .col--half{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.health_record{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 8px;
+    background-color: #FFFDFD;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    &__tabBar{
+        height: 10%;
+        &__item{
+            width: 25%;
+        }
+    }
+    &__prescription{
+        background-color: #AFB6BD;
+        width: 95%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        &__row{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            &__col{
+                margin: 8px;
+                height: 80px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
+                .content{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .br--center{
+                    left: 99%;
+                    height: 100%;
+                    position: relative;
+                    &__content{
+                        border: 0.2px solid #E7E5E5;
+                        width: 1px;
+                        height: 50%;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%)
+                    } 
+                }
+
+            }
+            &__col--ten{
+                width: 10%;
+            }
+            &__col--fourth{
+                width: 22.5%;
+            }
+        }
+    }
+}
+
+.table{
+    width: 100%;
+    height: 100%;
+    margin: 8px;
+}

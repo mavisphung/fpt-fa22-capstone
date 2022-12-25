@@ -1,0 +1,22 @@
+[2022-12-13 09:22:03,580] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-13 09:24:56,644] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-13 09:25:02,475] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-13 09:25:08,471] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-13 09:25:20,086] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-13 09:25:25,802] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-13 10:08:25,660] ERROR [shared.exception_handler.__handle_attribute_error:122] 'datetime.datetime' object has no attribute 'minutes'
+[2022-12-13 10:08:25,664] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-12-13 10:15:50,669] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-12-13 14:08:44,292] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/suggestion
+[2022-12-13 14:08:44,361] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/suggestion
+[2022-12-13 14:08:50,847] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/suggestion
+[2022-12-13 14:08:50,965] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/suggestion
+[2022-12-13 20:01:02,127] WARNING [apscheduler.executors.default.run_job:120] Run time of job "remove_expired_nonsign_contract (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='1'], next run at: 2022-12-13 21:01:00 +07)" was missed by 0:00:02.127101
+[2022-12-13 22:56:37,968] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))")). Retrying with a new DB connection...
+[2022-12-13 13:22:58,057] WARNING [django.request.log_response:241] Not Found: /admiun
+[2022-12-13 13:22:58,333] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-12-13 13:33:01,846] WARNING [apscheduler.executors.default.run_job:120] Run time of job "remove_expired_nonsign_contract (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2022-12-13 13:34:00 UTC)" was missed by 0:00:01.846659
+[2022-12-13 13:34:01,493] WARNING [apscheduler.executors.default.run_job:120] Run time of job "remove_expired_nonsign_contract (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2022-12-13 13:35:00 UTC)" was missed by 0:00:01.493335
+[2022-12-13 13:35:01,183] WARNING [apscheduler.executors.default.run_job:120] Run time of job "remove_expired_nonsign_contract (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2022-12-13 13:36:00 UTC)" was missed by 0:00:01.183545
+[2022-12-13 13:36:01,111] WARNING [apscheduler.executors.default.run_job:120] Run time of job "remove_expired_nonsign_contract (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2022-12-13 13:37:00 UTC)" was missed by 0:00:01.111006
+[2022-12-13 13:38:01,001] WARNING [apscheduler.executors.default.run_job:120] Run time of job "remove_expired_nonsign_contract (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2022-12-13 13:39:00 UTC)" was missed by 0:00:01.001550

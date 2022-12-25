@@ -1,0 +1,7 @@
+[2022-11-03 02:59:14,064] WARNING [django.request.log_response:241] Unauthorized: /user/me/agora-token/
+[2022-11-03 14:19:02,261] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-11-03 14:22:39,993] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-11-03 14:25:57,635] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-11-03 14:54:34,904] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-11-03 15:01:31,506] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-11-03 15:03:27,537] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/

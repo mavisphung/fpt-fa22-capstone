@@ -1,0 +1,9 @@
+{
+    "title": "Welcome to react using react-i18next",
+    "patient": {
+        "fullName": "Họ và tên",
+        "gender": "Giới tính",
+        "dob":"Ngày tháng năm sinh",
+        "address": "Địa chỉ"
+    }
+}

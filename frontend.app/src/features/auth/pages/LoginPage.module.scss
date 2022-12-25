@@ -1,0 +1,178 @@
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.section_img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: screen;
+  }
+
+  .contentBx {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    .formBx {
+      width: 50%;
+
+      h2 {
+        color: var(--black1);
+        font-weight: 600;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        border-bottom: 4px solid #0093e9;
+        display: inline-block;
+        letter-spacing: 1px;
+      }
+      .inputBox {
+        margin: 20px 0 12px 0;
+
+        .titleLabel {
+          display: block;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+        .inputDiv {
+          height: 44px;
+          width: 100%;
+          outline: none;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          padding-left: 15px;
+          font-size: 16px;
+          letter-spacing: 1px;
+          border-bottom-width: 2px;
+          transition: all 0.3s ease;
+        }
+        .inputDiv:focus {
+          border-color: var(--green);
+        }
+
+        .btnSubmit {
+          @extend .inputDiv;
+          padding-left: 0;
+          margin-top: 20px;
+          border: none;
+          font-weight: 400;
+          background: #0093e9;
+          color: #fff;
+          cursor: pointer;
+        }
+        .btnSubmit:hover {
+          background: #80d0c7;
+        }
+
+        // .btnGoogle {
+        //   cursor: pointer;
+        //   width: 100%;
+        //   padding: 10px 20px;
+        //   outline: none;
+        //   font-weight: 400;
+        //   border: 1px solid #607d8b;
+        //   font-size: 16px;
+        //   letter-spacing: 1px;
+        //   color: var(--black1);
+        //   background-color: transparent;
+        //   border-radius: 30px;
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        // }
+
+        // .btnGoogle:hover {
+        //   background: #03a9f4;
+        //   color: #fff;
+        // }
+
+        // p {
+        //   color: #607d8b;
+        //   .signUp {
+        //     color: #80d0c7;
+        //     cursor: pointer;
+        //   }
+        // }
+      }
+
+      // h3 {
+      //   color: #607d8b;
+      //   text-align: center;
+      //   margin: 60px 0 10px;
+      //   font-weight: 500;
+      // }
+    }
+  }
+}
+
+.titleInput::after {
+  content: '*';
+  color: red;
+}
+
+.logo_Google {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .section_img {
+    .imgBx {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .contentBx {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      .formBx {
+        width: 100%;
+        padding: 60px;
+        background: rgba(255, 255, 255, 0.8);
+        margin: 80px;
+        h3 {
+          color: #607d8b;
+          text-align: center;
+          margin: 30px 0 10px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

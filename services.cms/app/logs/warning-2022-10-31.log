@@ -1,0 +1,3 @@
+[2022-10-31 07:21:47,447] WARNING [django.request.log_response:241] Unauthorized: /api/suggest/doctor/5/
+[2022-10-31 07:22:04,673] WARNING [django.request.log_response:241] Bad Request: /api/suggest/doctor/5/
+[2022-10-31 07:22:14,622] WARNING [django.request.log_response:241] Bad Request: /api/suggest/doctor/5/

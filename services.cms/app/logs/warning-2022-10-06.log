@@ -1,0 +1,28 @@
+[2022-10-06 07:57:30,685] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 07:59:08,174] ERROR [shared.exception_handler.__handle_http404:112] Prescription matching query does not exist.
+[2022-10-06 07:59:08,177] WARNING [django.request.log_response:241] Not Found: /prescription/doctor/1/
+[2022-10-06 07:59:41,975] ERROR [shared.exception_handler.__handle_http404:112] Prescription matching query does not exist.
+[2022-10-06 07:59:41,979] WARNING [django.request.log_response:241] Not Found: /prescription/doctor/1/
+[2022-10-06 08:01:11,090] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 08:03:04,101] ERROR [shared.exception_handler.__handle_attribute_error:122] Cannot find 'prescription_set' on Prescription object, 'prescription_set' is an invalid parameter to prefetch_related()
+[2022-10-06 08:03:04,106] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 08:03:29,621] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 08:04:52,560] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 08:19:18,770] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Prescription' object has no attribute 'prescription_set'
+[2022-10-06 08:19:18,773] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 08:20:05,450] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Prescription' object has no attribute 'prescription_set'
+[2022-10-06 08:20:05,456] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 08:20:15,285] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Prescription' object has no attribute 'prescription_set'
+[2022-10-06 08:20:15,287] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 08:20:35,663] ERROR [shared.exception_handler.__handle_attribute_error:122] 'PrescriptionDetail' object has no attribute 'usage'
+[2022-10-06 08:20:35,668] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 08:22:03,524] ERROR [shared.exception_handler.__handle_attribute_error:122] 'PrescriptionDetail' object has no attribute 'usage'
+[2022-10-06 08:22:03,527] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 08:30:08,699] ERROR [shared.exception_handler.__handle_attribute_error:122] 'PrescriptionDetail' object has no attribute 'usage'
+[2022-10-06 08:30:08,702] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/1/
+[2022-10-06 00:55:14,188] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-10-06 00:56:19,025] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-10-06 00:57:39,487] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-10-06 00:58:37,853] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-10-06 01:33:40,739] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-10-06 01:34:53,669] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/

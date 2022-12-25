@@ -1,0 +1,60 @@
+[2022-10-01 04:10:18,914] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 04:18:07,565] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-01 04:40:46,008] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 04:47:48,213] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 04:53:20,063] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 05:07:12,945] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-10-01 05:07:24,749] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-01 05:10:43,042] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-01 05:10:52,917] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-01 07:47:13,200] WARNING [django.request.log_response:241] Bad Request: /api/suggest/doctor/5/
+[2022-10-01 07:47:19,077] ERROR [shared.exception_handler.__handle_attribute_error:122] type object 'Prefetch' has no attribute 'split'
+[2022-10-01 07:47:19,078] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 17:18:13,713] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 17:18:50,443] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 17:19:21,424] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 17:24:32,557] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 17:26:50,707] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 17:28:13,102] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 17:47:17,371] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 17:52:51,340] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 17:54:12,805] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-01 23:25:43,634] WARNING [django.request.log_response:241] Unauthorized: /prescription/
+[2022-10-01 23:25:52,311] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:25:58,369] ERROR [django.request.log_response:241] Internal Server Error: /prescription
+Traceback (most recent call last):
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/prescription/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2022-10-01 23:26:24,705] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:27:37,723] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:29:26,677] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:30:12,533] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:31:12,254] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-10-01 23:31:12,258] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:31:42,204] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:38:25,176] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Prescription' object has no attribute 'endedAt'
+[2022-10-01 23:38:25,180] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:39:28,753] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Prescription' object has no attribute 'status'
+[2022-10-01 23:39:28,757] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:39:55,011] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'medicine'
+[2022-10-01 23:39:55,014] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:41:12,601] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'medicine'
+[2022-10-01 23:41:12,604] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:50:31,741] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:53:37,113] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:54:39,280] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:55:11,284] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:56:29,343] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:56:52,163] ERROR [shared.exception_handler.__handle_attribute_error:122] Got AttributeError when attempting to get a value for field `usage` on serializer `PrescriptionDetailSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'usage'.
+[2022-10-01 23:56:52,168] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:57:42,613] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-10-01 23:58:03,989] ERROR [django.request.log_response:241] Internal Server Error: /prescription/

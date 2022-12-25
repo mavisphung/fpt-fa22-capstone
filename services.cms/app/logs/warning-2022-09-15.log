@@ -1,0 +1,36 @@
+[2022-09-15 00:13:39,000] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-09-15 07:44:46,316] ERROR [django.request.log_response:241] Internal Server Error: /doctors/
+[2022-09-15 11:53:19,833] WARNING [django.request.log_response:241] Forbidden: /appointments/
+[2022-09-15 11:53:39,207] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 11:54:18,587] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 11:54:26,231] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 11:54:28,745] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 11:54:31,660] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 11:56:04,521] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 11:57:45,141] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-15 11:58:02,134] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 11:58:39,523] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 12:04:11,540] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-15 12:10:40,786] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-15 12:13:31,214] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-15 12:14:27,947] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 12:14:37,634] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-15 12:15:19,651] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-15 12:39:16,404] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-09-15 13:17:43,627] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:17:48,493] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:17:52,041] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:17:58,018] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:18:09,613] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:20:33,949] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:45:39,904] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:46:03,681] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:46:12,091] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:46:21,850] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:46:59,268] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:47:40,201] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:47:52,842] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:47:56,955] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:49:45,810] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:52:39,782] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-15 13:55:26,063] WARNING [django.request.log_response:241] Bad Request: /appointments/

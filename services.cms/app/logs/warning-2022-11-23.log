@@ -1,0 +1,14 @@
+[2022-11-23 13:12:24,038] WARNING [django.request.log_response:241] Forbidden: /user/health-records/
+[2022-11-23 13:55:45,073] ERROR [shared.exception_handler.__handle_http404:112] No Appointment matches the given query.
+[2022-11-23 13:55:45,075] WARNING [django.request.log_response:241] Not Found: /appointments/177/cancel/
+[2022-11-23 13:58:36,831] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'status'
+[2022-11-23 13:58:36,834] ERROR [django.request.log_response:241] Internal Server Error: /appointments/167/cancel/
+[2022-11-23 13:59:35,680] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'status'
+[2022-11-23 13:59:35,684] ERROR [django.request.log_response:241] Internal Server Error: /appointments/167/cancel/
+[2022-11-23 14:00:32,274] ERROR [shared.exception_handler.__handle_http404:112] Appointment matching query does not exist.
+[2022-11-23 14:00:32,279] WARNING [django.request.log_response:241] Not Found: /appointments/167/cancel/
+[2022-11-23 14:01:12,235] ERROR [django.request.log_response:241] Internal Server Error: /appointments/167/cancel/
+[2022-11-23 14:02:00,344] ERROR [shared.exception_handler.__handle_http404:112] Appointment matching query does not exist.
+[2022-11-23 14:02:00,348] WARNING [django.request.log_response:241] Not Found: /appointments/167/cancel/
+[2022-11-23 14:02:20,017] ERROR [shared.exception_handler.__handle_http404:112] Appointment matching query does not exist.
+[2022-11-23 14:02:20,018] WARNING [django.request.log_response:241] Not Found: /appointments/17722/cancel/

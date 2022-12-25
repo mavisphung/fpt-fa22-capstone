@@ -1,0 +1,32 @@
+[2022-11-07 13:14:34,504] WARNING [django.request.log_response:241] Unauthorized: /admin2/manager/
+[2022-11-07 13:15:21,814] WARNING [django.request.log_response:241] Bad Request: /admin2/manager/
+[2022-11-07 13:15:42,506] ERROR [django.request.log_response:241] Internal Server Error: /admin2/manager/
+[2022-11-07 13:15:58,591] ERROR [django.request.log_response:241] Internal Server Error: /admin2/manager/
+[2022-11-07 13:16:25,267] ERROR [user.serializers.validate_email:577] Email validation failed
+[2022-11-07 13:16:25,286] WARNING [django.request.log_response:241] Bad Request: /admin2/manager/
+[2022-11-07 13:17:10,486] WARNING [django.request.log_response:241] Forbidden: /login/
+[2022-11-07 13:17:25,140] WARNING [django.request.log_response:241] Forbidden: /login/
+[2022-11-07 13:18:47,115] WARNING [django.request.log_response:241] Forbidden: /login/
+[2022-11-07 14:00:53,558] WARNING [django.request.log_response:241] Bad Request: /doctor/register/
+[2022-11-07 14:02:27,226] ERROR [django.security.DisallowedHost.response_for_exception:124] Invalid HTTP_HOST header: 'localhost:8000.'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000.'. The domain name provided is not valid according to RFC 1034/1035.
+[2022-11-07 14:02:27,420] WARNING [django.request.log_response:241] Bad Request: /manager/doctor/register/
+[2022-11-07 14:02:41,049] WARNING [django.request.log_response:241] Unauthorized: /manager/doctor/register/
+[2022-11-07 14:02:56,209] WARNING [django.request.log_response:241] Unauthorized: /manager/doctor/register/
+[2022-11-07 14:03:12,707] ERROR [django.request.log_response:241] Internal Server Error: /manager/doctor/register/
+[2022-11-07 14:05:43,346] WARNING [django.request.log_response:241] Bad Request: /manager/doctor/register/
+[2022-11-07 14:12:16,123] ERROR [django.request.log_response:241] Internal Server Error: /manager/doctor/register/
+[2022-11-07 15:02:10,830] WARNING [django.request.log_response:241] Bad Request: /manager/doctor/register/
+[2022-11-07 15:14:34,567] ERROR [django.request.log_response:241] Internal Server Error: /manager/doctor/register/
+[2022-11-07 15:19:11,860] WARNING [django.request.log_response:241] Bad Request: /manager/doctor/register/
+[2022-11-07 15:43:43,289] ERROR [shared.exception_handler.__handle_http404:112] Doctor matching query does not exist.
+[2022-11-07 15:43:43,291] WARNING [django.request.log_response:241] Not Found: /manager/doctor/register/

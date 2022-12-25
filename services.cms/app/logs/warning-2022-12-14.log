@@ -1,0 +1,3 @@
+[2022-12-14 12:43:11,440] WARNING [django.request.log_response:241] Unauthorized: /specialists/2/doctors/
+[2022-12-14 12:46:16,818] ERROR [shared.exception_handler.__handle_http404:112] Specialist matching query does not exist.
+[2022-12-14 12:46:16,825] WARNING [django.request.log_response:241] Not Found: /specialists/100/doctors/

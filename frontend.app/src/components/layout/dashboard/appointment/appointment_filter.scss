@@ -1,0 +1,12 @@
+#filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}

@@ -1,0 +1,30 @@
+@import '../../../../src/style/mixin.module.scss';
+
+$w: 100%;
+$h: 100%;
+$m: 8px;
+$p: 8px;
+$r: 10px;
+
+.contract_schedule {
+    @include box-sizing($w, fit-content, $m, $p, $r);
+    min-height: 300px;
+
+    &__adjustment {
+        @include box-sizing($w, 50px, $m, $p, $r);
+    }
+
+    &__table {
+        @include box-sizing(calc(100%), 100%, $m, $p, $r);
+        min-height: 400px;
+        display: flex;
+        .col {
+            @include box-sizing(calc(100% / 7), fit-content, $m, $p, $r);
+
+            .timetable_item {
+                @include box-sizing(calc(100%), 80px, $m, $p, $r);
+            }
+        }
+    }
+
+}

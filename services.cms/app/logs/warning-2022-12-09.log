@@ -1,0 +1,48 @@
+[2022-12-09 07:03:12,820] ERROR [django.request.log_response:241] Internal Server Error: /prescription-detail/doctor/145/
+[2022-12-09 07:12:59,603] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:12:59,621] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:14:54,069] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:14:54,079] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:15:31,283] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:15:31,305] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:15:57,055] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:15:57,058] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:16:36,741] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:16:36,806] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:16:51,673] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:16:51,689] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:17:38,569] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:17:38,575] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:45:21,196] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:45:21,225] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:45:32,549] WARNING [django.request.log_response:241] Not Found: //prescription-detail/doctor/undefined/
+[2022-12-09 07:45:32,609] WARNING [django.request.log_response:241] Not Found: //prescription-detail/doctor/undefined/
+[2022-12-09 07:45:32,700] WARNING [django.request.log_response:241] Not Found: //prescription-detail/doctor/122/
+[2022-12-09 07:46:04,534] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:46:04,545] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:47:01,385] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 07:47:01,387] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 11:50:57,885] WARNING [django.request.log_response:241] Bad Request: /doctor/instruction/
+[2022-12-09 11:55:23,658] ERROR [shared.exception_handler.__handle_attribute_error:122] type object 'datetime.timezone' has no attribute 'now'
+[2022-12-09 11:55:23,661] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-12-09 11:57:13,147] ERROR [django.request.log_response:241] Internal Server Error: /doctor/instruction/
+[2022-12-09 12:06:39,251] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 12:06:39,283] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 12:06:39,946] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-09 12:06:39,947] ERROR [django.request.log_response:241] Internal Server Error: /prescription-detail/doctor/8/
+[2022-12-09 12:32:03,039] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 12:32:03,094] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 12:32:03,922] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-09 12:32:03,923] ERROR [django.request.log_response:241] Internal Server Error: /prescription-detail/doctor/9/
+[2022-12-09 12:37:54,506] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 12:37:54,546] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 14:02:00,997] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 14:02:01,043] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 14:02:01,776] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-09 14:02:01,777] ERROR [django.request.log_response:241] Internal Server Error: /prescription-detail/doctor/9/
+[2022-12-09 14:02:12,454] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 14:02:12,470] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/undefined/
+[2022-12-09 14:02:13,147] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-09 14:02:13,148] ERROR [django.request.log_response:241] Internal Server Error: /prescription-detail/doctor/9/
+[2022-12-09 14:11:23,535] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/[object Object]/
+[2022-12-09 14:11:23,575] WARNING [django.request.log_response:241] Not Found: /prescription-detail/doctor/[object Object]/

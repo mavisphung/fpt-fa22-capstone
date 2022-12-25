@@ -1,0 +1,5 @@
+[2022-10-27 04:15:40,021] WARNING [django.request.log_response:241] Forbidden: /api/suggest/doctor/5/
+[2022-10-27 04:17:08,807] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-10-27 11:16:39,827] WARNING [django.request.log_response:241] Forbidden: /doctor/5/packages/12/
+[2022-10-27 11:16:52,314] WARNING [django.request.log_response:241] Bad Request: /doctor/5/packages/12/
+[2022-10-27 11:18:08,635] ERROR [django.request.log_response:241] Internal Server Error: /doctor/5/packages/10/

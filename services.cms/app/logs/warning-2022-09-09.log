@@ -1,0 +1,26 @@
+[2022-09-09 04:36:21,564] WARNING [django.request.log_response:241] Unauthorized: /admin2/user/5/approved/
+[2022-09-09 04:37:14,605] ERROR [shared.exception_handler.__handle_http404:112] No Doctor matches the given query.
+[2022-09-09 04:37:14,607] WARNING [django.request.log_response:241] Not Found: /admin2/user/5/approved/
+[2022-09-09 04:53:34,542] ERROR [django.request.log_response:241] Internal Server Error: /admin2/user/5/approved/
+[2022-09-09 05:26:14,518] WARNING [django.request.log_response:241] Forbidden: /doctor/shifts/
+[2022-09-09 05:42:00,085] ERROR [shared.exception_handler.__handle_attribute_error:122] 'collections.OrderedDict' object has no attribute 'pk'
+[2022-09-09 05:42:00,089] ERROR [django.request.log_response:241] Internal Server Error: /doctor/shifts/
+[2022-09-09 05:42:44,717] WARNING [django.request.log_response:241] Bad Request: /doctor/shifts/
+[2022-09-09 05:42:50,365] ERROR [shared.exception_handler.__handle_attribute_error:122] 'collections.OrderedDict' object has no attribute 'pk'
+[2022-09-09 05:42:50,367] ERROR [django.request.log_response:241] Internal Server Error: /doctor/shifts/
+[2022-09-09 05:45:02,759] WARNING [django.request.log_response:241] Bad Request: /doctor/shifts/
+[2022-09-09 05:49:17,007] ERROR [django.request.log_response:241] Internal Server Error: /doctor/shifts/
+[2022-09-09 05:53:25,281] ERROR [django.request.log_response:241] Internal Server Error: /doctor/shifts/
+[2022-09-09 05:58:02,897] WARNING [django.request.log_response:241] Bad Request: /doctor/shifts/
+[2022-09-09 05:58:26,757] ERROR [django.request.log_response:241] Internal Server Error: /doctor/shifts/
+[2022-09-09 05:59:54,479] ERROR [django.request.log_response:241] Internal Server Error: /doctor/shifts/
+[2022-09-09 06:04:57,879] ERROR [shared.exception_handler.__handle_attribute_error:122] Got AttributeError when attempting to get a value for field `shifts` on serializer `ManyWorkingShiftSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `list` instance.
+Original exception text was: 'list' object has no attribute 'shifts'.
+[2022-09-09 06:04:57,883] ERROR [django.request.log_response:241] Internal Server Error: /doctor/shifts/
+[2022-09-09 06:47:49,686] WARNING [django.request.log_response:241] Bad Request: /doctor/shifts/
+[2022-09-09 14:28:30,402] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-09 14:29:15,706] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-09 14:30:41,137] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-09 14:44:52,813] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-09 14:44:58,224] WARNING [django.request.log_response:241] Bad Request: /appointments/

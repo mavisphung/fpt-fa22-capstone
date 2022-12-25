@@ -1,0 +1,124 @@
+[2022-12-18 09:13:38,298] WARNING [django.request.log_response:241] Not Found: /61/approve/
+[2022-12-18 09:17:17,399] WARNING [django.request.log_response:241] Not Found: //contract/doctor/61/approve/
+[2022-12-18 09:17:34,174] WARNING [django.request.log_response:241] Not Found: //contract/doctor/61/approve/
+[2022-12-18 09:18:06,791] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/61/approve/
+[2022-12-17 06:30:51,993] WARNING [django.request.log_response:241] Forbidden: /doctor/health-records/
+[2022-12-17 06:31:10,669] ERROR [django.request.log_response:241] Internal Server Error: /doctor/health-records/
+[2022-12-17 07:04:22,507] WARNING [django.request.log_response:241] Bad Request: /doctor/health-records/
+[2022-12-17 07:05:24,722] ERROR [django.request.log_response:241] Internal Server Error: /doctor/health-records/
+[2022-12-17 07:09:25,689] ERROR [django.request.log_response:241] Internal Server Error: /doctor/health-records/
+[2022-12-17 07:11:32,239] ERROR [django.request.log_response:241] Internal Server Error: /doctor/health-records/
+[2022-12-17 07:16:17,579] ERROR [django.request.log_response:241] Internal Server Error: /doctor/health-records/
+[2022-12-17 07:18:12,404] ERROR [django.request.log_response:241] Internal Server Error: /doctor/health-records/
+[2022-12-17 07:19:26,560] ERROR [django.request.log_response:241] Internal Server Error: /doctor/health-records/
+[2022-12-17 07:33:22,687] ERROR [django.request.log_response:241] Internal Server Error: /health-records/194/
+[2022-12-17 07:37:48,682] ERROR [shared.exception_handler.__handle_attribute_error:122] 'HealthRecord' object has no attribute 'prescription_details'
+[2022-12-17 07:37:48,685] ERROR [django.request.log_response:241] Internal Server Error: /health-records/194/
+[2022-12-17 07:38:49,092] ERROR [django.request.log_response:241] Internal Server Error: /health-records/194/
+[2022-12-17 07:40:13,397] ERROR [django.request.log_response:241] Internal Server Error: /health-records/194/
+[2022-12-17 07:42:09,294] ERROR [django.request.log_response:241] Internal Server Error: /health-records/194/
+[2022-12-17 07:47:44,341] WARNING [django.request.log_response:241] Forbidden: /user/health-records/
+[2022-12-17 07:58:12,744] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'prescriptiondetail_set'
+[2022-12-17 07:58:12,747] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-17 08:14:26,985] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 08:18:21,173] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 08:19:30,272] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 08:21:14,748] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 08:24:04,313] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 08:25:08,090] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 08:26:04,305] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 08:26:39,104] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 08:42:30,220] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 08:57:27,530] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-17 08:59:48,250] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-17 09:03:12,904] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-17 09:24:48,322] ERROR [shared.exception_handler.__handle_attribute_error:122] Cannot find 'prescriptiondetail_setmedical_instructions' on Prescription object, 'prescription_set__prescriptiondetail_setmedical_instructions' is an invalid parameter to prefetch_related()
+[2022-12-17 09:24:48,326] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-17 09:42:33,763] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 09:49:14,756] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 09:52:39,951] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 09:53:29,423] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 09:54:32,662] ERROR [django.request.log_response:241] Internal Server Error: /health-records/
+[2022-12-17 09:55:47,457] WARNING [django.request.log_response:241] Not Found: /health-records/
+[2022-12-17 09:55:56,258] ERROR [django.request.log_response:241] Internal Server Error: /health-records2/
+[2022-12-17 09:56:45,246] ERROR [django.request.log_response:241] Internal Server Error: /health-records2/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/usr/src/app/health_record/views.py", line 273, in list
+    return Response(serializer.data)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/usr/src/app/health_record/serializers.py", line 525, in to_representation
+    instance.detail['prescriptions'] = _get_prescription_details(instance)
+TypeError: 'str' object does not support item assignment
+[2022-12-17 10:00:01,592] ERROR [django.request.log_response:241] Internal Server Error: /health-records2/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/usr/src/app/health_record/views.py", line 273, in list
+    return Response(serializer.data)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/usr/src/app/health_record/serializers.py", line 525, in to_representation
+    instance.detail['prescriptions'] = _get_prescription_details(instance)
+TypeError: 'str' object does not support item assignment
+[2022-12-17 10:02:02,754] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'type'
+[2022-12-17 10:02:02,758] ERROR [django.request.log_response:241] Internal Server Error: /health-records2/
+[2022-12-17 10:05:48,430] ERROR [django.request.log_response:241] Internal Server Error: /health-records2/
+[2022-12-17 10:06:22,071] ERROR [django.request.log_response:241] Internal Server Error: /health-records2/
+[2022-12-17 10:21:36,251] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-17 10:21:49,147] ERROR [shared.exception_handler.__handle_attribute_error:122] 'datetime.date' object has no attribute 'date'
+[2022-12-17 10:21:49,149] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-12-17 10:39:00,544] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-12-17 11:20:29,413] WARNING [django.request.log_response:241] Forbidden: /appointments/doctor/218/checkout/
+[2022-12-17 12:27:09,249] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/218/checkout/
+[2022-12-17 12:27:58,795] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/218/checkout/
+[2022-12-17 12:28:54,052] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/218/checkout/
+[2022-12-17 12:31:03,676] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/218/checkout/
+[2022-12-17 13:09:17,515] WARNING [django.request.log_response:241] Forbidden: /user/health-records/
+[2022-12-17 13:22:32,758] WARNING [django.request.log_response:241] Forbidden: /appointments/doctor/218/checkout/

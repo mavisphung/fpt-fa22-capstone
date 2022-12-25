@@ -1,0 +1,40 @@
+[2022-09-10 03:17:21,657] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-10 03:22:39,972] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-10 03:23:12,701] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-10 03:37:33,000] WARNING [django.request.log_response:241] Forbidden: /doctor/shifts/
+[2022-09-10 03:45:38,891] WARNING [django.request.log_response:241] Forbidden: /appointments/
+[2022-09-10 03:47:41,117] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 05:58:12,547] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 06:05:25,960] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-10 06:49:49,244] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 07:02:20,208] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-10 07:02:44,664] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 07:03:22,799] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 07:29:14,778] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 07:45:52,257] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 07:46:11,281] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 07:46:28,358] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 07:46:35,613] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 07:47:20,104] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-09-10 07:47:20,105] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-10 07:51:28,229] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-09-10 07:51:28,233] ERROR [django.request.log_response:241] Internal Server Error: /appointments/23/
+[2022-09-10 07:52:15,608] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 07:52:39,214] WARNING [django.request.log_response:241] Forbidden: /doctor/shifts/
+[2022-09-10 08:08:09,819] WARNING [django.request.log_response:241] Forbidden: /appointments/
+[2022-09-10 08:08:22,048] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 09:14:51,317] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 09:20:27,209] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 09:20:29,641] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 09:21:53,688] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 09:23:44,625] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 09:23:48,366] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 09:38:53,954] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 10:09:33,113] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 10:09:35,547] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 10:09:37,243] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 10:10:03,718] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 16:43:18,044] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 16:43:27,916] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 16:43:32,442] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-10 16:43:52,223] WARNING [django.request.log_response:241] Bad Request: /appointments/

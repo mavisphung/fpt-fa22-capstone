@@ -1,0 +1,22 @@
+[2022-06-26 04:17:57,821] WARNING [django.request.log_response:241] Unauthorized: /social-login/
+[2022-06-26 04:19:16,090] WARNING [django.request.log_response:241] Bad Request: /social-login/
+[2022-06-26 04:19:16,693] WARNING [django.request.log_response:241] Bad Request: /social-login/
+[2022-06-26 04:19:43,573] WARNING [django.request.log_response:241] Bad Request: /social-login/
+[2022-06-26 04:25:56,483] WARNING [django.request.log_response:241] Bad Request: /social-login/
+[2022-06-26 04:40:53,812] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 04:41:55,874] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 04:41:58,464] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 04:42:52,454] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 04:43:51,124] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 04:44:14,358] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 04:44:56,583] WARNING [django.request.log_response:241] Bad Request: /social-login/
+[2022-06-26 04:45:20,122] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 04:45:53,712] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 04:46:16,411] ERROR [auth.views.perform_login_with_google:55] Auth module: Login with Google error
+[2022-06-26 04:46:16,411] ERROR [auth.views.perform_login_with_google:56] ('Expecting value: line 1 column 1 (char 0)',)
+[2022-06-26 04:46:16,431] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 04:49:27,834] ERROR [django.request.log_response:241] Internal Server Error: /social-login/
+[2022-06-26 06:58:50,303] ERROR [auth.views.perform_login_with_google:68] Login with Google API has occured error with status code 401
+[2022-06-26 06:58:50,322] WARNING [django.request.log_response:241] Bad Request: /social-login/
+[2022-06-26 07:08:40,782] ERROR [auth.views.perform_login_with_google:68] Login with Google API has occured error with status code 401
+[2022-06-26 07:08:40,788] WARNING [django.request.log_response:241] Unauthorized: /social-login/

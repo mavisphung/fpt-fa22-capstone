@@ -1,0 +1,21 @@
+@mixin buttonStyle {
+  outline: none;
+  border: none;
+  color: var(--white);
+  margin-right: 15px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1em;
+  span {
+    padding: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ion-icon {
+    font-size: 1.2em;
+    vertical-align: middle;
+  }
+}

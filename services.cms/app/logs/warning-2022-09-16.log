@@ -1,0 +1,25 @@
+[2022-09-16 04:17:31,840] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:38:48,765] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:38:50,849] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:38:52,387] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:38:53,929] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:39:00,034] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:39:02,399] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:39:04,074] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:40:07,760] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:42:39,475] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:43:15,280] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:48:58,396] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:50:33,519] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:51:20,541] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:52:55,116] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 04:55:05,021] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 05:09:43,497] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-09-16 05:31:06,683] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 05:34:16,799] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 05:35:47,824] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 05:37:05,997] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=65 | run_date=2022-09-16 05:37:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-16 05:37:06,303] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=65 | run_date=2022-09-16 05:37:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-16 05:39:03,899] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-16 05:40:05,763] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=66 | run_date=2022-09-16 05:40:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-16 05:40:06,064] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=66 | run_date=2022-09-16 05:40:05+00:00' no longer exists! Skipping logging of job execution...

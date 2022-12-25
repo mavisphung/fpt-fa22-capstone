@@ -1,0 +1,5 @@
+[2022-09-26 03:57:38,477] WARNING [django.request.log_response:241] Forbidden: /appointments/
+[2022-09-26 03:58:13,740] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-26 04:04:35,904] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-26 04:06:23,008] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-26 04:11:50,865] WARNING [django.request.log_response:241] Not Found: /favicon.ico

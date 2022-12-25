@@ -1,0 +1,104 @@
+[2022-12-06 14:09:39,981] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+[2022-12-06 14:14:41,833] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+[2022-12-06 13:46:34,612] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-06 13:47:10,783] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-06 13:58:39,136] WARNING [django.request.log_response:241] Forbidden: /contract/supervisor/33/sign
+[2022-12-06 14:14:15,927] ERROR [django.request.log_response:241] Internal Server Error: /contract/session/
+[2022-12-06 14:15:58,085] ERROR [django.request.log_response:241] Internal Server Error: /contract/session/
+[2022-12-06 14:16:54,939] ERROR [django.request.log_response:241] Internal Server Error: /contract/session/
+[2022-12-06 14:18:33,829] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-12-06 14:27:33,359] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-12-06 14:28:19,956] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-12-06 14:32:05,785] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/33/sign
+[2022-12-06 14:34:18,785] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/
+[2022-12-06 14:34:32,698] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-06 14:37:29,624] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-06 14:40:02,886] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 14:40:22,846] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'status'
+[2022-12-06 14:40:22,850] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 14:41:19,071] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'status'
+[2022-12-06 14:41:19,074] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 14:42:08,806] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 14:46:21,812] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 18:19:53,350] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 18:20:25,380] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-06 18:20:33,086] ERROR [shared.exception_handler.__handle_attribute_error:122] 'HealthRecord' object has no attribute 'endAt'
+[2022-12-06 18:20:33,088] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 18:34:49,560] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 18:35:28,870] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 18:35:47,126] WARNING [django.request.log_response:241] Not Found: /contract/doctor/session/readonly
+[2022-12-06 18:35:54,636] WARNING [django.request.log_response:241] Not Found: /contract/doctor/session/readonly
+[2022-12-06 18:36:16,585] WARNING [django.request.log_response:241] Not Found: /contract/doctor/session/readonly/
+[2022-12-06 18:36:41,530] ERROR [shared.exception_handler.__handle_attribute_error:122] 'HealthRecord' object has no attribute 'endAt'
+[2022-12-06 18:36:41,533] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/readonly/
+[2022-12-06 18:36:51,290] ERROR [shared.exception_handler.__handle_attribute_error:122] 'HealthRecord' object has no attribute 'endAt'
+[2022-12-06 18:36:51,291] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/readonly/
+[2022-12-06 19:04:16,828] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 19:05:30,611] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 19:06:15,306] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:07:26,981] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:13:10,593] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:13:48,916] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:14:09,156] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:14:53,017] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'slot'
+[2022-12-06 19:14:53,021] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:16:38,847] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/cancel/session/
+[2022-12-06 19:17:47,470] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/cancel/session/
+[2022-12-06 19:18:11,021] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/cancel/session/
+[2022-12-06 19:18:41,667] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/cancel/session/
+[2022-12-06 19:19:01,727] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:23:02,158] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:24:44,172] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:26:05,315] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:26:52,162] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:27:48,098] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:29:40,803] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-06 19:32:33,615] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/cancel/session/
+[2022-12-06 20:30:18,689] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-06 20:32:05,958] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 20:42:27,652] WARNING [django.request.log_response:241] Not Found: /contract/supervisor/session/checkin
+[2022-12-06 20:44:22,013] WARNING [django.request.log_response:241] Forbidden: /contract/supervisor/session/checkin
+[2022-12-06 20:44:48,148] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/checkin
+[2022-12-06 20:45:43,916] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/
+[2022-12-06 20:49:21,470] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/checkin
+[2022-12-06 20:50:06,075] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/checkin
+[2022-12-06 20:51:05,051] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/checkin
+[2022-12-06 20:52:01,685] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/checkin
+[2022-12-06 20:56:06,343] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'slot'
+[2022-12-06 20:56:06,347] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/checkin
+[2022-12-06 20:57:17,972] WARNING [django.request.log_response:241] Bad Request: /contract/supervisor/session/checkin
+[2022-12-06 20:58:34,433] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/
+[2022-12-06 20:59:27,732] WARNING [django.request.log_response:241] Forbidden: /contract/supervisor/session/checkin
+[2022-12-06 20:59:46,649] WARNING [django.request.log_response:241] Bad Request: /contract/supervisor/session/checkin
+[2022-12-06 21:02:28,860] WARNING [django.request.log_response:241] Bad Request: /contract/supervisor/session/checkin
+[2022-12-06 21:04:09,704] WARNING [django.request.log_response:241] Bad Request: /contract/supervisor/session/checkin
+[2022-12-06 21:05:15,988] WARNING [django.request.log_response:241] Bad Request: /contract/supervisor/session/checkin
+[2022-12-06 21:05:57,649] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/checkin
+[2022-12-06 21:07:02,337] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/checkin
+[2022-12-06 21:07:47,455] WARNING [django.request.log_response:241] Bad Request: /contract/supervisor/session/checkin
+[2022-12-06 21:33:38,672] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-06 21:33:38,674] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-12-06 21:34:13,791] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-06 21:34:13,794] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-12-06 21:34:57,903] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-06 21:34:57,904] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-12-06 21:36:05,964] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-06 21:36:05,967] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-12-06 21:41:14,792] ERROR [shared.exception_handler.__handle_attribute_error:122] 'RelatedManager' object has no attribute 'pk'
+[2022-12-06 21:41:14,794] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-12-06 21:41:47,533] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-12-06 21:42:24,447] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-06 21:42:24,449] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-12-06 21:48:33,384] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-06 21:48:33,386] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-12-06 21:51:18,562] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-12-06 21:51:18,564] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-12-06 22:58:38,553] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/
+[2022-12-06 22:58:53,044] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/
+[2022-12-06 22:59:32,772] ERROR [shared.exception_handler.__handle_attribute_error:122] 'TreatmentSession' object has no attribute 'date'
+[2022-12-06 22:59:32,773] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 23:00:30,096] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 23:00:52,120] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-06 23:07:01,580] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-06 23:08:01,753] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-06 23:08:54,666] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/readonly/

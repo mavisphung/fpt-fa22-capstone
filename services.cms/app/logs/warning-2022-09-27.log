@@ -1,0 +1,54 @@
+[2022-09-27 02:10:00,353] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'items'
+[2022-09-27 02:10:00,360] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-27 02:10:03,389] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'items'
+[2022-09-27 02:10:03,391] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-27 02:10:28,885] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'items'
+[2022-09-27 02:10:28,889] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-27 02:11:28,480] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'items'
+[2022-09-27 02:11:28,483] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-27 04:08:06,160] WARNING [django.request.log_response:241] Unauthorized: /api/suggest/doctor/5/
+[2022-09-27 04:08:15,611] ERROR [shared.exception_handler.__handle_attribute_error:122] Cannot find 'schedules' on WorkingShift object, 'schedules' is an invalid parameter to prefetch_related()
+[2022-09-27 04:08:15,612] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-09-27 04:09:12,672] ERROR [django.request.log_response:241] Internal Server Error: /schedule/
+[2022-09-27 06:48:07,728] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'weekday'
+[2022-09-27 06:48:07,732] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-09-27 06:49:57,433] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-09-27 06:52:24,938] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-09-27 07:04:30,108] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-09-27 11:22:36,281] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-09-27 11:26:39,178] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-09-27 11:28:31,827] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 11:28:41,747] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 11:28:48,590] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 11:44:48,324] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 11:45:17,003] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 11:45:24,701] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 11:45:28,130] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 11:46:16,163] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 12:18:42,993] ERROR [shared.exception_handler.__handle_attribute_error:122] 'GenericRelatedObjectManager' object has no attribute 'estEndAt'
+[2022-09-27 12:18:43,001] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-27 12:19:20,625] ERROR [shared.exception_handler.__handle_attribute_error:122] 'GenericRelatedObjectManager' object has no attribute 'content_object'
+[2022-09-27 12:19:20,629] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-27 12:21:12,629] ERROR [shared.exception_handler.__handle_attribute_error:122] 'GenericRelatedObjectManager' object has no attribute 'content_object'
+[2022-09-27 12:21:12,634] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-27 12:21:49,897] ERROR [shared.exception_handler.__handle_attribute_error:122] 'GenericRelatedObjectManager' object has no attribute 'content_object'
+[2022-09-27 12:21:49,900] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-27 12:22:43,909] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Appointment' object has no attribute 'estEndAt'
+[2022-09-27 12:22:43,913] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-27 12:45:28,879] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-27 12:47:16,140] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 12:47:23,846] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 12:47:33,836] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-27 12:56:15,729] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-27 12:59:02,871] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-27 12:59:39,327] ERROR [shared.exception_handler.__handle_attribute_error:122] 'GenericRelatedObjectManager' object has no attribute 'estEndAt'
+[2022-09-27 12:59:39,330] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-27 13:02:36,617] ERROR [django.request.log_response:241] Internal Server Error: /user/me/appointments/
+[2022-09-27 13:05:52,949] ERROR [shared.exception_handler.__handle_http404:112] Schedule matching query does not exist.
+[2022-09-27 13:05:52,951] WARNING [django.request.log_response:241] Not Found: /user/me/appointments/history/
+[2022-09-27 13:05:56,949] ERROR [shared.exception_handler.__handle_http404:112] Schedule matching query does not exist.
+[2022-09-27 13:05:56,950] WARNING [django.request.log_response:241] Not Found: /user/me/appointments/history/
+[2022-09-27 13:08:14,445] ERROR [shared.exception_handler.__handle_http404:112] Schedule matching query does not exist.
+[2022-09-27 13:08:14,447] WARNING [django.request.log_response:241] Not Found: /user/me/appointments/history/
+[2022-09-27 13:08:34,661] ERROR [shared.exception_handler.__handle_http404:112] Schedule matching query does not exist.
+[2022-09-27 13:08:34,665] WARNING [django.request.log_response:241] Not Found: /user/me/appointments/history/

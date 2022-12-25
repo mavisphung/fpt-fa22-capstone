@@ -1,0 +1,190 @@
+@import '../../../../src/style/mixin.module.scss';
+
+$w: 100%;
+$h: 100%;
+$m: 8px;
+$p: 8px;
+
+.session_modal_wrapper {
+    @include box-sizing($w, $h, 0, 0, 0);
+    position: fixed;
+    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    .session_modal {
+        @include box-sizing(500px, 500px, 0, 0, 4px);
+        background-color: #EFF1F7;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-20%);
+        display: flex;
+        flex-wrap: wrap;
+        .session_modal_header {
+            position: relative;
+            @include box-sizing(calc(100% - $m * 2), 40px, 8px, 0, 0);
+
+            h5.session_modal_header_title {
+                font-weight: 700;
+            }
+        }
+
+        .session_modal_content {
+            @include box-sizing(500px, 380px, 0, 0, 0);
+            overflow-y: scroll;
+
+            .session_modal_content_datetime,
+            .session_modal_content_note,
+            .session_model_content_assessment {
+                @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 0, 0);
+
+                h6 {
+                    font-weight: 700;
+                }
+            }
+            .session_modal_content_note_value{
+                @include box-sizing(calc(100% - $m * 2), fit-content, 0px, 8px, 0);
+                background-color: #FFFDFD;
+            }
+        }
+
+        .session_modal_footer {
+            @include box-sizing(500px, 56px, 0, 0, 4px);
+            display: flex;
+            justify-content: flex-end;
+
+            button.btnSessionClose {
+                @include box-sizing(150px, 40px, 8px, 0, 4px);
+                text-align: center;
+            }
+        }
+    }
+
+    .modal_wrapper {
+        @include box-sizing($w, $h, 0, 0, 0);
+        position: absolute;
+        @include center(50%);
+        background-color: rgba(0, 0, 0, 0.4);
+
+        .cancel_session_modal {
+            @include box-sizing(480px, 200px, 0, 0, 4px);
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-40%);
+            background-color: #EFF1F7;
+
+            .cancel_session_modal_header {
+                @include box-sizing(480px, 40px, 0, 0, 0);
+                .cancel_session_modal_header_title{
+                    margin-top: 8px;
+                    font-weight: 700;
+                    padding-left: 10px;
+                }
+            }
+
+            .cancel_session_modal_content {
+                @include box-sizing(480px, 90px, 0, 0, 0);
+            }
+
+            .cancel_session_modal_footer {
+                @include box-sizing(480px, 50px, 0,0, 0);
+                padding-top: 11px;
+                display: flex;
+                justify-content: flex-end;
+
+                button.cancel_session_modal_footer_confirm {
+                    @include box-sizing(120px, 40px, 0,0, 4px);
+                    margin-right: 8px;
+                    color: white;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+                }
+
+                button.cancel_session_modal_footer_close {
+                    @include box-sizing(120px, 40px, 0,0, 4px);
+                    margin-right: 8px;
+                    color: white;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+                }
+            }
+
+            input[type='text'].cancelReason_input {
+                @include box-sizing(calc(100% - $m * 2), calc(40px), 8px, 8px, 0px);
+                appearance: none;
+                border: 0px;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                background-color: #FFFDFD;
+            }
+        }
+        .modal_success_wrapper {
+            @include box-sizing(300px,300px, 0, 0, 0);
+            position: absolute;
+            @include center(50%);
+            background-color: rgba(0, 0, 0, 0.4);
+            .modal_success_modal {
+                @include box-sizing(300px, 200px, 0, 0, 4px);
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-40%);
+                background-color: #EFF1F7;
+    
+                .modal_success_modal_header {
+                    @include box-sizing(300px, 40px, 0, 0, 0);
+                    .modal_success_modal_header_title{
+                        margin-top: 8px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                    }
+                }
+    
+                .modal_success_modal_content {
+                    @include box-sizing(300px, 90px, 0, 0, 0);
+                }
+    
+                .modal_success_modal_footer {
+                    @include box-sizing(300px, 50px, 0,0, 0);
+                    padding-top: 11px;
+                    display: flex;
+                    justify-content: flex-end;
+    
+                    button.modal_success_modal_footer_confirm {
+                        @include box-sizing(300px, 40px, 0,0, 4px);
+                        margin-right: 8px;
+                        color: white;
+                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+                    }
+    
+                    button.modal_success_modal_footer_close {
+                        @include box-sizing(120px, 40px, 0,0, 4px);
+                        margin-right: 8px;
+                        color: white;
+                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+                    }
+                }
+    
+                input[type='text'].cancelReason_input {
+                    @include box-sizing(calc(100% - $m * 2), calc(40px), 8px, 8px, 0px);
+                    appearance: none;
+                    border: 0px;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                    background-color: #FFFDFD;
+                }
+            }
+        }
+    }
+}
+
+div.horizontal_divider{
+    @include box-sizing(100%, 2px, 0, 0, 0);
+    background-color: #FEFCFC;   
+}
+
+.no_padding{
+    padding-left: 0px;
+    word-wrap: break-word;
+}

@@ -1,0 +1,59 @@
+@import './mixin.scss';
+
+.page {
+  overflow-y: scroll;
+  border: 0px;
+  @include box(calc(100vw), calc(100vh), 0px, 0px, 0px);
+}
+
+.video_call_section {
+  position: relative;
+  @include box(calc(100%), calc(100% - 16px), 0px, 8px, 0px);
+
+  .video_media {
+    @include box(calc(100% - 16px), calc(100% - 60px - 16px), 8px, 8px, 0px);
+    position: relative;
+
+    .local_video {
+      @include box(calc(240px), calc(130px), 0px, 8px, 0px);
+      z-index: 10;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      div {
+        border-radius: 10px !important;
+      }
+    }
+
+    .remote_video {
+      @include box(calc(100% - 16px), calc(100% - 16px), 0px, 0px, 0px);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border: 0.2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      position: absolute;
+
+      div {
+        border-radius: 10px !important;
+      }
+    }
+  }
+
+  .video_control {
+    @include box(400px, calc(50px), 8px, 8px, 0px);
+    @include centerFromBottom(50%, -20px);
+    display: flex;
+    justify-content: space-evenly;
+
+    .btn_control {
+      @include box(40px, calc(40px), 0px, 0px, 50%);
+      position: relative;
+      background-color: red;
+
+      svg {
+        @include center(50%);
+        color: white;
+      }
+    }
+  }
+}

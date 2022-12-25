@@ -1,0 +1,13 @@
+[2022-11-11 02:52:57,783] WARNING [django.request.log_response:241] Not Found: /manager/service/
+[2022-11-11 02:53:19,794] WARNING [django.request.log_response:241] Forbidden: /manager/service/
+[2022-11-11 03:03:38,369] WARNING [django.request.log_response:241] Bad Request: /user/me/
+[2022-11-11 03:05:05,777] WARNING [django.request.log_response:241] Bad Request: /manager/service/
+[2022-11-11 03:10:18,346] ERROR [django.request.log_response:241] Internal Server Error: /manager/service/
+[2022-11-11 03:14:55,416] ERROR [shared.exception_handler.__handle_attribute_error:122] 'collections.OrderedDict' object has no attribute 'pk'
+[2022-11-11 03:14:55,419] ERROR [django.request.log_response:241] Internal Server Error: /manager/service/
+[2022-11-11 03:16:02,106] ERROR [shared.exception_handler.__handle_attribute_error:122] 'collections.OrderedDict' object has no attribute 'pk'
+[2022-11-11 03:16:02,113] ERROR [django.request.log_response:241] Internal Server Error: /manager/service/
+[2022-11-11 03:26:55,871] ERROR [shared.exception_handler.__handle_http404:112] 
+[2022-11-11 03:26:55,876] WARNING [django.request.log_response:241] Not Found: /manager/service/5/
+[2022-11-11 12:35:00,713] WARNING [django.request.log_response:241] Bad Request: /manager/service/5/
+[2022-11-11 12:35:44,048] WARNING [django.request.log_response:241] Bad Request: /manager/service/5/

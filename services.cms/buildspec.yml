@@ -1,0 +1,39 @@
+version: 0.2
+
+phases:
+  # install:
+  #   runtime-versions:
+  #     python: 3.9
+  #   commands:
+  #     # Install dependencies needed for running tests
+  #     - echo Installing dependencies
+  #     - pip install -r app/requirements.txt
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 198057700007.dkr.ecr.ap-southeast-1.amazonaws.com
+      - REPOSITORY_URI=198057700007.dkr.ecr.ap-southeast-1.amazonaws.com/capstone-repo
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - IMAGE_TAG=${COMMIT_HASH:=latest}
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Build docker image started
+      # - docker-compose -f docker-compose.yml build
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker-compose -f docker-compose.yml build
+      - docker tag capstone-service:0.0.1 $REPOSITORY_URI
+      - echo Build docker image succeeded
+
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Push image to ECR...
+      - docker push $REPOSITORY_URI:latest
+      - printf '[{"name":"servicescms","imageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefinitions.json
+artifacts:
+  files:
+    - '**/*'
+    - imagedefinitions.json

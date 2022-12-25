@@ -1,0 +1,75 @@
+[2022-08-05 03:47:35,155] ERROR [django.request.log_response:241] Internal Server Error: /users/
+[2022-08-05 04:16:44,836] WARNING [django.request.log_response:241] Not Found: /user/me/health-records/
+[2022-08-05 04:18:43,240] WARNING [django.request.log_response:241] Unauthorized: /user/health-records/
+[2022-08-05 04:19:11,676] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-08-05 04:23:35,739] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:25:57,080] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:30:12,389] WARNING [django.request.log_response:241] Bad Request: /user/health-records/
+[2022-08-05 04:31:35,145] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:38:27,941] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:39:07,074] WARNING [django.request.log_response:241] Bad Request: /user/health-records/
+[2022-08-05 04:39:11,987] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:43:59,565] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'id'
+[2022-08-05 04:43:59,566] WARNING [shared.exception_handler.__handle_attribute_error:123] ("'NoneType' object has no attribute 'id'",)
+[2022-08-05 04:43:59,570] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:44:40,288] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'id'
+[2022-08-05 04:44:40,289] WARNING [shared.exception_handler.__handle_attribute_error:123] ("'NoneType' object has no attribute 'id'",)
+[2022-08-05 04:44:40,542] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/src/app/health_record/views.py", line 56, in create
+    data = serializer.data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/src/app/health_record/serializers.py", line 143, in to_representation
+    'doctor': doctor.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 169, in custom_exception_handler
+    return cached_exceptions[exception_name](exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 124, in __handle_attribute_error
+    exc.with_traceback()
+TypeError: AttributeError.with_traceback() takes exactly one argument (0 given)
+[2022-08-05 04:45:32,505] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'id'
+[2022-08-05 04:45:32,505] WARNING [shared.exception_handler.__handle_attribute_error:123] ("'NoneType' object has no attribute 'id'",)
+[2022-08-05 04:45:32,509] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:47:31,489] ERROR [shared.exception_handler.__handle_attribute_error:121] 'NoneType' object has no attribute 'id'
+[2022-08-05 04:47:31,492] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:48:04,872] ERROR [shared.exception_handler.__handle_attribute_error:121] 'NoneType' object has no attribute 'id'
+[2022-08-05 04:48:04,876] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:50:52,746] ERROR [shared.exception_handler.__handle_attribute_error:121] 'NoneType' object has no attribute 'id'
+[2022-08-05 04:50:52,750] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:51:39,875] ERROR [shared.exception_handler.__handle_attribute_error:121] 'NoneType' object has no attribute 'id'
+[2022-08-05 04:51:39,879] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:52:11,769] ERROR [shared.exception_handler.__handle_attribute_error:121] 'NoneType' object has no attribute 'id'
+[2022-08-05 04:52:11,773] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 04:52:47,521] WARNING [django.request.log_response:241] Forbidden: /doctor/health-records/
+[2022-08-05 04:53:15,696] WARNING [django.request.log_response:241] Forbidden: /doctor/health-records/
+[2022-08-05 04:53:17,777] WARNING [django.request.log_response:241] Forbidden: /doctor/health-records/
+[2022-08-05 04:56:38,822] WARNING [django.request.log_response:241] Forbidden: /user/health-records/
+[2022-08-05 04:57:01,903] ERROR [shared.exception_handler.__handle_attribute_error:121] 'NoneType' object has no attribute 'id'
+[2022-08-05 04:57:01,905] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-08-05 05:04:22,588] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-08-05 05:04:30,443] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-08-05 05:04:39,276] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-08-05 05:12:30,952] WARNING [django.request.log_response:241] Bad Request: /user/health-records/

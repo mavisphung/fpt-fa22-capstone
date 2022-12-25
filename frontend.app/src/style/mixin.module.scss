@@ -1,0 +1,104 @@
+@mixin centerVertical () {
+    position: absolute;
+    top: 50%;
+    transform:  translateY(-50%);
+}
+
+@mixin centerHorizontal () {
+    position: absolute;
+    left: 50%;
+    transform:  translateX(-50%);
+}
+
+@mixin centerBoth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translateX(-50%)  translateY(-50%);
+}
+
+@mixin box_shadow($width,$height) {
+    @include box($width,$height);
+    @include shadow;
+}
+
+@mixin shadow {
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 1.95px 2.6px;
+}
+
+@mixin box($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flexbox($direction, $align, $width, $height) {
+    @include box($width,$height);
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $align;
+}
+
+@mixin box_right($width,$height, $style) {
+    @include box($width,$height);
+    border-right: $style;
+}
+
+@mixin content_box($width,$height, $margin, $padding) {
+    box-sizing: content-box;
+    @include box($width,$height);
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin border-box($width,$height) {
+    @include box($width,$height);
+    border: 0.2px solid #000000;
+    padding: 8px;
+    margin: 8px;
+    border-radius: calc($height + 10px);
+}
+
+@mixin radius-border-box($width,$height, $radius) {
+    @include box($width,$height);
+    border: 0.2px solid #000000;
+    padding: 8px;
+    margin: 8px;
+    border-radius: calc($radius);
+}
+
+@mixin box-sizing($width, $height, $margin,$padding, $radius){
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+    border-radius: $radius;
+    box-sizing: border-box;
+}
+
+@mixin center($x){
+    position: absolute;
+    top: $x;
+    left: $x;
+    transform: translateX(calc(0% - $x)) translateY(calc(0% - $x));
+}
+
+@mixin centerFromBottom($x, $y){
+    position: absolute;
+    bottom: $y;
+    left: $x;
+    transform: translateX(calc(0% - $x)) translateY($y);
+}
+
+@mixin bottomPostion($x, $y){
+    position: absolute;
+    bottom: $y;
+    left: $x;
+}
+
+@mixin topPostion($x, $y){
+    position: absolute;
+    left: $x;
+    top: $y;
+    transform: translateX(-$x) translateY(-$y);
+}

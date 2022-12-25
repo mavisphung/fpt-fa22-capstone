@@ -1,0 +1,1 @@
+[2022-09-01 07:08:32,951] WARNING [django.request.log_response:241] Forbidden: /user/me/appointments/history/

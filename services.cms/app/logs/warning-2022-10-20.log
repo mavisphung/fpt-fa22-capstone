@@ -1,0 +1,4 @@
+[2022-10-20 11:39:00,029] ERROR [django.request.log_response:241] Internal Server Error: /doctor/register/
+[2022-10-20 11:40:46,982] WARNING [django.request.log_response:241] Bad Request: /doctor/register/
+[2022-10-20 11:41:27,660] WARNING [django.request.log_response:241] Bad Request: /doctor/register/
+[2022-10-20 11:43:13,774] ERROR [django.request.log_response:241] Internal Server Error: /doctor/register/

@@ -1,0 +1,11 @@
+[2022-08-02 11:44:22,728] WARNING [django.request.log_response:241] Unauthorized: /doctor/health-records/
+[2022-08-02 11:57:48,388] WARNING [django.request.log_response:241] Forbidden: /doctor/health-records/
+[2022-08-02 12:34:51,727] WARNING [django.request.log_response:241] Bad Request: /doctor/register/
+[2022-08-02 12:34:57,262] WARNING [django.request.log_response:241] Bad Request: /doctor/register/
+[2022-08-02 12:40:50,111] WARNING [django.request.log_response:241] Bad Request: /doctor/register/
+[2022-08-02 12:44:46,169] WARNING [django.request.log_response:241] Bad Request: /doctor/register/
+[2022-08-02 12:45:06,570] WARNING [django.request.log_response:241] Bad Request: /doctor/register/
+[2022-08-02 12:58:47,030] WARNING [django.request.log_response:241] Forbidden: /admin2/user/5/approved/
+[2022-08-02 12:59:02,729] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-08-02 12:59:31,510] ERROR [shared.exception_handler.__handle_http404:111] No Doctor matches the given query.
+[2022-08-02 12:59:31,512] WARNING [django.request.log_response:241] Not Found: /admin2/user/5/approved/

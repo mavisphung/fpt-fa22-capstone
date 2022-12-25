@@ -1,0 +1,2 @@
+from rest_framework_simplejwt.authentication import JWTAuthentication
+from django.contrib.auth.middleware import AuthenticationMiddleware

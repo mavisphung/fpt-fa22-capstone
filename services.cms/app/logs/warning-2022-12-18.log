@@ -1,0 +1,236 @@
+[2022-12-18 09:19:38,947] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/61/approve/
+[2022-12-18 09:23:17,042] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/61/approve/
+[2022-12-18 09:26:01,599] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/61/approve/
+[2022-12-18 10:17:17,568] WARNING [django.request.log_response:241] Unauthorized: /user/me/notifications/
+[2022-12-18 10:23:40,326] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-12-18 10:23:40,403] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-12-18 10:23:45,271] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-12-18 10:27:54,823] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-12-18 10:27:54,843] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-12-18 10:28:00,793] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-12-18 10:28:08,088] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-12-18 00:59:18,902] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-18 01:01:12,267] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-18 01:02:19,714] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-18 01:04:17,996] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-18 01:04:22,162] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-18 01:05:07,635] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-18 01:10:16,079] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'prescriptiondetail_set'
+[2022-12-18 01:10:16,084] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-18 01:14:36,841] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/
+[2022-12-18 02:00:00,513] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-12-18 02:04:09,104] WARNING [django.request.log_response:241] Forbidden: /appointments/doctor/221/checkout/
+[2022-12-18 02:19:39,190] WARNING [django.request.log_response:241] Forbidden: /appointments/
+[2022-12-18 02:47:37,980] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-12-18 02:48:31,374] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-12-18 02:51:43,111] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/usr/src/app/schedule/views.py", line 238, in retrieve
+    available_slots = self.calculate_available_times(selected_date, doctor_id)
+  File "/usr/src/app/schedule/views.py", line 215, in calculate_available_times
+    filtered_slots = self.filter_slots(available_slots)
+  File "/usr/src/app/schedule/views.py", line 167, in filter_slots
+    temp = self.split_slots2(bookedAt, estEndAt)
+  File "/usr/src/app/schedule/views.py", line 161, in split_slots2
+    return ranges([bookedAt, estEndAt], 30)
+  File "/usr/src/app/schedule/views.py", line 104, in ranges
+    return [(r.start, r.stop) for r in partition(range(N), nb)]
+TypeError: 'list' object cannot be interpreted as an integer
+[2022-12-18 03:11:51,844] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-12-18 03:15:49,940] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/utils/encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/utils/encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+  File "/usr/src/app/schedule/views.py", line 135, in to_dict
+    args = slot.split('-')
+AttributeError: 'dict' object has no attribute 'split'
+[2022-12-18 03:17:12,793] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-12-18 03:23:47,795] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-18 03:40:02,516] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-12-18 05:00:00,617] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-12-18 05:03:21,023] WARNING [django.request.log_response:241] Not Found: /http:/api.ipify.org/
+[2022-12-18 05:03:42,945] WARNING [django.request.log_response:241] Not Found: /www.shadowserver.org:443
+[2022-12-18 05:45:37,292] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-18 05:45:58,706] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-18 05:47:06,123] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-18 11:42:07,398] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-18 12:10:03,771] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-12-18 12:10:03,772] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/list/
+[2022-12-18 12:16:28,988] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-18 12:16:57,093] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-18 12:17:22,709] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-18 12:17:55,710] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-18 12:18:09,261] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-12-18 12:27:10,327] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+s[2022-12-18 08:09:42,426] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/list/
+[2022-12-18 08:09:54,526] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/list/
+[2022-12-18 08:10:00,752] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/list/
+[2022-12-18 08:20:41,618] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/list/
+[2022-12-18 09:42:28,800] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-12-18 09:55:33,266] WARNING [django.request.log_response:241] Not Found: /manager/doctor/50/lock/
+[2022-12-18 09:56:14,258] WARNING [django.request.log_response:241] Unauthorized: /manager/doctor/50/lock/
+[2022-12-18 09:56:15,078] WARNING [django.request.log_response:241] Unauthorized: /manager/doctor/50/lock/
+[2022-12-18 09:56:27,091] WARNING [django.request.log_response:241] Unauthorized: /manager/doctor/50/lock/
+[2022-12-18 09:56:30,894] WARNING [django.request.log_response:241] Unauthorized: /manager/doctor/50/lock/
+[2022-12-18 09:56:46,670] WARNING [django.request.log_response:241] Unauthorized: /manager/doctor/50/lock/
+[2022-12-18 11:05:43,778] ERROR [shared.exception_handler.__handle_http404:112] 
+[2022-12-18 11:05:43,817] WARNING [django.request.log_response:241] Not Found: /.env
+[2022-12-18 11:05:44,258] WARNING [django.request.log_response:241] Not Found: /.DS_Store
+[2022-12-18 11:05:44,294] WARNING [django.request.log_response:241] Not Found: /.git/config
+[2022-12-18 11:05:44,308] WARNING [django.request.log_response:241] Not Found: /s/230323e24373e28363e27323/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+[2022-12-18 11:05:44,344] WARNING [django.request.log_response:241] Not Found: /info.php
+[2022-12-18 11:05:44,458] ERROR [shared.exception_handler.__handle_http404:112] 
+[2022-12-18 11:05:44,354] WARNING [django.request.log_response:241] Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[2022-12-18 11:05:44,400] WARNING [django.request.log_response:241] Not Found: /telescope/requests
+[2022-12-18 11:05:44,415] WARNING [django.request.log_response:241] Not Found: /server-status
+[2022-12-18 11:05:44,455] WARNING [django.request.log_response:241] Not Found: /debug/default/view
+[2022-12-18 11:05:44,583] WARNING [django.request.log_response:241] Not Found: /login.action
+[2022-12-18 11:05:44,632] WARNING [django.request.log_response:241] Not Found: /config.json
+[2022-12-18 11:05:44,823] WARNING [django.request.log_response:241] Not Found: /about
+[2022-12-18 11:05:44,870] WARNING [django.request.log_response:241] Not Found: /v2/_catalog
+[2022-12-18 11:05:44,900] WARNING [django.request.log_response:241] Not Found: /api/search
+[2022-12-18 12:17:08,737] WARNING [django.request.log_response:241] Not Found: /manager/doctor/5/services/3/
+[2022-12-18 12:21:20,986] ERROR [shared.exception_handler.__handle_http404:112] DoctorService matching query does not exist.
+[2022-12-18 12:21:20,991] WARNING [django.request.log_response:241] Not Found: /manager/doctor/5/services/100/
+[2022-12-18 12:21:57,310] ERROR [shared.exception_handler.__handle_http404:112] DoctorService matching query does not exist.
+[2022-12-18 12:21:57,311] WARNING [django.request.log_response:241] Not Found: /manager/doctor/5/services/3/
+[2022-12-18 12:56:23,902] WARNING [django.request.log_response:241] Not Found: /doctor/5/services/
+[2022-12-18 12:57:05,052] WARNING [django.request.log_response:241] Not Found: /doctor/5/services/
+[2022-12-18 12:57:23,902] ERROR [django.request.log_response:241] Internal Server Error: /manager/doctor/5/services/
+[2022-12-18 12:59:17,253] WARNING [django.request.log_response:241] Not Found: /doctor/5/services/
+[2022-12-18 12:59:43,115] WARNING [django.request.log_response:241] Forbidden: /manager/doctor/5/services/
+[2022-12-18 13:00:21,595] WARNING [django.request.log_response:241] Forbidden: /manager/doctor/5/services/
+[2022-12-18 13:18:59,199] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-12-18 14:29:18,000] WARNING [django.request.log_response:241] Forbidden: /doctor/5/services/
+[2022-12-18 14:29:53,212] WARNING [django.request.log_response:241] Forbidden: /doctor/5/services/
+[2022-12-18 14:31:19,606] WARNING [django.request.log_response:241] Forbidden: /doctor/5/services/
+[2022-12-18 14:32:31,680] WARNING [django.request.log_response:241] Forbidden: /doctor/5/services/
+[2022-12-18 13:35:20,880] WARNING [django.request.log_response:241] Bad Request: /user/health-records/
+[2022-12-18 18:16:25,674] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/54/approve/
+[2022-12-18 18:17:45,149] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/68/approve/
+[2022-12-18 18:18:12,763] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/68/approve/
+[2022-12-18 18:18:32,398] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/68/approve/
+Traceback (most recent call last):
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+  File "E:\Document\capstone\service.cms\service.cms\app\treatment\views.py", line 90, in update
+    serializer.save()
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "E:\Enviroment\python\version3\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "E:\Document\capstone\service.cms\service.cms\app\treatment\serializers.py", line 360, in update
+    endAt: float = self.context['endedAt']
+KeyError: 'endedAt'
+[2022-12-18 18:28:26,357] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/64/approve/
+[2022-12-18 18:28:36,108] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/64/approve/
+[2022-12-18 18:28:37,198] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-12-18 18:35:18,790] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/68/approve/
+[2022-12-18 20:26:43,053] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'strftime'
+[2022-12-18 20:26:43,059] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/69/approve/
+[2022-12-18 20:29:13,112] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/69/approve/
+[2022-12-18 20:30:06,227] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'strftime'
+[2022-12-18 20:30:06,233] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/69/approve/
+[2022-12-18 21:32:02,369] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/67/approve/
+[2022-12-18 21:33:09,151] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/67/approve/
+[2022-12-18 21:36:14,950] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/67/approve/
+[2022-12-18 21:37:22,263] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/67/approve/
+[2022-12-18 21:41:08,796] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/67/approve/
+[2022-12-18 21:42:06,131] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/67/approve/
+[2022-12-18 21:43:17,885] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/67/approve/
+Traceback (most recent call last):
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+  File "E:\Document\capstone\service.cms\service.cms\app\treatment\views.py", line 89, in update
+    serializer.save()
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "E:\Enviroment\python\version3\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "E:\Document\capstone\service.cms\service.cms\app\treatment\serializers.py", line 570, in update
+    self._push_notification_to_doctor(instance)
+  File "E:\Document\capstone\service.cms\service.cms\app\treatment\serializers.py", line 466, in _push_notification_to_doctor
+    'payload': to_json({
+  File "E:\Document\capstone\service.cms\service.cms\app\shared\utils.py", line 269, in to_json
+    return json.dumps(data)
+  File "E:\Enviroment\python\version3\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "E:\Enviroment\python\version3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "E:\Enviroment\python\version3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "E:\Enviroment\python\version3\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type date is not JSON serializable
+[2022-12-18 22:14:58,834] WARNING [django.request.log_response:241] Forbidden: /contract/supervisor/session/readonly/
+[2022-12-18 22:15:09,190] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/readonly/

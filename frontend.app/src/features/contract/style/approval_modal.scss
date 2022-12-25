@@ -1,0 +1,306 @@
+@import '../../../../src/style/mixin.module.scss';
+
+$m: 8px;
+
+$white: #FFFDFD;
+$blue: #EFF1F7;
+
+.approval_modal_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    @include box-sizing(calc(100%), calc(100%), 0px, 0, 0);
+    background-color: rgb(0, 0, 0, 0.4);
+
+}
+
+.approval_modal_content {
+    @include box-sizing(calc(90% - $m * 2), calc(90% - $m * 2), 0, 0, 0);
+    margin-left: calc((100% - (90% - $m * 2)) / 2);
+    margin-top: calc((100% - (95% - $m * 2)) / 2);
+    position: relative;
+    background-color: #EFF1F7;
+    display: flex;
+    flex-direction: column;
+
+    .approval_modal_content_header {
+        @include box-sizing(100%, 40px, 0, 0, 0);
+        display: grid;
+        grid-template-columns: 97% 3%;
+        .step_header{
+            @include box-sizing(95%, 40px, 0, 0, 0);
+            margin-top: 8px;
+            margin-left: 8px;
+            font-weight: 700,
+        }
+        .svg-inline--fa{
+            margin-top: 4px;
+        }
+    }
+
+    .approval_modal_content_body {
+        @include box-sizing(100%, calc(100% - 40px), 0, 0, 0);
+        overflow-y: scroll;
+    }
+
+    .approval_modal_content_footer {
+        position: sticky;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+.schedule_container {
+    @include box-sizing(calc(100% - $m * 2), calc(100% - 8px * 2), 8px, 0, 0);
+    position: relative;
+
+    .schedule_container_config {
+        @include box-sizing(100%, 90px, 0, 0, 0);
+        display: flex;
+        flex-wrap: wrap;
+
+        .schedule_container_datepicker {
+            @include box-sizing(40%, 80px, 0, 0, 0);
+        }
+
+        .weekly_schedule {
+            @include box-sizing(40%, fit-content, 8px, 0, 0);
+            display: flex;
+            flex-direction: column;
+
+            .weekly_schedule_days {
+                background-color: $white;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                @include box-sizing(100%, fit-content, 0, 0, 0);
+                min-height: 40px;
+                position: relative;
+
+                &:hover {
+                    .weekly_schedule_days_options {
+                        display: block;
+                    }
+                }
+
+                .weekly_schedule_days_selection {
+                    display: flex;
+                    @include box-sizing(100%, 40px, 0, 0, 0);
+
+                    .week_day_selection {
+                        display: block;
+                        margin-right: 8px !important;
+                        @include box-sizing(80px, 32px, 4px, 4px, 0);
+                        background-color: #00ABE9;
+                        color: $white;
+                        text-align: center;
+                        border-radius: 4px;
+                    }
+
+                    .week_day_place_holder {
+                        display: block;
+                        @include box-sizing(fit-content, 32px, 4px, 4px, 0);
+                        background-color: $white;
+                        color: black;
+                        text-align: center;
+                        border-radius: 4px;
+                    }
+                }
+
+                .weekly_schedule_days_options {
+                    @include box-sizing(100%, 280px, 0, 0, 0);
+                    position: absolute;
+                    left: 0px;
+                    top: 40px;
+                    background-color: rgba(251, 251, 251, 0.5);
+                    z-index: 10;
+                    display: none;
+
+                    .weekly_schedule_days_options_item {
+                        @include box-sizing(100%, 40px, 0, 8px, 0);
+
+                        &:hover {
+                            background-color: #EFF1F7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .suggestion_slot {
+        @include box-sizing(100%, 70%, 0, 0, 0);
+        overflow-y: scroll;
+
+        .suggestion_slot_result {
+            display: flex;
+            flex-wrap: wrap;
+
+            .slot_datetime_item {
+                @include box-sizing(calc(100% / 5 - 16px), fit-content, 8px, 0, 0);
+                min-height: 40px;
+                position: relative;
+
+                &:hover {
+                    .slot_datetime_item_time_options {
+                        display: block;
+                    }
+                }
+
+                .slot_datetime_item_selection {
+                    @include box-sizing(100%, 40px, 0, 0, 4px);
+                    position: relative;
+
+                    .slot_datetime_item_time_result {
+                        @include box-sizing(100%, 40px, 0, 0, 0);
+                        text-align: center;
+                        background-color: $white;
+
+                        .slot_wrapper {
+                            @include box-sizing(100%, fit-content, 0, 0, 0);
+                            @include center(50%);
+                        }
+                    }
+                }
+
+                .slot_datetime_item_date {
+                    @include box-sizing(100%, 40px, 0, 0, 0);
+                    text-transform: capitalize;
+                }
+
+                .slot_datetime_item_time_options {
+                    @include box-sizing(100%, 200px, 0, 0, 0);
+                    overflow-y: scroll;
+                    display: none;
+                    position: absolute;
+                    top: 40px;
+                    left: 0px;
+                    z-index: 100;
+                    background-color: rgb(251, 251, 251, 1);
+
+                    .slot_datetime_item_time {
+                        text-align: center;
+                        @include box-sizing(100%, 40px, 0, 0, 0);
+                        position: relative;
+
+                        &:hover {
+                            background-color: #EFF1F7;
+                        }
+
+                        .slot_wrapper {
+                            @include box-sizing(fit-content, fit-content, 0, 0, 0);
+                            display: block;
+                            @include center(50%);
+                        }
+                    }
+                }
+            }
+
+            @include box-sizing(100%, 200px, 0, 0, 0);
+        }
+    }
+
+    .horizontal_divider--stickbottom {
+        position: absolute;
+        bottom: 55px;
+        left: 0px;
+        display: flex;
+    }
+
+    .footer_action {
+        position: absolute;
+        @include box-sizing(100%, 56px, 0, 0, 0);
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+        justify-content: flex-end;
+
+        .footer_action_wrapper_submit {
+            color: $white;
+            background-color: #00ABE9;
+            @include box-sizing(calc(120px), 40px, 8px, 0, 4px);
+        }
+    }
+}
+
+div.horizontal_divider {
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+}
+
+
+.contract_policy_rule{
+    @include box-sizing(100%, calc(99%), 0, 0 , 0);
+    display: grid;
+    grid-template-rows: 85% 3% 12%;
+    overflow-y: hidden;
+    .carousel{
+        @include box-sizing(100%, 5%, 0, 0 , 0);
+        .carousel_control{
+            @include box-sizing(fit-content, fit-content, 0, 0 , 0);
+            @include center(50%);
+            display: flex;
+            .carousel_control_button{
+                @include box-sizing(10px, calc(10px), 8px, 0 , 50%);
+                background-color: gray;
+            }
+            .carousel_control_active{
+                @include box-sizing(10px, calc(10px), 8px, 0 , 50%);
+                background-color: $white;
+            }
+        }
+    }
+    .approve_section{
+        @include box-sizing(calc(100% - 8px * 2), calc(3%), 0px, 0, 0);
+        .approve_checkbox{
+            @include box-sizing(calc(100% - 8px * 2), calc(100% - 8px * 2), 8px, 0, 0);
+        }
+        .approve_action{
+            @include box-sizing(calc(100%), fit-content, 8px, 0, 0);
+            display: flex;
+            justify-content: flex-end;
+            .btnApproval{
+                @include box-sizing(calc(120px), 40px, 8px, 0, 4px);
+                background-color: #00ABE9;
+                color: $white;
+            }
+        }
+    }
+    .contract_claim{
+        @include box-sizing(calc(100% - 8px * 2), calc(100% - 40px - 8px * 2), 8px, 0, 0);
+        overflow-y: scroll;
+    }
+    .policy_container {
+        @include box-sizing(calc(100% - 8px * 2), calc(100% - 40px - 8px * 2), 8px, 0, 0);
+        margin-bottom: 0px;
+        margin-top: 0px;
+        overflow-y: scroll; 
+        .contract_sides {
+            @include box-sizing(calc(100%), fit-content, 0px, 0, 0);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .half_side{
+                @include box-sizing(calc(50% - 8px * 2), fit-content, 8px, 0, 0);
+            }
+        }
+    
+        .policies{
+            @include box-sizing(100%, fit-content, 0px, 0, 0);
+            .policies_right {
+                @include box-sizing(100%, fit-content, 0, 0, 0);
+            }
+        }
+    
+    }
+}
+
+
+
+.bold_text{
+    font-weight: 700;
+}
+
+.text_center{
+    text-align: center;
+    font-weight: 700;
+}

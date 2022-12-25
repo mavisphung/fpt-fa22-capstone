@@ -1,0 +1,136 @@
+[2022-07-30 05:55:19,140] WARNING [django.security.csrf.log_response:241] Forbidden (CSRF cookie not set.): /admin/user/1/approved/
+[2022-07-30 05:55:22,644] WARNING [django.security.csrf.log_response:241] Forbidden (CSRF cookie not set.): /admin/user/1/approved/
+[2022-07-30 05:56:05,258] WARNING [django.security.csrf.log_response:241] Forbidden (CSRF cookie not set.): /admin/user/1/approved/
+[2022-07-30 05:56:06,402] WARNING [django.security.csrf.log_response:241] Forbidden (CSRF cookie not set.): /admin/user/1/approved/
+[2022-07-30 05:56:06,966] WARNING [django.security.csrf.log_response:241] Forbidden (CSRF cookie not set.): /admin/user/1/approved/
+[2022-07-30 05:57:15,418] WARNING [django.security.csrf.log_response:241] Forbidden (CSRF cookie not set.): /admin/user/1/approved/
+[2022-07-30 05:59:54,845] WARNING [django.request.log_response:241] Unauthorized: /admin2/user/1/approved/
+[2022-07-30 06:00:13,686] WARNING [django.request.log_response:241] Forbidden: /admin2/user/1/approved/
+[2022-07-30 06:07:07,915] WARNING [django.request.log_response:241] Forbidden: /admin2/user/1/approved/
+[2022-07-30 06:11:33,973] WARNING [django.request.log_response:241] Forbidden: /admin2/user/1/approved/
+[2022-07-30 06:11:35,525] WARNING [django.request.log_response:241] Forbidden: /admin2/user/1/approved/
+[2022-07-30 06:17:14,558] WARNING [django.request.log_response:241] Forbidden: /admin2/user/1/approved/
+[2022-07-30 06:17:38,052] WARNING [django.request.log_response:241] Forbidden: /admin2/user/1/approved/
+[2022-07-30 06:18:56,457] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-07-30 06:54:54,300] WARNING [django.request.log_response:241] Forbidden: /admin2/user/1/approved/
+[2022-07-30 06:59:26,516] ERROR [shared.exception_handler.__handle_http404:111] No Doctor matches the given query.
+[2022-07-30 06:59:26,517] WARNING [django.request.log_response:241] Not Found: /admin2/user/1/approved/
+[2022-07-30 06:59:28,219] ERROR [shared.exception_handler.__handle_http404:111] No Doctor matches the given query.
+[2022-07-30 06:59:28,221] WARNING [django.request.log_response:241] Not Found: /admin2/user/1/approved/
+[2022-07-30 06:59:29,903] ERROR [shared.exception_handler.__handle_http404:111] No Doctor matches the given query.
+[2022-07-30 06:59:29,905] WARNING [django.request.log_response:241] Not Found: /admin2/user/1/approved/
+[2022-07-30 07:00:14,630] ERROR [django.request.log_response:241] Internal Server Error: /admin2/user/1/approved/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 656, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 541, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 431, in show_form_for_method
+    view.check_permissions(request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/usr/src/app/user/permissions.py", line 15, in has_permission
+    if user.type == UserType.ADMIN and user.is_staff and user.is_active:
+AttributeError: 'AnonymousUser' object has no attribute 'type'
+[2022-07-30 07:00:56,760] ERROR [django.request.log_response:241] Internal Server Error: /admin2/user/1/approved/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 656, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 541, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 431, in show_form_for_method
+    view.check_permissions(request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/usr/src/app/user/permissions.py", line 15, in has_permission
+    if user.type == UserType.ADMIN and user.is_staff and user.is_active:
+AttributeError: 'AnonymousUser' object has no attribute 'type'
+[2022-07-30 07:00:57,860] ERROR [django.request.log_response:241] Internal Server Error: /admin2/user/1/approved/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 656, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 541, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 431, in show_form_for_method
+    view.check_permissions(request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/usr/src/app/user/permissions.py", line 15, in has_permission
+    if user.type == UserType.ADMIN and user.is_staff and user.is_active:
+AttributeError: 'AnonymousUser' object has no attribute 'type'
+[2022-07-30 07:00:58,623] ERROR [django.request.log_response:241] Internal Server Error: /admin2/user/1/approved/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 656, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 541, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 431, in show_form_for_method
+    view.check_permissions(request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/usr/src/app/user/permissions.py", line 15, in has_permission
+    if user.type == UserType.ADMIN and user.is_staff and user.is_active:
+AttributeError: 'AnonymousUser' object has no attribute 'type'
+[2022-07-30 07:00:59,500] ERROR [django.request.log_response:241] Internal Server Error: /admin2/user/1/approved/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 656, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 541, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 431, in show_form_for_method
+    view.check_permissions(request)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/usr/src/app/user/permissions.py", line 15, in has_permission
+    if user.type == UserType.ADMIN and user.is_staff and user.is_active:
+AttributeError: 'AnonymousUser' object has no attribute 'type'

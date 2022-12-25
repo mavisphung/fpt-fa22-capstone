@@ -1,0 +1,22 @@
+@mixin box($width, $height, $margin,$padding, $radius){
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+    border-radius: $radius;
+    box-sizing: border-box;
+}
+
+@mixin center($x){
+    position: absolute;
+    top: $x;
+    left: $x;
+    transform: translateX(calc(0% - $x)) translateY(calc(0% - $x));
+}
+
+@mixin centerFromBottom($x, $y){
+    position: absolute;
+    bottom: $y;
+    left: $x;
+    transform: translateX(calc(0% - $x)) translateY($y);
+}

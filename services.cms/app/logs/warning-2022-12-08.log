@@ -1,0 +1,96 @@
+[2022-12-08 11:02:27,752] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-08 11:04:11,192] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'start'
+[2022-12-08 11:04:11,195] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-08 11:18:21,488] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-08 11:30:58,780] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/
+[2022-12-08 11:31:22,706] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/session/
+[2022-12-08 11:51:44,624] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-08 11:51:54,415] WARNING [django.request.log_response:241] Forbidden: /contract/supervisor/session/checkin
+[2022-12-08 11:52:05,821] WARNING [django.request.log_response:241] Bad Request: /contract/supervisor/session/checkin
+[2022-12-08 11:54:12,797] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/session/checkin
+[2022-12-08 11:55:32,929] WARNING [django.request.log_response:241] Bad Request: /contract/supervisor/session/checkin
+[2022-12-08 11:56:09,913] WARNING [django.request.log_response:241] Bad Request: /contract/supervisor/session/checkin
+[2022-12-08 12:38:27,537] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/52/approve/
+[2022-12-08 12:43:25,770] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'price'
+[2022-12-08 12:43:25,773] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/51/approve/
+[2022-12-08 12:45:23,864] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'price'
+[2022-12-08 12:45:23,865] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/51/approve/
+[2022-12-08 12:46:21,655] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'price'
+[2022-12-08 12:46:21,659] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/51/approve/
+[2022-12-08 12:47:26,575] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'price'
+[2022-12-08 12:47:26,578] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/51/approve/
+[2022-12-08 12:48:28,534] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'price'
+[2022-12-08 12:48:28,537] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/51/approve/
+[2022-12-08 12:51:11,544] WARNING [django.request.log_response:241] Forbidden: /contract/
+[2022-12-08 12:53:04,951] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/53/approve/
+[2022-12-08 12:53:13,678] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 12:53:13,680] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 12:54:47,514] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 12:54:47,519] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 12:55:55,781] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 12:55:55,785] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 12:59:58,985] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 12:59:58,989] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:03:18,937] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:03:18,942] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:04:07,351] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:04:07,355] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:05:56,955] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:05:56,958] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:09:47,428] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:09:47,433] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:12:11,079] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:12:11,080] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:13:49,206] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:13:49,210] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:18:19,263] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:18:19,266] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:19:59,492] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:19:59,496] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:23:30,904] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:23:56,151] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:23:56,154] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:24:31,297] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:24:31,301] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:25:46,236] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:25:46,240] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:27:18,819] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:27:18,822] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:28:35,335] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:28:35,338] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:29:23,353] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:29:23,357] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:30:16,956] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'endTime'
+[2022-12-08 13:30:16,961] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:31:44,619] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:31:44,625] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:32:25,274] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:32:25,277] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:34:39,487] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:34:39,490] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:36:27,940] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:36:27,943] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:37:52,807] ERROR [shared.exception_handler.__handle_attribute_error:122] 'dict' object has no attribute 'startTime'
+[2022-12-08 13:37:52,811] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:41:36,574] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:42:31,189] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:43:13,203] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:45:47,353] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 13:48:53,026] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/53/approve/
+[2022-12-08 14:04:49,445] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/53/approve/
+[2022-12-08 14:06:19,334] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/53/approve/
+[2022-12-08 14:07:16,862] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/53/approve/
+[2022-12-08 14:07:25,335] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/53/approve/
+[2022-12-08 14:07:46,229] ERROR [shared.exception_handler.__handle_attribute_error:122] 'TreatmentContract' object has no attribute 'endTime'
+[2022-12-08 14:07:46,231] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/54/approve/
+[2022-12-08 14:07:53,101] ERROR [shared.exception_handler.__handle_attribute_error:122] 'TreatmentContract' object has no attribute 'endTime'
+[2022-12-08 14:07:53,102] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/54/approve/
+[2022-12-08 14:10:17,574] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/54/approve/
+[2022-12-08 14:13:26,485] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/54/approve/
+[2022-12-08 14:13:38,763] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/54/approve/
+[2022-12-08 14:15:30,859] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/54/approve/
+[2022-12-08 14:31:26,734] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/cancel/session/
+[2022-12-08 15:29:52,514] ERROR [django.request.log_response:241] Internal Server Error: /prescription/doctor/66/
+[2022-12-08 15:39:52,172] ERROR [django.request.log_response:241] Internal Server Error: /prescription/
+[2022-12-09 06:59:27,673] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'prescriptiondetail_set'
+[2022-12-09 06:59:27,678] ERROR [django.request.log_response:241] Internal Server Error: /prescription-detail/doctor/145/

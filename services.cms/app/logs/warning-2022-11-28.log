@@ -1,0 +1,4 @@
+[2022-11-28 02:25:50,179] WARNING [django.request.log_response:241] Unauthorized: /user/me/appointments/
+[2022-11-28 02:39:03,709] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-11-28 11:53:15,855] ERROR [shared.exception_handler.__handle_http404:112] Patient matching query does not exist.
+[2022-11-28 11:53:15,859] WARNING [django.request.log_response:241] Not Found: /user/health-records/

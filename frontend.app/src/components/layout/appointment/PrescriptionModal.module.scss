@@ -1,0 +1,62 @@
+.bodyPrescriptionModal {
+  height: 76vh;
+  padding: 0 20px;
+  table {
+    width: 100%;
+    tr {
+      text-align: left;
+      height: 70px;
+      td {
+        padding: 10px 0;
+      }
+      td:nth-child(1) {
+        width: 22%;
+      }
+      td:nth-child(2) {
+        .inputDiv {
+          height: 45px;
+          width: 100%;
+          outline: none;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          padding-left: 15px;
+          padding-right: 10px;
+          font-size: 16px;
+          border-bottom-width: 2px;
+          transition: all 0.3s ease;
+        }
+        .inputDiv:focus {
+          border-color: var(--green);
+        }
+      }
+    }
+  }
+  .buttonSubmit {
+    height: 45px;
+    width: 40%;
+    margin: 15px auto;
+    align-items: center;
+    justify-content: center;
+    .btnSave {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      color: var(--white);
+      border: none;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      background: var(--blue);
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}
+
+.titleLabel::after {
+  content: '*';
+  color: red;
+}

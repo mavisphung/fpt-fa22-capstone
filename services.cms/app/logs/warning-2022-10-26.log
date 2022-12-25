@@ -1,0 +1,4 @@
+[2022-10-26 12:48:55,641] WARNING [django.request.log_response:241] Unauthorized: /doctor/5/packages/10/
+[2022-10-26 12:56:06,739] WARNING [django.request.log_response:241] Bad Request: /doctor/5/packages/13/
+[2022-10-26 12:56:15,263] WARNING [django.request.log_response:241] Bad Request: /doctor/16/packages/13/
+[2022-10-26 12:56:30,230] WARNING [django.request.log_response:241] Bad Request: /doctor/5/packages/12/

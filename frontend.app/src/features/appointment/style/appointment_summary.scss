@@ -1,0 +1,158 @@
+@import '../../../style/mixin.module.scss';
+
+
+$w: 300px;
+$h: 400px;
+$m: 8px;
+$p: 8px;
+$r: 10px;
+$fit: fit-content;
+$rc: 50%;
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.appointment_card {
+    @include box-sizing($w, $h, $m, 0px, $r);
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 0.2px solid !important;
+
+    &__wrapper {
+        @include box-sizing(calc($w - 0.8px), calc($h - 0.8px), 0, 0, $r);
+        position: relative;
+
+        &__avatar {
+            @include box-sizing(calc(100%), calc(200px), 0, 0, $r);
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-bottom: 1px solid rgba(126, 125, 125, 0.634);
+            position: relative;
+
+            &__label {
+                @include box-sizing(calc($w - 0.8px - 16px), 40px, 8px, 0px, $r);
+                position: relative;
+                top: 4px;
+                right: 0px;
+                .appointment_label{
+                    @include box-sizing(fit-content, 40px, 0px, 4px, 40px);
+                    position: absolute;
+                    top: 0px;
+                    right: 8px;
+                    padding: 8px;
+                    color: white;
+                }
+                .appointment_label--pending{
+                    background-color: #999999;
+                }
+                .appointment_label--completed{
+                    background-color: #299eff;
+                }
+                .appointment_label--cancelled{
+                    background-color: #f91f1f;
+                }
+            }
+
+            img {
+                display: block;
+                @include box-sizing(calc(100px), calc(100px), 0, 0, 50%);
+                @include center(50%);
+                top: 50%;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                @include box-sizing(100%, calc(40px), 0, 0, 50%);
+                position: absolute;
+                bottom: 4px;
+                left: 0px;
+                text-align: center;
+            }
+        }
+
+        &__content {
+            @include box-sizing(calc(100% - 16px),40%, 0, 0, $r);
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+    }
+}
+
+.appointment_info {
+    &__name {
+        @include box-sizing(fit-content, fit-content, 0, $p, 0);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: $w;
+        display: block;
+    }
+
+    &__status {
+        @include box-sizing(fit-content, fit-content, 0, $p, $r);
+        display: block;
+    }
+
+    &__date {
+        @include box-sizing(fit-content, fit-content, 0px, $p, $r);
+        display: block;
+    }
+
+    &__time {
+        @include box-sizing(fit-content, calc($fit), 0px, $p, $r);
+        display: block;
+    }
+}
+
+.appointment_action {
+    @include box-sizing(calc($w), calc(40px), 0px, 8px, 0px);
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 32px;
+    left: 0px;
+    &__button {
+        background-color: red;
+        color: white;
+        @include box-sizing(50%, 40px, 8px, 0px, 10px);
+        display: flex;
+        justify-content: flex-start;
+        &__icon {
+            @include box-sizing(calc(100% - 16px), 40px, 8px, 0, 0);
+            display: block;
+            position: relative;
+            text-align: center;
+        }
+    }
+
+    &__button--checkin{
+        background-color: #32DE84;
+    }
+
+    &__button--cancel{
+        background-color: #999999;
+    }
+}

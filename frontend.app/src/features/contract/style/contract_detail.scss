@@ -1,0 +1,863 @@
+@import '../../../style/mixin.module.scss';
+
+$w: 100%;
+$h: 100%;
+$m: 8px;
+$p: 8px;
+$r: 10px;
+
+.contract_info {
+  @include box-sizing(calc($w - $m * 2), calc($h - $m * 2), $m, $p, $r);
+  overflow-y: scroll;
+  position: relative;
+
+  &__patient {
+    min-height: 250px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+
+    .left_section {
+      @include box-sizing(calc(40% - $m * 2), 300px, $m, $p, $r);
+      background-color: var(--grey);
+
+      .avatar_wrapper {
+        @include box-sizing(calc(100% - $m * 2), 60%, $m, $p, 0px);
+        position: relative;
+
+        img.circle_img {
+          position: absolute;
+          @include center(50%);
+          display: block;
+          @include box-sizing(calc(120px), 120px, $m, $p, 60px);
+        }
+      }
+
+      .text {
+        @include box-sizing(calc(100% - $m * 2), calc(40% - $m * 2), $m, $p, 0px);
+
+        h5 {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          text-align: center;
+        }
+
+        h6 {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          text-align: center;
+        }
+      }
+    }
+
+    .contract_patient_detail {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      background-color: var(--grey);
+      min-height: 300px;
+      @include box-sizing(calc(100% - $m * 2), fit-content, $m, $p, $r);
+
+      h5 {
+        @include box-sizing(calc(100% - $m * 2), fit-content, $m, $p, $r);
+      }
+
+      .left-section {
+        background-color: var(--grey);
+        @include box-sizing(calc(40% - $m * 2), calc(100% - $m * 2), $m, $p, $r);
+        min-height: 250px;
+        position: relative;
+
+        img.circle_img {
+          display: block;
+          @include box-sizing(120px, 120px, 0, 0, 50%);
+          border: 0.2px solid;
+          @include center(50%);
+          transform: translateX(-50%) translateY(-70%);
+        }
+
+        .summary {
+          width: calc(100% - $m * 2);
+          margin-top: $m;
+          position: absolute;
+          text-align: center;
+          @include centerFromBottom(10px, 5%);
+        }
+      }
+
+      .contract_short_info {
+        @include box-sizing(calc(50% - $m * 4), fit-content, $m * 2, $p, 0px);
+      }
+
+      .contract_long_info {
+        @include box-sizing(calc(50% - $m * 3), fit-content, $m * 2, $p, 0px);
+      }
+    }
+  }
+
+  &__attachment {
+    background-color: var(--grey);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    @include box-sizing(calc($w - $m * 2), fit-content, $m, $p, $r);
+    min-height: 400px;
+
+    &__label {
+      @include box-sizing(calc($w - $m * 2), fit-content, $m, $p, $r);
+    }
+
+    &__prescriptions {
+      @include box-sizing(calc(50% - $m * 2), 360px, $m, $p, $r);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &__instructions {
+      @include box-sizing(calc(50% - $m * 2), 360px, $m, $p, $r);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .attatchment_items {
+      @include box-sizing(calc(100%), (400px), $m, 0px, $r);
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .attatchment_item {
+      @include box-sizing(calc(33% - $m * 2), (200px), $m, 0px, $r);
+      margin-left: 0px;
+      margin-right: $m;
+      background-color: var(--grey);
+      position: relative;
+
+      p {
+        width: 98%;
+        position: absolute;
+        bottom: 30px;
+        text-align: center;
+      }
+
+      &__checkbox {
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+    }
+
+    .attactchment_label {
+      @include box-sizing(calc(100%), fit-content, 0px, $p, $r);
+      font-weight: 600;
+    }
+
+    .attactment_icon {
+      position: absolute;
+      display: block;
+      width: 100px;
+      height: 100px;
+      @include topPostion(50%, 20%);
+
+      border-radius: 50%;
+      border: 0.2px solid silver;
+
+      svg {
+        position: absolute;
+        @include center(50%);
+      }
+    }
+  }
+
+  &__schedule {
+    background-color: var(--grey);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    @include box-sizing(calc($w - $m * 2), fit-content, $m, $p, $r);
+    min-height: 400px;
+
+    &__label {
+      @include box-sizing(calc($w - $m * 2), fit-content, $m, $p, $r);
+    }
+
+    &__prescriptions {
+      @include box-sizing(calc(50% - $m * 2), 360px, $m, $p, $r);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &__instructions {
+      @include box-sizing(calc(50% - $m * 2), 360px, $m, $p, $r);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .attatchment_items {
+      @include box-sizing(calc(100%), (400px), $m, 0px, $r);
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .attatchment_item {
+      @include box-sizing(calc(33% - $m * 2), (200px), $m, 0px, $r);
+      margin-left: 0px;
+      margin-right: $m;
+      background-color: var(--grey);
+      position: relative;
+
+      p {
+        width: 98%;
+        position: absolute;
+        bottom: 30px;
+        text-align: center;
+      }
+    }
+
+    .attactchment_label {
+      @include box-sizing(calc(100%), fit-content, 0px, $p, $r);
+      font-weight: 600;
+    }
+
+    .attactment_icon {
+      position: absolute;
+      display: block;
+      width: 100px;
+      height: 100px;
+      @include topPostion(50%, 20%);
+
+      border-radius: 50%;
+      border: 0.2px solid silver;
+
+      svg {
+        position: absolute;
+        @include center(50%);
+      }
+    }
+  }
+
+  &__medicalHistory {
+    background-color: var(--grey);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    @include box-sizing(calc($w - $m * 2), fit-content, $m, $p, $r);
+
+    &__label {
+      @include box-sizing(calc($w - $m * 2), fit-content, $m, $p, $r);
+    }
+
+    &__disease {
+      @include box-sizing(calc(50% - $m * 2), 360px, $m, $p, $r);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &__alle {
+      @include box-sizing(calc(50% - $m * 2), 360px, $m, $p, $r);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .attatchment_items {
+      @include box-sizing(calc(100%), (400px), $m, 0px, $r);
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+    }
+  }
+}
+
+.empty_content_label {
+  width: 300px;
+  height: 30px;
+  @include center(50%);
+}
+
+.contract_short_info {
+  @include box-sizing(calc(50% - $m * 4), fit-content, $m, $p, 0px);
+
+  .button {
+    @include box-sizing(calc(50% - $m * 4), fit-content, 0px, $p, 10px);
+    background-color: var(--blue);
+    color: var(--white);
+    outline: none;
+    border: none;
+  }
+}
+
+.contract_long_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @include box-sizing(calc(50% - $m * 2), 100px, $m, $p, 0px);
+
+  .info_label {
+    @include box-sizing(calc(50% - $m * 2), fit-content, 8px, 0px, 0px);
+  }
+
+  .info_content {
+    @include box-sizing(calc(50% - $m * 2), fit-content, 8px, 0px, 0px);
+  }
+}
+
+div.page_detail {
+  @include box-sizing(calc(100%), 100%, 0px, 0px, 0px);
+  background-color: #F2F5F9;
+  overflow: scroll;
+  display: flex;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  display: flex;
+
+  .main {
+    @include box-sizing(calc(70%), 100%, 0px, 0px, 0px);
+
+    .patient {
+      @include box-sizing(calc(100%), 250px, 8px, 0px, 8px);
+      background-color: #FFFDFD;
+      display: flex;
+      flex-direction: row;
+
+      .avatar_side {
+        @include box-sizing(250px, 100%, 0px, 0px, 8px);
+        margin-left: 8px;
+        margin-right: 8px;
+        position: relative;
+        .avatar {
+          @include box-sizing(calc(100%), 114px, 0px, 0px, 0px);
+          position: relative;
+
+          .circle_img {
+            @include box-sizing(calc(60px), 60px, 0px, 0px, 50%);
+            position: absolute;
+            left: 50%;
+            top: 30px;
+            transform: translateX(-50%)
+          }
+
+          .fullname {
+            position: absolute;
+            bottom: 2px;
+            @include box-sizing(calc(100%), fit-content, 0px, 0px, 0px);
+
+            h6,
+            h5,
+            p {
+              margin: 0px;
+              text-align: center;
+            }
+          }
+        }
+
+        .align_center {
+          text-align: center;
+        }
+
+        div.contract_actions {
+          @include box-sizing(calc(100%), fit-content, 0px, 0px, 0px);
+          position: absolute;
+          left: 0px;
+          bottom: 8px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .fullContainerWidth {
+            @include box-sizing(calc(100% - 4px), calc(30px), 0px, 0px, 4px);
+            border: 0px;
+            margin-left: 4px;
+          }
+
+          .acceptButton {
+            @include box-sizing(calc(50% - 4px), calc(40px), 0px, 0px, 4px);
+            color: white;
+            background-color: #41B2D8;
+          }
+
+          .rejectButton {
+            @include box-sizing(calc(50% - 4px), calc(40px), 0px, 0px, 4px);
+            color: white;
+            background-color: #FF0000;
+          }
+        }
+      }
+
+      .patient_summary {
+        @include box-sizing(calc(100% - 250px - 2px), 100%, 0px, 0px, 8px);
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .tab {
+      @include box-sizing(calc(100%), calc(100% - 250px - 32px - 8px), 8px, 8px, 10px);
+      margin-top: $m;
+      background-color: #FFFDFD;
+
+      .tab_selection {
+        display: flex;
+        background-color: #EFF1F7;
+        @include box-sizing(fit-content, calc(48px), 0px, 0px, 4px);
+
+        .tab_item {
+          @include box-sizing(calc(200px), calc(40px), 4px, 0px, 4px);
+          margin-top: calc((48px - 40px) / 2);
+          position: relative;
+
+          p {
+            position: absolute;
+            width: calc(100% - $m * 2);
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #88959F;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .tab_item--active {
+        background-color: #FFFFFF;
+      }
+
+
+      .tab_displayer {
+        @include box-sizing(calc(100% - 16px), fit-content, 0px, 0px, 0px);
+        overflow-y: scroll;
+        min-height: 280px;
+        max-height: 280px;
+        margin-top: 8px;
+        border-radius: 10px;
+        background-color: #EFF1F7;
+
+        &__content {
+          display: flex;
+          flex-wrap: wrap;
+
+          .tab_title {
+            @include box-sizing(calc(50% - 16px), calc(48px), 8px, 0px, 0px);
+
+            h5 {
+              padding-left: 10px
+            }
+          }
+
+          .new_section {
+            @include box-sizing(calc(50% - 16px), calc(48px), 8px, 0px, 0px);
+
+            .newSessionBtn {
+              @include box-sizing(calc(200px), calc(40px), 0px, 0px, 4px);
+              margin-left: 8px;
+              margin-right: 8px;
+              border: none;
+              background-color: #FFFFFF;
+            }
+
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          .session {
+            @include box-sizing(calc(100% - 16px), 100px, 8px, 8px, 4px);
+            display: flex;
+            background-color: #4062c9;
+
+            &__datetime {
+              @include box-sizing(150px, calc(100%), 0px, 0px, 0px);
+              position: relative;
+            }
+
+            &__note_assetment {
+              @include box-sizing(calc((100% - 150px - 120px) / 2), fit-content, 0px, 0px, 0px);
+              margin-left: 16px;
+              position: relative;
+              display: flex;
+              flex-direction: row;
+
+              .assetment_container,
+              .note_container {
+                @include box-sizing(calc(100% - 2px), fit-content, 0px, 8px, 0px);
+                min-height: 80px;
+                position: relative;
+              }
+            }
+
+            &__note_assetment--smail {
+              width: 120px
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.side {
+    @include box-sizing(calc(30%), calc(100% - $m * 2), 0px, 0px, 0px);
+    background-color: #EFF1F7;
+    display: flex;
+    flex-direction: column;
+
+    .session_list {
+      @include box-sizing(calc(100% - $m * 2), calc(250px), 8px, 8px, 4px);
+      background-color: #FFFDFD;
+
+      .session_list_header {
+        @include box-sizing(calc(100% - $m*2), fit-content, 8px, 0px, 0px);
+      }
+
+      .session_list_content {
+        @include box-sizing(calc(100% - $m * 2), calc(100% - 40px), 8px, 8px, 8px);
+        background-color: #EFF1F7;
+        overflow-y: scroll;
+
+        .session_list_content_item {
+          @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 0px, 4px);
+          display: flex;
+          justify-content: flex-start;
+          background-color: #FFFDFD;
+          position: relative;
+
+          .session_list_content_item_label {
+            @include box-sizing(calc(30% - 2px), 100px, 0px, 0px, 0px);
+            position: relative;
+
+            .wrapper {
+              @include box-sizing(fit-content, fit-content, 0px, 0px, 0px);
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+
+          div.divider--small {
+            position: absolute;
+            top: 50%;
+            left: calc(30% - 2px);
+            transform: translateY(-50%);
+            @include box-sizing(calc(4px), 100%, 0, 0, 0px);
+            background-color: #EFF1F7;
+          }
+
+          .session_list_content_item_detail {
+            @include box-sizing(calc(70%), 80px, 0px, 0px, 0px);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            .datetime {
+              @include box-sizing(calc(100%), 70px, 0px, 0px, 0px);
+
+              h6 {
+                padding-left: 10px;
+              }
+            }
+
+            .action {
+              @include box-sizing(calc(100%), 30px, 8px, 0px, 0px);
+
+              .btnSpan {
+                display: block;
+                @include box-sizing(80px, fit-content, 0px, 8px, 8px);
+                background-color: #41B2D8;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      .session_list_footer {
+        .session_add {
+          @include box-sizing(calc(100% - $m*2), 40px, 8px, 0px, 0px);
+        }
+      }
+    }
+
+    .session_creation_form {
+      @include box-sizing(calc(100% - $m*2), 356px, 8px, 0px, 4px);
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-color: #FFFDFD;
+      position: relative;
+
+      .session_creation_form_header {
+        @include box-sizing(calc(100% - $m*2), 40px, 8px, 0px, 0px);
+
+        h5,
+        h6 {
+          margin-top: 0px;
+        }
+      }
+
+      .session_creation_form_content {
+        @include box-sizing(calc(100% - $m*2), calc(320px), 8px, 8px, 8px);
+        position: absolute;
+        top: 73%;
+        transform: translateY(-73%);
+        background-color: #EFF1F7;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        .field {
+          @include box-sizing(calc(100%), fit-content, 0px, 0px, 0px);
+          .dropdown_wrapper{
+            background-color: #FFFDFD;
+          }
+          input.text_input {
+            @include box-sizing(calc(100% - $m * 2), calc(32px), 8px, 8px, 0px);
+            appearance: none;
+            border: 0px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            background-color: #FFFDFD;
+          }
+
+          input.date_input{
+            @include box-sizing(calc(100% - $m * 2), calc(32px), 8px, 0px, 0px);
+            appearance: none;
+            border: 0px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            background-color: #FFFDFD;
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+
+          h6 {
+            margin: 8px;
+          }
+
+          .btnAction {
+            @include box-sizing(calc(100% - $m * 2), calc(40px), 8px, 0px, 4px);
+          }
+        }
+
+        .field--suggestion {
+          h6{
+            width: 100%;
+          }
+          display: flex;
+          flex-wrap: wrap;
+          .suggestion {
+            cursor: pointer;
+            @include box-sizing(110px, calc(40px), 8px, 8px, 4px);
+            background-color: #FFFDFD;
+          }
+        }
+
+        .field--note {
+          h6{
+            width: 100%;
+          }
+          display: flex;
+          flex-wrap: wrap;
+          .note {
+            cursor: pointer;
+            @include box-sizing(fit-content, fit-content, 8px, 8px, 4px);
+            min-height: 40px;
+            background-color: #FFFDFD;
+          }
+        }
+
+        .field--half {
+          @include box-sizing(calc(50%), fit-content, 0px, 0px, 4px);
+
+          input[type="time"] {
+            display: inline;
+            @include box-sizing(calc(100% - $m * 2), calc(32px), 8px, 0px, 0px);
+            border: 0px solid #000000;
+            appearance: none;
+            background-color: inherit;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            background-color: #FFFDFD;
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+
+          h6 {
+            margin: 8px;
+          }
+        }
+
+      }
+
+      .session_creation_form_footer {
+        @include box-sizing(calc(100% - $m*2), calc(24px), 8px, 8px, 8px);
+      }
+    }
+
+  }
+
+  .contract_detail_short {
+    @include box-sizing(fit-content, fit-content, $m, 0px, 0px);
+    min-width: calc(100% / 3 - $m * 2);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contract_detail_long {
+    @include box-sizing(fit-content, fit-content, $m, 0px, 0px);
+    min-width: calc(100% - $m * 2);
+
+    .align_center {
+      text-align: justify;
+      margin: 0px;
+    }
+  }
+
+}
+
+.contract_short_info {
+  @include box-sizing(calc(50% - $m * 2), fit-content, $m, $p, 0px);
+  display: flex;
+  flex-direction: column;
+}
+
+.contract_long_info {
+  @include box-sizing(calc(100% - $m * 2), fit-content, $m, $p, 0px);
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  @include box-sizing(calc(4px), 100%, 0, 0, 0px);
+  background-color: #EFF1F7;
+}
+
+.divider--small {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  @include box-sizing(calc(1px), 50%, 0, 0, 0px);
+  min-height: 42px;
+  background-color: #FFFDFD;
+}
+
+.wrapper_centerVer {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+
+  p {
+    margin: 0;
+  }
+}
+
+.wrapper_centerHorizontal {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%) translateY(-50%);
+
+  p {
+    margin: 0;
+  }
+}
+
+
+// prescription summary
+
+div.prescriptions {
+  @include box-sizing($w, 200px, 0px, 0, 0);
+  overflow-y: scroll;
+
+  .prescriptions_header {
+    @include box-sizing(calc(100% - $m * 2), 40px, 8px, 0, 0);
+  }
+
+  .prescriptions_item {
+    display: flex;
+    justify-content: flex-start;
+    @include box-sizing(calc(100% - $m * 2), 80px, 8px, 0, 0);
+    background-color: #FFFDFD;
+
+    div.divider--small {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      @include box-sizing(calc(2px), 50%, 0, 0, 0px);
+      min-height: 42px;
+      background-color: #EFF1F7;
+    }
+
+    .prescriptions_item_date {
+      @include box-sizing($w/3, calc(100% - $m * 2), 8px, 8px, 0);
+    }
+
+    .prescriptions_item_note {
+      @include box-sizing(calc(100% - $w / 4 - 50px), calc(100% - $m * 2), 8px, 8px, 0);
+
+      p {
+        padding: 0;
+      }
+    }
+
+    .actions {
+      @include box-sizing(calc(200px), calc(100% - $m * 2), 8px, 8px, 0);
+    }
+  }
+}
+
+
+div.instruction {
+  @include box-sizing($w, 200px, 0px, 0, 0);
+  overflow-y: scroll;
+
+  .instruction_header {
+    @include box-sizing(calc(100% - $m * 2), 40px, 8px, 0, 0);
+  }
+
+  .instruction_item {
+    display: flex;
+    justify-content: flex-start;
+    @include box-sizing(calc(100% - $m * 2), 80px, 8px, 0, 0);
+    background-color: #FFFDFD;
+
+    div.divider--small {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      @include box-sizing(calc(4px), 50%, 0, 0, 0px);
+      min-height: 42px;
+      background-color: #EFF1F7;
+    }
+
+    .instruction_item_date {
+      @include box-sizing($w/3, calc(100% - $m * 2), 8px, 8px, 0);
+    }
+
+    .instruction_item_note {
+      @include box-sizing(calc(100% - $w / 4 - 50px), calc(100% - $m * 2), 8px, 8px, 0);
+
+      p {
+        padding: 0;
+      }
+    }
+
+    .actions {
+      @include box-sizing(calc(200px), calc(100% - $m * 2), 8px, 8px, 0);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+[2022-08-14 06:44:52,165] WARNING [django.request.log_response:241] Unauthorized: /cicd/
+[2022-08-14 06:45:37,207] ERROR [django.request.log_response:241] Internal Server Error: /cicd/
+[2022-08-14 06:46:25,478] ERROR [django.request.log_response:241] Internal Server Error: /cicd/
+[2022-08-14 06:49:12,492] ERROR [django.request.log_response:241] Internal Server Error: /cicd/
+[2022-08-14 06:57:25,288] ERROR [django.request.log_response:241] Internal Server Error: /cicd/
+[2022-08-14 07:18:58,083] ERROR [django.request.log_response:241] Internal Server Error: /user/resend-code/
+[2022-08-14 07:53:39,144] WARNING [django.request.log_response:241] Unauthorized: /login/

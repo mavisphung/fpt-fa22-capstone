@@ -1,0 +1,1 @@
+[2022-12-04 14:03:15,638] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/3999/approve/

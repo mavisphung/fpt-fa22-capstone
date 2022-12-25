@@ -1,0 +1,1 @@
+[2022-11-19 03:26:56,521] WARNING [django.request.log_response:241] Unauthorized: /doctors/

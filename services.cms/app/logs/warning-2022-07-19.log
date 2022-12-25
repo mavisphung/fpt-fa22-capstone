@@ -1,0 +1,61 @@
+[2022-07-19 02:52:58,693] WARNING [django.request.log_response:241] Bad Request: /user/existed/
+[2022-07-19 02:52:58,695] WARNING [django.server.log_message:187] "POST /user/existed/ HTTP/1.1" 400 117
+[2022-07-19 04:42:48,894] WARNING [django.request.log_response:241] Unauthorized: /user/recovery-password/
+[2022-07-19 04:42:48,896] WARNING [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 401 121
+[2022-07-19 05:07:01,711] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 05:07:01,713] WARNING [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 400 73
+[2022-07-19 05:08:58,803] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 05:08:58,807] WARNING [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 400 73
+[2022-07-19 05:13:04,126] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 05:13:04,130] ERROR [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 500 150
+[2022-07-19 05:14:27,308] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 05:14:27,310] ERROR [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 500 124
+[2022-07-19 05:15:24,191] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 05:15:24,196] WARNING [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 400 73
+[2022-07-19 05:16:10,727] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 05:16:10,730] ERROR [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 500 148
+[2022-07-19 05:16:36,546] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 05:16:36,549] ERROR [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 500 148
+[2022-07-19 05:19:12,433] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 05:19:12,437] ERROR [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 500 150
+[2022-07-19 05:23:29,606] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 05:23:29,608] WARNING [django.server.log_message:187] "PUT /user/recovery-password/ HTTP/1.1" 400 73
+[2022-07-19 08:30:52,173] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 08:31:04,009] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 08:31:26,794] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 08:31:34,911] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 08:48:34,497] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 08:59:44,871] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 09:00:00,338] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 09:00:12,282] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 09:00:56,389] ERROR [user.serializers.validate:392] code is not matched
+[2022-07-19 09:00:56,404] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 09:02:08,423] ERROR [user.serializers.validate:392] code is not matched
+[2022-07-19 09:02:08,445] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 09:03:55,416] ERROR [user.serializers.validate:392] code is not matched
+[2022-07-19 09:03:55,431] ERROR [django.request.log_response:241] Internal Server Error: /user/recovery-password/
+[2022-07-19 09:07:39,317] ERROR [user.serializers.validate:392] code is not matched
+[2022-07-19 09:08:32,810] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 09:09:08,146] ERROR [user.serializers.validate:392] code is not matched
+[2022-07-19 09:09:32,383] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 09:10:31,532] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-07-19 09:13:51,339] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-07-19 09:37:00,362] ERROR [user.serializers.validate:389] code is not matched
+[2022-07-19 09:37:00,382] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 09:37:06,542] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 09:56:00,358] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 09:56:12,228] ERROR [django.request.log_response:241] Internal Server Error: /user/send-code/
+[2022-07-19 10:03:24,559] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:03:28,339] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:04:22,444] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-07-19 10:05:37,874] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:07:16,145] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:07:18,414] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:07:21,142] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:07:22,898] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:13:01,533] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:14:22,226] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:16:08,088] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:16:43,793] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:17:02,989] WARNING [django.request.log_response:241] Bad Request: /user/recovery-password/
+[2022-07-19 10:17:18,341] WARNING [django.request.log_response:241] Unauthorized: /login/

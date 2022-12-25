@@ -1,0 +1,105 @@
+[2022-11-29 05:14:02,717] ERROR [shared.exception_handler.__handle_http404:112] Patient matching query does not exist.
+[2022-11-29 05:14:02,722] WARNING [django.request.log_response:241] Not Found: /user/health-records/
+[2022-11-29 05:14:24,648] ERROR [shared.exception_handler.__handle_http404:112] Patient matching query does not exist.
+[2022-11-29 05:14:24,649] WARNING [django.request.log_response:241] Not Found: /user/health-records/
+[2022-11-29 13:02:44,653] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-29 13:05:14,806] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-29 13:24:12,967] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'healthRecord'
+[2022-11-29 13:24:12,972] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-29 13:32:18,315] WARNING [django.request.log_response:241] Bad Request: /prescription/
+[2022-11-29 13:32:31,191] WARNING [django.request.log_response:241] Bad Request: /prescription/
+[2022-11-29 13:32:50,470] WARNING [django.request.log_response:241] Bad Request: /prescription/
+[2022-11-29 13:42:39,758] WARNING [django.request.log_response:241] Forbidden: /contract/
+[2022-11-29 05:37:02,217] WARNING [django.request.log_response:241] Bad Request: /user/me/deposit/
+[2022-11-29 05:37:19,629] WARNING [django.request.log_response:241] Bad Request: /user/me/deposit/
+[2022-11-29 05:37:31,792] WARNING [django.request.log_response:241] Bad Request: /user/me/deposit/
+[2022-11-29 05:37:34,432] WARNING [django.request.log_response:241] Bad Request: /user/me/deposit/
+[2022-11-29 05:37:35,836] WARNING [django.request.log_response:241] Bad Request: /user/me/deposit/
+[2022-11-29 05:37:37,887] WARNING [django.request.log_response:241] Bad Request: /user/me/deposit/
+[2022-11-29 14:25:34,927] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 16:55:32,821] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/29/approve/
+[2022-11-29 16:55:47,018] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 16:56:58,496] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 16:58:08,048] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 16:59:54,689] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:01:32,634] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:03:10,747] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:04:01,786] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:05:14,012] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:06:34,717] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:07:36,820] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/29/approve/
+[2022-11-29 17:07:47,998] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/29/approve/
+[2022-11-29 17:07:57,867] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:09:18,032] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:09:49,558] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:11:25,107] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:15:15,186] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:17:13,309] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/29/approve/
+[2022-11-29 17:17:42,822] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:18:29,267] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:20:45,822] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:22:41,991] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:23:31,133] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:24:53,987] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:25:32,909] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/29/approve/
+[2022-11-29 17:47:00,158] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-11-29 17:48:19,738] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/list/
+[2022-11-29 18:24:02,697] WARNING [django.request.log_response:241] Unauthorized: /contract/test/30/
+[2022-11-29 18:24:45,954] WARNING [django.request.log_response:241] Unauthorized: /contract/test/30/
+[2022-11-29 18:24:58,680] ERROR [django.request.log_response:241] Internal Server Error: /contract/test/30/
+[2022-11-29 18:27:33,086] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'pk'
+[2022-11-29 18:27:33,090] ERROR [django.request.log_response:241] Internal Server Error: /contract/test/30/
+[2022-11-29 18:32:12,177] ERROR [django.request.log_response:241] Internal Server Error: /contract/test/30/
+[2022-11-29 18:34:05,796] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'pk'
+[2022-11-29 18:34:05,799] ERROR [django.request.log_response:241] Internal Server Error: /contract/test/30/
+[2022-11-29 18:34:27,158] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-11-29 18:34:27,161] ERROR [django.request.log_response:241] Internal Server Error: /contract/test/30/
+[2022-11-29 18:39:09,050] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/32/approve/
+[2022-11-29 18:50:14,102] ERROR [shared.exception_handler.__handle_attribute_error:122] 'TreatmentContract' object has no attribute 'amount'
+[2022-11-29 18:50:14,105] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/31/approve/
+[2022-11-29 18:51:35,982] ERROR [shared.exception_handler.__handle_attribute_error:122] 'TreatmentContract' object has no attribute 'amount'
+[2022-11-29 18:51:35,985] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/31/approve/
+[2022-11-29 19:02:31,509] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/31/sign
+[2022-11-29 19:03:42,726] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/31/sign
+[2022-11-29 19:04:10,272] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/31/sign
+[2022-11-29 19:05:07,537] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'save'
+[2022-11-29 19:05:07,541] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/32/sign
+[2022-11-29 19:07:22,229] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'save'
+[2022-11-29 19:07:22,234] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/32/sign
+[2022-11-29 19:20:46,259] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/list/
+[2022-11-29 19:21:35,177] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'pk'
+[2022-11-29 19:21:35,178] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-29 19:21:56,816] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-11-29 19:21:56,818] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/list/
+[2022-11-29 19:34:17,469] WARNING [django.request.log_response:241] Forbidden: /contract/
+[2022-11-29 19:34:26,652] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 21:34:06,127] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-11-29 21:35:29,171] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 13:39:18,036] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 13:39:31,030] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'healthRecord'
+[2022-11-29 13:39:31,033] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-29 13:51:17,186] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 13:57:13,622] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 13:57:52,174] ERROR [shared.exception_handler.__handle_http404:112] Doctor matching query does not exist.
+[2022-11-29 13:57:52,177] WARNING [django.request.log_response:241] Not Found: /contract/
+[2022-11-29 14:00:02,248] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 14:00:07,406] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 14:00:09,967] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 14:04:57,406] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 14:05:04,585] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 14:05:18,250] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'healthRecord'
+[2022-11-29 14:05:18,251] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-29 14:21:34,018] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-11-29 14:21:41,138] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-29 14:24:34,422] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-29 14:25:44,657] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-11-29 22:55:07,109] ERROR [shared.exception_handler.__handle_http404:112] Patient matching query does not exist.
+[2022-11-29 22:55:07,113] WARNING [django.request.log_response:241] Not Found: /user/health-records/
+[2022-11-29 16:02:38,539] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'id'
+[2022-11-29 16:02:38,543] ERROR [django.request.log_response:241] Internal Server Error: /health-records/84/
+[2022-11-29 16:19:47,672] ERROR [shared.exception_handler.__handle_http404:112] Patient matching query does not exist.
+[2022-11-29 16:19:47,676] WARNING [django.request.log_response:241] Not Found: /user/health-records/
+[2022-11-29 16:26:30,795] ERROR [shared.exception_handler.__handle_http404:112] Patient matching query does not exist.
+[2022-11-29 16:26:30,797] WARNING [django.request.log_response:241] Not Found: /user/health-records/
+[2022-11-29 22:55:07,109] ERROR [shared.exception_handler.__handle_http404:112] Patient matching query does not exist.
+[2022-11-29 22:55:07,113] WARNING [django.request.log_response:241] Not Found: /user/health-records/

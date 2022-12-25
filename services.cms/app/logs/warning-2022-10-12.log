@@ -1,0 +1,76 @@
+[2022-10-12 02:33:40,395] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-10-12 03:03:03,978] WARNING [django.request.log_response:241] Unauthorized: /user/me/agora-token/
+[2022-10-12 04:07:21,130] ERROR [django.request.log_response:241] Internal Server Error: /push-notification/
+[2022-10-12 04:07:48,608] ERROR [django.request.log_response:241] Internal Server Error: /push-notification/
+[2022-10-12 04:08:21,669] ERROR [django.request.log_response:241] Internal Server Error: /push-notification/
+[2022-10-12 04:09:44,708] ERROR [django.request.log_response:241] Internal Server Error: /push-notification/
+[2022-10-12 05:31:03,230] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-10-12 05:32:34,787] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-10-12 05:32:52,275] ERROR [django.request.log_response:241] Internal Server Error: /doctors/nearest/
+[2022-10-12 05:37:59,423] WARNING [django.request.log_response:241] Bad Request: /doctors/nearest/
+[2022-10-12 05:38:40,976] WARNING [django.request.log_response:241] Bad Request: /doctors/nearest/
+[2022-10-12 05:39:11,862] WARNING [django.request.log_response:241] Bad Request: /doctors/nearest/
+[2022-10-12 06:04:21,423] WARNING [django.request.log_response:241] Bad Request: /doctors/nearest/
+[2022-10-12 06:06:25,375] WARNING [django.request.log_response:241] Bad Request: /doctors/nearest/
+[2022-10-12 06:08:45,665] WARNING [django.request.log_response:241] Bad Request: /doctors/nearest/
+[2022-10-12 06:08:55,340] WARNING [django.request.log_response:241] Bad Request: /doctors/nearest/
+[2022-10-12 06:40:42,714] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 06:40:44,558] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 06:44:15,466] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 06:44:20,118] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 06:44:25,865] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 06:44:25,970] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 06:53:22,435] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 06:54:12,057] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 06:56:05,868] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 07:12:42,165] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")). Retrying with a new DB connection...
+[2022-10-12 07:14:30,261] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 07:14:44,120] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 07:15:50,502] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 07:16:22,891] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-10-12 09:25:11,913] ERROR [django.request.log_response:241] Internal Server Error: /specialists/
+[2022-10-12 09:26:33,480] ERROR [django.request.log_response:241] Internal Server Error: /specialists/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+[2022-10-12 09:27:28,714] ERROR [django.request.log_response:241] Internal Server Error: /specialists/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 218, in __call__
+    return call_result.result()
+  File "/usr/local/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 284, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+[2022-10-12 11:06:47,392] WARNING [django.request.log_response:241] Not Found: /doctor/shifts/:shiftId/
+[2022-10-12 11:07:03,277] WARNING [django.request.log_response:241] Forbidden: /doctor/shifts/
+[2022-10-12 11:09:32,258] WARNING [django.request.log_response:241] Forbidden: /doctor/shifts/13/
+[2022-10-12 11:11:53,744] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Manager' object has no attribute 'delete'
+[2022-10-12 11:11:53,748] ERROR [django.request.log_response:241] Internal Server Error: /doctor/shifts/13/
+[2022-10-12 11:12:40,377] ERROR [shared.exception_handler.__handle_attribute_error:122] 'QuerySet' object has no attribute 'adelete'
+[2022-10-12 11:12:40,381] ERROR [django.request.log_response:241] Internal Server Error: /doctor/shifts/13/

@@ -1,0 +1,117 @@
+@mixin pagination {
+    &__pagingation {
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        &__container {
+            width: fit-content;
+            height: 100%;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            &__wrapper {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+
+                &__previous,
+                &__next {
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    width: 100px;
+                    height: 50px;
+                    display: flex;
+                    margin: 5px;
+                    border-radius: 10px;
+
+                    a {
+                        margin: auto auto;
+                        display: block;
+                        width: fit-content;
+                        height: fit-content;
+                    }
+                }
+
+                &__page {
+                    display: flex;
+                    margin: 5px;
+                    width: 50px;
+                    height: 50px;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    border-radius: 10px;
+
+                    a {
+                        margin: auto auto;
+                        display: block;
+                        width: fit-content;
+                        height: fit-content;
+                    }
+                }
+
+                &__active {
+                    background-color: #56f1f1;
+                }
+            }
+        }
+    }
+}
+
+@mixin largecol {
+    &__td {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__imgContainer {
+            width: 30%;
+            height: 100%;
+
+            img {
+                margin-left: 5px;
+                min-height: 40px;
+                min-width: 40px;
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        &__patient {
+            width: 70%;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: flex-start;
+
+            p {
+                padding-left: 10px;
+                word-break: break-all;
+            }
+        }
+    }
+}
+
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+    padding: 10px 16px;
+}
+
+@media (max-width: 820px) {
+    .main {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+}

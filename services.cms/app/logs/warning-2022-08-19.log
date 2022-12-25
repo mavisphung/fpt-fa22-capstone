@@ -1,0 +1,6 @@
+[2022-08-19 05:30:30,033] WARNING [django.request.log_response:241] Unauthorized: /appointments/
+[2022-08-19 05:30:42,347] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-08-19 05:31:23,838] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-19 05:32:27,305] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-19 05:32:41,107] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-19 06:16:50,920] ERROR [django.request.log_response:241] Internal Server Error: /user/health-records/

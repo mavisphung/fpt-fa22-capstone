@@ -1,0 +1,433 @@
+p {
+    margin: 0;
+}
+
+h1,h2,h3, h4, h5, h6{
+    margin: 8px;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.padding{
+    margin: 8px;
+    padding-left: 16px;
+}
+
+.number-bullet{
+    margin-left: 16px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.bold--medium{
+    font-weight: 600;
+}
+
+li.nobullet {
+    display: block;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .leftbar {
+        width: 25%;
+        height: 100%;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+
+        ul {
+            padding-left: 0px;
+            margin: 8px 8px;
+
+            li {
+                display: block;
+
+                .card {
+                    margin: 8px;
+                    padding: 8px;
+                    height: 300px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                    border-radius: 4px;
+
+                    &__header {
+                        position: relative;
+                        height: 120px;
+                        width: 100%;
+
+                        .image {
+                            display: block;
+                            object-fit: fill;
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: 50%;
+                            top: 10%;
+                            transform: translateX(-50%);
+                        }
+
+                        h3 {
+                            display: block;
+                            width: 100%;
+                            text-align: center;
+                            padding: 8px;
+                            margin: 0 0;
+                            position: absolute;
+                            bottom: 4%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+
+                    &__detail {
+                        margin: 8px;
+                        height: fit-content;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+
+                        &__col {
+                            width: 48%;
+                            min-height: 45px;
+                            padding: 8px;
+
+                            &__label {
+                                width: fit-content;
+                                display: flex;
+                                flex-direction: row;
+
+                                .svg-inline--fa {
+                                    margin-top: 2px;
+                                }
+
+                                &__text {
+                                    margin-left: 8px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                }
+                            }
+
+                            &__value {
+                                display: block;
+                            }
+                        }
+
+                        &__row {
+                            width: 100%;
+                            height: fit-content;
+                            padding: 8px;
+
+                            &__label {
+                                width: fit-content;
+                                display: flex;
+                                flex-direction: row;
+
+                                .svg-inline--fa {
+                                    margin-top: 2px;
+                                }
+
+                                &__text {
+                                    margin-left: 8px;
+                                }
+                            }
+
+                            &__value {
+                                display: block;
+
+                                ul {
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__displayer {
+        position: relative;
+        width: 45%;
+        height: 95%;
+        border-radius: 4px;
+        padding: 4px;
+        margin-top: 8px;
+        background-color: aquamarine;
+        overflow: scroll;
+
+        &__section {
+            margin: 8px;
+
+            &__list {
+                display: block;
+                padding: 0px;
+
+                li.nobullet {
+
+                    h3,
+                    p {
+                        margin: 8px;
+                    }
+
+                    margin: 8px;
+                }
+            }
+        }
+    }
+
+    .rightbar {
+        position: relative;
+        width: 20%;
+        height: 100%;
+        margin: 8px;
+
+        &__healthrecord {
+            width: 100%;
+            height: calc(116px * 3.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                margin: 8px;
+                padding: 0px;
+            }
+
+            &__list {
+                display: block;
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+                overflow-x: scroll;
+
+                &__card {
+                    display: block;
+                    position: relative;
+                    width: fit-content;
+                    height: 100px;
+                    width: calc(100% - 16px);
+                    margin: 8px;
+                    position: relative;
+                    background: #97e6f8;
+                    border-radius: 4px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+                    &__icon {
+                        width: 35%;
+                        height: 100%;
+                        border-right: 1px solid;
+                        position: absolute;
+                        top: 50%;
+                        left: 5%;
+                        right: 5%;
+                        transform: translate(-10%, -50%);
+
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: center;
+                        &__wrapper {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            background: white;
+                            position: relative;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+
+                            svg {
+                                margin: auto auto;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+
+                    &__content {
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 40%;
+                        transform: translate(0%, -50%);
+
+                        .title {
+                            font-weight: bolder;
+
+                            span {
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &__tablecontent {
+            width: 100%;
+            height: calc(116px * 2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                margin: 8px;
+                padding: 0px;
+            }
+
+            &__list {
+                display: block;
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+                overflow-x: scroll;
+
+                ul {
+                    display: block;
+
+                    li {
+                        display: block;
+                    }
+                }
+
+                &__card {
+                    display: block;
+                    position: relative;
+                    width: fit-content;
+                    height: 100px;
+                    width: calc(100% - 16px);
+                    margin: 8px;
+                    position: relative;
+                    background: #97e6f8;
+                    border-radius: 4px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+                    &__icon {
+                        width: 35%;
+                        height: 100%;
+                        border-right: 1px solid;
+                        position: absolute;
+                        top: 50%;
+                        left: 5%;
+                        right: 5%;
+                        transform: translate(-10%, -50%);
+
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: center;
+                        &__wrapper {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            background: white;
+                            position: relative;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+
+                            svg {
+                                margin: auto auto;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+
+                    &__content {
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 40%;
+                        transform: translate(0%, -50%);
+
+                        .title {
+                            font-weight: bolder;
+
+                            span {
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.row{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    &__column--half{
+        margin: 8px;
+        width: 45%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        h3{
+            margin: 8px;
+        }
+        p{
+            margin: 8px;
+        }
+    }
+    .prescription{
+        border-radius: 4px;
+        flex: 45%;
+        width: 50%;
+        height: fit-content;
+        border: 1px solid;
+        padding: 8px;
+        margin: 4px;
+        &__header{
+            width: 100%;
+            height: 50px;
+            position: relative;
+            &__title{
+              max-width: 180px;
+              margin: 8px;
+              word-wrap: break-word;   
+            }
+            &__expand{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+        }
+        &__detail{
+            width: 100%;
+            height: fit-content;
+            overflow-y:scroll;
+            visibility: collapse;
+        }
+        &__detail--visible{
+            width: 100%;
+            height: fit-content;
+            visibility: visible;
+            overflow-y:scroll;
+        }
+    }
+}

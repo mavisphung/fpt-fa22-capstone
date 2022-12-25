@@ -1,0 +1,266 @@
+[
+    {
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "ADMIN"
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 2,
+        "fields": {
+            "name": "MEMBER"
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 3,
+        "fields": {
+            "name": "DOCTOR"
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 4,
+        "fields": {
+            "name": "PATIENT"
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 5,
+        "fields": {
+            "name": "MANAGER"
+        }
+    },
+    {
+        "model": "specialist.Specialist",
+        "pk": 1,
+        "fields": {
+            "createdAt": "2022-10-02 04:07:25",
+            "updatedAt": "2022-10-02 04:07:25",
+            "name": "Đa khoa",
+            "description": "Khám tổng quát và đa dạng như tim mạch, tâm lý, khoa nhi, tai mũi họng, da liễu, v.v"
+        }
+    },
+    {
+        "model": "specialist.Specialist",
+        "pk": 2,
+        "fields": {
+            "createdAt": "2022-10-02 04:07:25",
+            "updatedAt": "2022-10-02 04:07:25",
+            "name": "Tim mạch",
+            "description": "Bao gồm các bệnh liên quan đến tim mạch như huyết áp cao, huyết áp thấp, tức ngực, ..."
+            
+        }
+    },
+    {
+        "model": "specialist.Specialist",
+        "pk": 3,
+        "fields": {
+            "createdAt": "2022-10-02 04:07:25",
+            "updatedAt": "2022-10-02 04:07:25",
+            "name": "Khoa nhi",
+            "description": "Bao gồm các bệnh của trẻ em từ 1 ~ 16 tuổi"
+        }
+    },
+    {
+        "model": "specialist.Specialist",
+        "pk": 4,
+        "fields": {
+            "createdAt": "2022-10-02 04:07:25",
+            "updatedAt": "2022-10-02 04:07:25",
+            "name": "Da liễu",
+            "description": "Bao gồm các loại bệnh về da liễu như mụn, lậu, giang mai, ..."
+        }
+    },
+    {
+        "model": "specialist.Specialist",
+        "pk": 5,
+        "fields": {
+            "createdAt": "2022-10-02 04:07:25",
+            "updatedAt": "2022-10-02 04:07:25",
+            "name": "Tai mũi họng",
+            "description": "Bao gồm các bệnh liên quan đến tai, mũi và họng"
+        }
+    },
+    {
+        "model": "specialist.Specialist",
+        "pk": 6,
+        "fields": {
+            "createdAt": "2022-10-02 04:07:25",
+            "updatedAt": "2022-10-02 04:07:25",
+            "name": "Cơ xương khớp",
+            "description": "Bao gồm các bệnh liên quan đến cơ, xương, khớp"
+        }
+    },
+    {
+        "model": "specialist.Specialist",
+        "pk": 7,
+        "fields": {
+            "createdAt": "2022-10-02 04:07:25",
+            "updatedAt": "2022-10-02 04:07:25",
+            "name": "Khoa mắt",
+            "description": "Các bệnh liên quan về mắt như cận thị, viễn thị, loạn thị, ..."
+        }
+    },
+    {
+        "model": "specialist.Specialist",
+        "pk": 8,
+        "fields": {
+            "createdAt": "2022-10-02 04:07:25",
+            "updatedAt": "2022-10-02 04:07:25",
+            "name": "Tâm lý",
+            "description": "Bao gồm các bệnh liên quan đến tâm lý như rối loạn tâm lý, trầm cảm, khủng hoảng, ..."
+        }
+    },
+    {
+        "model": "specialist.Specialist",
+        "pk": 9,
+        "fields": {
+            "createdAt": "2022-10-02 04:07:25",
+            "updatedAt": "2022-10-02 04:07:25",
+            "name": "Y học cổ truyền",
+            "description": "Khám theo phương pháp cổ truyền đã được phê duyệt từ Bộ"
+        }
+    },
+    {
+        "model": "service.Service",
+        "pk": 1,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Thăm khám sức khỏe",
+            "description": "Dịch vụ thăm khám theo ngày được quy định trong hợp đồng",
+            "price": 300000.0,
+            "category": "CONTRACT"
+        }
+    },
+    {
+        "model": "service.Service",
+        "pk": 2,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Khám dịch vụ loại 2",
+            "description": "Bệnh nhân đến nơi làm việc của bác sĩ để khám",
+            "price": 450000.0,
+            "category": "AT_DOCTOR_HOME"
+        }
+    },
+    {
+        "model": "service.Service",
+        "pk": 3,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Khám dịch vụ loại 3",
+            "description": "Tiện lợi, nhanh chóng và tiết kiệm thời gian",
+            "price": 400000.0,
+            "category": "ONLINE"
+        }
+    },
+    {
+        "model": "service.Service",
+        "pk": 4,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Khám tổng quát",
+            "description": "Tiện lợi, nhanh chóng và tiết kiệm thời gian",
+            "price": 1200000.0,
+            "category": "AT_PATIENT_HOME"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 1,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Phiếu điện tim"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 2,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Phiếu siêu âm"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 3,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Phiếu chụp X-quang"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 4,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Phiếu ra viện"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 5,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Phiếu xét nghiệm huyết học"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 6,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Đơn thuốc"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 7,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Sinh hiệu"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 8,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Phiếu chẩn đoán"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 9,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Phiếu khác"
+        }
+    },
+    {
+        "model": "instruction.MedicalInstructionCategory",
+        "pk": 10,
+        "fields": {
+            "createdAt": "2022-11-07 04:07:25",
+            "updatedAt": "2022-11-07 04:07:25",
+            "name": "Đơn thuốc từ người giám hộ"
+        }
+    }
+]

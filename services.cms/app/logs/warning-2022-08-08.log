@@ -1,0 +1,14 @@
+[2022-08-08 05:38:18,731] WARNING [django.request.log_response:241] Unauthorized: /user/health-records/
+[2022-08-08 05:42:44,053] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-08 05:55:08,352] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-08 05:55:22,852] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-08 05:55:31,667] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-08 06:46:03,885] WARNING [django.request.log_response:241] Bad Request: /doctor/register/
+[2022-08-08 06:49:06,686] WARNING [django.request.log_response:241] Not Found: /admin2/doctor/6/
+[2022-08-08 06:51:10,068] WARNING [django.request.log_response:241] Forbidden: /admin2/user/6/approved/
+[2022-08-08 06:51:55,150] ERROR [shared.exception_handler.__handle_http404:111] No Doctor matches the given query.
+[2022-08-08 06:51:55,152] WARNING [django.request.log_response:241] Not Found: /admin2/user/6/approved/
+[2022-08-08 06:51:56,563] ERROR [shared.exception_handler.__handle_http404:111] No Doctor matches the given query.
+[2022-08-08 06:51:56,564] WARNING [django.request.log_response:241] Not Found: /admin2/user/6/approved/
+[2022-08-08 06:51:58,110] ERROR [shared.exception_handler.__handle_http404:111] No Doctor matches the given query.
+[2022-08-08 06:51:58,111] WARNING [django.request.log_response:241] Not Found: /admin2/user/6/approved/

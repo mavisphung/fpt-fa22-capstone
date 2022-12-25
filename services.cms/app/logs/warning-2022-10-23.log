@@ -1,0 +1,75 @@
+[2022-10-23 12:43:36,026] WARNING [django.request.log_response:241] Unauthorized: /contract
+[2022-10-23 12:43:47,141] ERROR [django.request.log_response:241] Internal Server Error: /contract
+[2022-10-23 12:44:17,457] ERROR [django.request.log_response:241] Internal Server Error: /contract
+[2022-10-23 12:45:02,886] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:45:42,273] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:47:15,812] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:48:14,263] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:50:13,306] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:53:36,211] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:54:28,580] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:55:06,302] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:57:18,263] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:59:16,153] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 12:59:48,537] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:00:41,447] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:02:37,980] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:03:49,398] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:04:15,983] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:04:50,705] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:05:07,230] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:05:34,591] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:06:10,935] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:07:25,093] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:08:56,475] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:10:40,326] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:11:34,711] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:12:27,632] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:13:30,502] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:14:23,960] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:15:00,471] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:16:19,592] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:19:17,619] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:21:10,909] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:21:39,608] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:28:27,356] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 13:29:20,143] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:47:57,524] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 13:48:30,957] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 20:18:55,928] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 20:31:17,896] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 20:32:25,138] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 14:02:23,849] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 14:03:50,760] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 14:05:17,241] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 14:07:43,685] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 14:07:49,799] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 14:08:41,719] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 14:09:03,706] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 14:10:49,502] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 14:13:39,917] ERROR [django.request.log_response:241] Internal Server Error: /contract/
+[2022-10-23 21:21:54,902] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 21:23:03,899] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 21:26:11,594] WARNING [django.request.log_response:241] Bad Request: /contract/
+[2022-10-23 21:42:36,146] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/3/
+[2022-10-23 21:45:23,118] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/1/
+[2022-10-23 21:45:55,914] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/1/
+[2022-10-23 21:46:30,524] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/1/
+[2022-10-23 21:47:27,438] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/1/
+[2022-10-23 21:50:39,418] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/1/
+[2022-10-23 21:51:22,329] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/1/:action/
+[2022-10-23 21:51:40,734] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/3/approve/
+[2022-10-23 21:52:30,726] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/3/approve/
+[2022-10-23 21:54:55,823] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/3/approve/
+[2022-10-23 21:56:28,039] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/4/cancel/
+[2022-10-23 21:57:12,193] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/4/cancel/
+[2022-10-23 21:58:49,146] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/4/cancel/
+[2022-10-23 21:59:36,088] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/4/cancel/
+[2022-10-23 22:00:48,252] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/4/approve/
+[2022-10-23 22:10:10,187] WARNING [django.request.log_response:241] Not Found: /contract/supervisor/4/cancel/
+[2022-10-23 22:11:04,694] WARNING [django.request.log_response:241] Not Found: /contract/supervisor/4/cancel/
+[2022-10-23 22:11:50,518] WARNING [django.request.log_response:241] Not Found: /contract/supervisor/3/sign/
+[2022-10-23 22:12:19,434] WARNING [django.request.log_response:241] Not Found: /contract/supervisor/3/sign/
+[2022-10-23 22:13:53,485] WARNING [django.request.log_response:241] Not Found: /contract/supervisor/3/sign/
+[2022-10-23 22:14:24,305] WARNING [django.request.log_response:241] Not Found: /contract/supervisor/int:contract/:action
+[2022-10-23 22:15:04,739] ERROR [django.request.log_response:241] Internal Server Error: /contract/supervisor/3/sign

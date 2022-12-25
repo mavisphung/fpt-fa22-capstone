@@ -1,0 +1,26 @@
+[2022-08-18 03:14:43,700] WARNING [django.request.log_response:241] Unauthorized: /appointments/
+[2022-08-18 03:14:51,705] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 03:15:13,808] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 03:29:54,527] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 03:44:18,281] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 03:46:04,126] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 03:56:34,526] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 03:57:05,187] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 03:57:31,242] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 03:58:47,875] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 03:59:47,431] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-08-18 04:19:45,835] ERROR [shared.exception_handler.__handle_attribute_error:121] 'Appointment' object has no attribute 'time'
+[2022-08-18 04:19:45,839] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-08-18 04:20:16,855] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-08-18 04:21:02,494] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-08-18 04:44:46,034] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 04:45:47,637] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 04:50:27,840] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 04:51:47,258] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 05:20:00,122] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 05:20:41,939] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 05:22:21,422] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 05:22:33,075] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 05:23:01,857] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 05:23:18,644] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-08-18 05:23:29,333] WARNING [django.request.log_response:241] Bad Request: /appointments/

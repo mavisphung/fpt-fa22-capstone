@@ -1,0 +1,244 @@
+{
+    "success": true,
+    "status": 200,
+    "message": "GET_DATA_SUCCEEDED",
+    "data": {
+        "recordId": 1,
+        "patient": {
+            "id": 2,
+            "firstName": "Phong Code",
+            "lastName": "Hoang",
+            "dob": "2000-02-12",
+            "avatar": "https://cuu-be.s3.amazonaws.com/cuu-be/2022/6/28/O2VWFV.png",
+            "age": 22,
+            "gender": "OTHER"
+        },
+        "supervisor": {
+            "id": 13,
+            "firstName": "Huy",
+            "lastName": "Phùng Chí",
+            "phoneNumber": "0349797318",
+            "email": "nguoibimatthegioi@gmail.com"
+        },
+        "doctor": {
+            "id": 5,
+            "firstName": "Huy",
+            "lastName": "Phùng Chí",
+            "email": "doctor@gmail.com"
+        },
+        "instructions": [
+            {
+                "id": 1,
+                "createdAt": "2022-10-04T16:30:41.426413Z",
+                "category": "Xét nghiệm khác",
+                "requirement": [
+                    "Xét nghiệm nồng độ ure phân",
+                    "Xét nghiệm nồng độ lưu huỳnh"
+                ],
+                "status": "PENDING",
+                "submissions": null
+            },
+            {
+                "id": 2,
+                "createdAt": "2022-10-04T16:31:57.570133Z",
+                "category": "Xét nghiệm khác",
+                "requirement": [
+                    "Xét nghiệm nồng độ ure phân",
+                    "Xét nghiệm nồng độ lưu huỳnh"
+                ],
+                "status": "COMPLETED",
+                "submissions": "haha"
+            },
+            {
+                "id": 3,
+                "createdAt": "2022-10-04T16:35:11.701867Z",
+                "category": "Xét nghiệm khác",
+                "requirement": [
+                    "Xét nghiệm nồng độ ure phân",
+                    "Xét nghiệm nồng độ lưu huỳnh"
+                ],
+                "status": "PENDING",
+                "submissions": null
+            }
+        ],
+        "isPatientProvided": false,
+        "symptoms": [
+            {
+                "title": "Ho",
+                "shortDescription": "Ho có đàm, liên tục, cụ thể từ ngày 1/8"
+            },
+            {
+                "title": "Sổ mũi",
+                "shortDescription": "Nước mũi có màu xanh đậm"
+            },
+            {
+                "title": "Thoát vị đĩa đệm đốt cột sống L2",
+                "shortDescription": null
+            }
+        ],
+        "prescriptions": [
+            {
+                "id": 89,
+                "createdAt": "2022-10-05T16:31:35.759857Z",
+                "fromDate": "2022-10-05",
+                "toDate": "2022-10-15",
+                "cancelReason": null,
+                "details": [
+                    {
+                        "name": "Amlodipin 5mg Nang Pháp",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    },
+                    {
+                        "name": "Betadine SK 125ml",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    }
+                ],
+                "recordId": 1
+            },
+            {
+                "id": 90,
+                "createdAt": "2022-10-05T16:31:41.672515Z",
+                "fromDate": "2022-10-05",
+                "toDate": "2022-10-15",
+                "cancelReason": null,
+                "details": [
+                    {
+                        "name": "Amlodipin 5mg Nang Pháp",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    },
+                    {
+                        "name": "Betadine SK 125ml",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    }
+                ],
+                "recordId": 1
+            },
+            {
+                "id": 91,
+                "createdAt": "2022-10-05T16:31:48.519026Z",
+                "fromDate": "2022-10-05",
+                "toDate": "2022-10-15",
+                "cancelReason": null,
+                "details": [
+                    {
+                        "name": "Amlodipin 5mg Nang Pháp",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    },
+                    {
+                        "name": "Betadine SK 125ml",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    }
+                ],
+                "recordId": 1
+            },
+            {
+                "id": 93,
+                "createdAt": "2022-10-05T16:40:01.952075Z",
+                "fromDate": "2022-10-05",
+                "toDate": "2022-10-15",
+                "cancelReason": null,
+                "details": [
+                    {
+                        "name": "Amlodipin 5mg Nang Pháp",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    },
+                    {
+                        "name": "Betadine SK 125ml",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    }
+                ],
+                "recordId": 1
+            },
+            {
+                "id": 94,
+                "createdAt": "2022-10-05T16:40:48.738815Z",
+                "fromDate": "2022-10-05",
+                "toDate": "2022-10-15",
+                "cancelReason": null,
+                "details": [
+                    {
+                        "name": "Amlodipin 5mg Nang Pháp",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    },
+                    {
+                        "name": "Betadine SK 125ml",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    }
+                ],
+                "recordId": 1
+            },
+            {
+                "id": 95,
+                "createdAt": "2022-10-05T16:41:45.434515Z",
+                "fromDate": "2022-10-05",
+                "toDate": "2022-10-15",
+                "cancelReason": null,
+                "details": [
+                    {
+                        "name": "Amlodipin 5mg Nang Pháp",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    },
+                    {
+                        "name": "Betadine SK 125ml",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    }
+                ],
+                "recordId": 1
+            },
+            {
+                "id": 96,
+                "createdAt": "2022-10-05T16:43:05.738448Z",
+                "fromDate": "2022-10-05",
+                "toDate": "2022-10-15",
+                "cancelReason": null,
+                "details": [
+                    {
+                        "name": "Amlodipin 5mg Nang Pháp",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    },
+                    {
+                        "name": "Betadine SK 125ml",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    }
+                ],
+                "recordId": 1
+            },
+            {
+                "id": 97,
+                "createdAt": "2022-10-05T16:44:31.427846Z",
+                "fromDate": "2022-10-05",
+                "toDate": "2022-10-15",
+                "cancelReason": null,
+                "details": [
+                    {
+                        "name": "Amlodipin 5mg Nang Pháp",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    },
+                    {
+                        "name": "Betadine SK 125ml",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    }
+                ],
+                "recordId": 1
+            },
+            {
+                "id": 100,
+                "createdAt": "2022-10-05T16:50:03.429764Z",
+                "fromDate": "2022-10-05",
+                "toDate": "2022-10-15",
+                "cancelReason": null,
+                "details": [
+                    {
+                        "name": "Amlodipin 5mg Nang Pháp",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    },
+                    {
+                        "name": "Betadine SK 125ml",
+                        "guide": "Sáng 1 viên, Tối 1/2 viên"
+                    }
+                ],
+                "recordId": 1
+            }
+        ]
+    }
+}

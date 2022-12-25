@@ -1,0 +1,30 @@
+{
+    "title": "Welcome to react using react-i18next",
+    "patient": {
+        "fullName": "Họ và tên",
+        "gender": "Giới tính",
+        "dob":"Ngày sinh",
+        "address": "Địa chỉ",
+        "city": "thành phố/tỉnh",
+        "chiefOfComplaint":"Lí do theo dõi",
+        "StartDate": "Ngày bắt đầu theo dõi",
+        "EndDate":"Ngày kết thúc theo dõi",
+        "followDate":"Buổi theo dõi kế tiếp",
+        "job": "Công việc",
+        "format": "Hình thưc theo dõi"
+    },
+    "session":{
+        "no": "Buổi theo dõi",
+        "date": "Ngày tiến hành",
+        "time": "thời gian",
+        "status": "Trạng thái"
+    },
+    "prescription":{
+        "fromDate": "Ngày bắt đầu",
+        "toDate": "Ngày kết thúc",
+        "cancelReason": "Lí do hủy",
+        "detail": "Chi tiết đơn thuốc",
+        "diagnose": "Chẩn đoán",
+        "no": "STT"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "title": "Welcome to react using react-i18next",
+    "patient": {
+        "fullName": "Fullname",
+        "gender": "Gender",
+        "dob":"Birthdate",
+        "address": "Address"
+    }
+}

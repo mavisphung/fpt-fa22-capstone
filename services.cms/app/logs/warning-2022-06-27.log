@@ -1,0 +1,21 @@
+[2022-06-27 09:03:10,788] WARNING [django.request.log_response:241] Not Found: /user/me/password/
+[2022-06-27 09:05:47,195] WARNING [django.request.log_response:241] Unauthorized: /user/me/password/
+[2022-06-27 09:09:04,608] WARNING [django.request.log_response:241] Bad Request: /user/me/password/
+[2022-06-27 09:21:35,842] WARNING [django.request.log_response:241] Bad Request: /user/existed/
+[2022-06-27 09:21:42,220] WARNING [django.request.log_response:241] Bad Request: /user/existed/
+[2022-06-27 09:38:23,233] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 09:38:33,765] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 09:43:47,309] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 09:43:54,320] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 09:43:56,265] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 09:44:25,863] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 09:45:01,868] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 09:45:46,644] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 09:46:06,750] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 09:48:25,174] WARNING [django.request.log_response:241] Not Found: /user/me/change-email/
+[2022-06-27 15:25:37,002] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 15:25:56,008] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-27 15:26:13,945] WARNING [django.request.log_response:241] Bad Request: /user/me/existed/
+[2022-06-27 15:26:34,480] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-27 15:26:42,505] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-27 15:31:40,442] WARNING [django.request.log_response:241] Not Found: /user/me/change-email/

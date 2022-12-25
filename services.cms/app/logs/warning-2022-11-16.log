@@ -1,0 +1,24 @@
+[2022-11-16 04:53:17,023] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Specialist' object has no attribute '_add_hints'
+[2022-11-16 04:53:17,026] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+[2022-11-16 04:54:28,340] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+[2022-11-16 05:18:20,675] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+[2022-11-16 05:21:30,679] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+[2022-11-16 05:26:45,514] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+[2022-11-16 05:57:46,085] ERROR [shared.exception_handler.__handle_attribute_error:122] 'tuple' object has no attribute '__dict__'
+[2022-11-16 05:57:46,090] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+[2022-11-16 05:58:18,400] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+[2022-11-16 06:06:52,305] ERROR [django.request.log_response:241] Internal Server Error: /api/doctor/search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`

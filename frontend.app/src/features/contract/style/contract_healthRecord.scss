@@ -1,0 +1,88 @@
+@import '../../../../src/style/mixin.module.scss';
+
+$m: 8px;
+$white: #FFFDFD;
+$blue: #EFF1F7;
+
+.contract_health_record {
+    @include box-sizing(100%, calc(275px), 0, 0, 0);
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    .contract_health_record_header {
+        @include box-sizing(calc(100% - $m * 2), 40px, 8px, 0, 0);
+    }
+
+    .contract_health_record_content {
+        @include box-sizing(calc(100%), fit-content, 0px, 0, 0);
+        overflow-y: scroll;
+        background-color: $blue;
+
+        .contract_health_record_content_section {
+            @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 0, 0);
+            .contract_health_record_item {
+                @include box-sizing(calc(100% - $m * 2), fit-content, 0px, 0, 0);
+                min-height: 90px;
+                background-color: $white;
+                display: flex;
+                flex-wrap: wrap;
+
+                .contract_health_record_item_disease {
+                    @include box-sizing(calc(40% - $m * 2), calc(90px), 8px, 0, 0);
+                    position: relative;
+
+                    .contract_health_record_item_disease_wrapper {
+                        @include box-sizing(calc(100% - $m * 2), calc(50px), 0px, 0, 0);
+                        position: absolute;
+                        left: 10px;
+                        top: 20%;
+                        transform: translateY(-20%);
+                    }
+                }
+
+                .contract_health_record_item_tickets {
+                    @include box-sizing(calc(60% - $m * 2), calc(90px), 8px, 0, 0);
+                    display: flex;
+                    flex-direction: column;
+
+                    .contract_health_record_item_tickets_wrapper {
+                        @include box-sizing(100%, 60px, 0px, 0, 0);
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .contract_health_record_item_ticket_detail {
+                            @include box-sizing(fit-content, 40px, 2px, 0, 0);
+                            min-width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+div.vertical_divider_wrapper {
+    @include box-sizing(calc(2px), calc(100%), 0px, 0, 0);
+    min-height: 90px;
+    position: relative;
+    align-self: stretch;
+
+    .vertical_divider {
+        background-color: $blue;
+        @include box-sizing(calc(2px), calc(50%), 0px, 0, 0);
+        @include center(50%);
+    }
+}
+
+
+
+.title {
+    font-weight: 700;
+    color: #88959F;
+}
+
+.text_bold {
+    font-weight: 700;
+}

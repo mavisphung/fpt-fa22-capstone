@@ -1,0 +1,640 @@
+@import '../../../../src/style/mixin.module.scss';
+
+$m: 8px;
+$p: 8px;
+$xr: 4px;
+$lr: 10px;
+
+div.divider {
+    @include box-sizing(4px, 100%, 0, 0, 0);
+    background-color: #EFF1F7;
+}
+
+div.verticalDivider {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    @include box-sizing(calc(1px), 50%, 0, 0, 0px);
+    min-height: 42px;
+    background-color: #6E6363;
+    display: block;
+}
+
+.prescription_container {
+    @include box-sizing(calc(95% - $m * 2), calc(90% - $m * 2), 0px, 0, 0);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    .prescription_wrapper {
+        background-color: #EFF1F7;
+        @include box-sizing(calc(100% - $m * 2), calc(100% - $m * 2), 8px, 0px, 4px);
+        position: relative;
+        overflow: hidden;
+        .prescription_header {
+            @include box-sizing(100%, 50px, 0, 0, 0);
+            padding-left: 10px;
+            padding-top: 8px;
+
+            p {
+                font-weight: 700;
+            }
+        }
+
+        .prescription_body {
+            @include box-sizing(100%, fit-content, 0, 0, 0);
+        }
+
+        .prescription_footer {
+            @include box-sizing(100%, 40px, 0, 0, 0);
+            position: absolute;
+            bottom: 16px;
+            left: 0px;
+            display: flex;
+            justify-content: flex-end;
+
+            .btnCloseAction {
+                @include box-sizing(100px, 40px, 0px, 0, 4px);
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            .btnCancelAction {
+                @include box-sizing(120px, 40px, 0px, 0, 4px);
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.prescription_date {
+    @include box-sizing(100%, 40px, 0, 0, 0);
+    display: flex;
+    justify-content: flex-start;
+
+    .prescription_date_item {
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        @include box-sizing(200px, 40px, 8px, 0, 30px);
+        position: relative;
+
+        p {
+            padding: 0;
+            margin: 0;
+            margin-top: calc(24px / 3);
+            text-align: center;
+        }
+    }
+}
+
+.prescription_diagnose {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 0, 0);
+
+    h6 {
+        @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 0, 0);
+        font-weight: 700;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .prescription_diagnose_item {
+        @include box-sizing(calc(100% / 3 - $m * 2), 40px, 8px, 8px, 30px);
+        border: #FFFDFD 1px solid;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        min-width: 300px;
+        text-align: center;
+    }
+}
+
+
+.prescription_details_content_wrapper {
+    @include box-sizing(calc(100% - $m * 2), calc(120px), 8px, 0, 0);
+}
+
+.prescription_details_wrapper {
+    @include box-sizing(calc(100% - $m * 2), 280px, 8px, 0, 0);
+
+    h6 {
+        @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 0, 0);
+        font-weight: 700;
+    }
+
+    .prescription_details_content {
+        @include box-sizing(calc(100%), calc(300px), 0px, 0, 0);
+        // overflow-y: scroll;
+        background-color: #EFF1F7;
+    }
+}
+
+.prescription_detail_item {
+    background-color: #FFFDFD;
+    display: flex;
+    @include box-sizing(calc(100% - $m * 2), 100px, 8px, 0, $xr);
+    overflow: auto;
+
+    .prescription_detail_name {
+        @include box-sizing(45%, calc(100% - $m * 2), 8px, 0, $xr);
+    }
+
+    .prescription_detail_usage {
+        @include box-sizing(40%, calc(100% - $m * 2), 8px, 0, $xr);
+
+        p {
+            word-break: break-all;
+        }
+    }
+
+    .prescription_detail_note {
+        @include box-sizing(15%, calc(100% - $m * 2), 8px, 0, $xr);
+    }
+}
+
+
+// .prescription_creation_form {
+//     @include box-sizing(calc(80% - $m * 2), calc(100% - $m * 2), 8px, 0, 0);
+//     position: fixed;
+// }
+
+
+// prescription creation form
+
+input.text_input {
+    display: inline;
+    width: 100%;
+    padding: 10px;
+    border: 0px solid #000000;
+    appearance: none;
+    height: 40px;
+    background-color: inherit;
+}
+
+input.date_input {
+    display: inline;
+    width: 100%;
+    padding: 10px;
+    border: 0px solid #000000;
+    appearance: none;
+    height: 40px;
+    background-color: inherit;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #FFFDFD;
+}
+
+input[type="text"]:hover {
+    .diseaseSuggestion {
+        display: block;
+    }
+}
+
+.prescription_creation_form_wrapper {
+    @include box-sizing(calc(100% - $m * 2), calc(100% - $m * 2), 8px, 0px, 0px);
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.prescription_creation_form {
+    background-color: #F2F5F9;
+    left: calc((100% - 80% - $m * 2) / 2);
+    top: 8px;
+    @include box-sizing(calc(80% - $m * 2), calc(90% - $m * 2), 0px, 0px, 0px);
+    position: relative;
+
+    .prescription_creation_form_content {
+        @include box-sizing(calc(100%), calc(100% - 60px), 0px, 0px, 0px);
+        overflow-y: scroll;
+
+        .prescription_diagnose_form {
+            @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 8px, 4px);
+
+            .selection_list {
+                @include box-sizing(calc(99% - $m * 2), fit-content, 8px, 8px, 4px);
+                margin-left: 8px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+
+                .prescription_diagnose_item {
+                    @include box-sizing(fit-content, 40px, 8px, 8px, 30px);
+                    border: #FFFDFD 1px solid;
+                    background-color: white;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                    // max-width: 300px;
+                    text-align: center;
+                }
+            }
+
+            .prescription_diagnose_form_addInput {
+                @include box-sizing(calc(98% - $m * 2), fit-content, 8px, 8px, 4px);
+                margin-left: 24px;
+                min-height: 40px;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                background-color: #FFFDFD;
+
+                &:hover {
+                    .diseaseSuggestion {
+                        display: block;
+                        background-color: #FFFDFD;
+                    }
+                }
+
+                input.focus_input {
+                    &:hover {
+                        .diseaseSuggestion {
+                            display: block;
+                            background-color: #FFFDFD;
+                        }
+                    }
+                }
+
+                .diseaseSuggestion {
+                    @include box-sizing(calc(100% - $m * 6), 300px, 8px, 8px, 0px);
+                    z-index: 100;
+                    top: 48px;
+                    position: absolute;
+                    display: none;
+                    overflow-y: scroll;
+
+                    .disease {
+                        border: 0.2 px solid;
+                        @include box-sizing(calc(100% - $m * 2), 50px, 8px, 8px, 0px);
+                    }
+                }
+
+                .button_wrapper {
+                    @include box-sizing(calc(50px), calc(40px), 0px, 0px, 0);
+                    margin-right: 10px;
+                    position: relative;
+
+                    svg {
+                        @include center(50%);
+                    }
+                }
+            }
+        }
+
+        .prescription_datetime {
+            @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 8px, 4px);
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            .field--half {
+                @include box-sizing(calc(50% - $m * 2), fit-content, 0px, 0px, 0px);
+            }
+        }
+
+        .prescription_prescription_form {
+            position: absolute;
+            top: 0;
+            z-index: 100;
+            background-color: #FFFDFD;
+            opacity: 0.9;
+            @include box-sizing(calc(100%), calc(100%), 0px, 0px, 0px);
+
+            .prescription_prescription_form_add {
+                background-color: #EFF1F7;
+                display: flex;
+                flex-wrap: wrap;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                @include box-sizing(calc(500px), calc(500px), 0px, 0px, 0px);
+                position: relative;
+
+                .form_title {
+                    @include box-sizing(calc(100%), fit-content, 0px, 0px, 0px);
+                }
+
+                div.field {
+                    @include box-sizing(calc(100% - $m * 2), fit-content, 0px, 0px, 0px);
+
+                    .text_input {
+                        @include box-sizing(calc(100% - $m * 2), calc(40px), 8px, 8px, 0px);
+                        appearance: none;
+                        border: 0px;
+                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                        background-color: #FFFDFD;
+                    }
+                    h6 {
+                        margin: 8px;
+                    }
+
+                    div.medicineSuggestion {
+                        @include box-sizing(calc(100% - $m * 4), calc(300px), 8px, 8px, 0px);
+                        background-color: #FFFDFD;
+                        display: none;
+                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                        z-index: 100;
+                        position: absolute;
+                        top: 70px;
+
+                        input[type="text"] {
+                            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                            background-color: #FFFDFD;
+                        }
+
+                        .suggest_result {
+                            @include box-sizing(calc(100% - $m * 2), calc(200px), 8px, 8px, 0px);
+                            overflow-y: scroll;
+
+                            p {
+                                @include box-sizing(calc(100% - $m * 2), calc(24px), 8px, 8px, 0px);
+                            }
+                        }
+                    }
+
+                    &__button--half {
+                        @include box-sizing(calc(120px), 40px, 8px, 0px, 8px);
+                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                    }
+                }
+
+                .field--half {
+                    @include box-sizing(calc(50% - $m * 2), fit-content, 0px, 0px, 0px);
+                }
+
+                .field--hover {
+                    &:hover {
+                        .medicineSuggestion {
+                            display: block;
+                        }
+                    }
+                }
+
+                .field--action {
+                    display: flex;
+                    justify-content: flex-end;
+
+                }
+            }
+        }
+
+        .prescription_medicine_list {
+            .prescription_medicine_list_title {
+                @include box-sizing(calc(100% - $m * 2), 40px, 8px, 0, 0);
+                display: flex;
+
+                h5 {
+                    width: calc(100% - 160px)
+                }
+            }
+
+            .prescription_medicine_list_action {
+                @include box-sizing(calc(100% - $m * 2), 40px, 8px, 0, 0);
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .prescription_medicine_list_wrapper {
+                @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 8px, 0px);
+
+                // overflow-y: scroll;
+                .prescription_medicine_list_item {
+                    @include box-sizing(calc(100% - $m * 2), 80px, 8px, 8px, 4px);
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    background-color: #FFFDFD;
+
+                    .prescription_medicine_list_item_detail {
+                        @include box-sizing(calc(100% - 44px - $m * 2), fit-content, 0px, 0px, 0px);
+
+                        h6 {
+                            font-weight: 700;
+                        }
+
+                        p {
+                            padding: 0px;
+                        }
+                    }
+                }
+
+            }
+
+            @include box-sizing(calc(100% - $m * 2), 300px, 8px, 8px, 0px);
+        }
+    }
+
+    .prescription_creation_form_footer {
+        position: sticky;
+        bottom: 0px;
+        @include box-sizing(calc(100% - $m * 2), calc(50px), 8px, 0px, 0px);
+
+        .half-width {
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            @include box-sizing(calc(50% - $m * 2), calc(40px), 0px, 8px, 4px);
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+}
+
+div.error {
+    @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 0, 0);
+    color: red;
+}
+
+.unit_dropdown {
+    @include box-sizing(calc(100% - $m * 2), 40px, 8px, 0px, 0);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #FFFDFD;
+    position: relative;
+
+    &:hover {
+        .dropdown_option {
+            display: block;
+        }
+    }
+
+    .dropdown_selection {
+        display: flex;
+        @include box-sizing(calc(100%), 40px, 0, 8px, 0);
+        position: relative;
+
+        .dropdown_selection_text {
+            @include box-sizing(calc(100% - 30px), 24px, 0, 0, 0);
+        }
+
+        .icon_container {
+            @include box-sizing(calc(30px), 24px, 0, 0, 0);
+            position: relative;
+
+            .icon {
+                @include center(50%);
+            }
+        }
+    }
+
+    .dropdown_option {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFDFD;
+        display: none;
+        position: absolute;
+        top: 40px;
+        z-index: 100;
+        @include box-sizing(calc(100%), fit-content, 0, 8px, 0);
+
+        .dropdown_option_item {
+            @include box-sizing(calc(100% - 2px), 40px, 0, 0px, 0);
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+button.btnAction {
+    @include box-sizing(180px, 40px, 0px, 0px, 4px);
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+div.icon {
+    width: fit-content;
+    height: fit-content;
+    @include center(50%);
+}
+
+div.remove_action {
+    @include box-sizing(calc(44px), 100%, 0px, 0px, 0px);
+    position: relative;
+}
+
+
+
+// instruction modal
+
+.prescription_modal {
+    @include box-sizing(calc(100%), calc(100%), 0, 0, 0);
+    position: fixed;
+    background-color: #FFFDFD;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+
+    .modal_box {
+        @include center(50%);
+        @include box-sizing(calc(600px), calc(500px), 0, 0, 0);
+        background-color: #EFF1F7;
+
+        .modal_box_header {
+            @include box-sizing(calc(100%), calc(40px), 0, 0, 0);
+
+            h5 {
+                padding: 10px;
+            }
+        }
+
+        .modal_divider {
+            @include box-sizing(calc(100%), calc(2px), 0, 0, 0);
+            background-color: #FFFDFD;
+        }
+
+        .modal_box_content {
+            @include box-sizing(calc(600px), calc(400px), 0, 0, 0);
+
+            .instruction_date {
+                @include box-sizing(calc(100% - $m * 2), calc(60px), 8px, 0, 0);
+                padding-left: 10px;
+
+                p {
+                    padding: 0px;
+                }
+            }
+
+            .instruction_type {
+                @include box-sizing(calc(100% - $m * 2), calc(60px), 8px, 0, 0);
+                padding-left: 10px;
+
+                p {
+                    padding: 0px;
+                }
+            }
+
+            .requirment {
+                h6 {
+                    padding-left: 10px;
+                }
+
+                @include box-sizing(calc(100% - $m * 2), calc(256px), 8px, 0, 0);
+
+                .requirment_detail {
+                    @include box-sizing(calc(100% - $m * 2), fit-content, 8px, 0, 0);
+                    min-height: 40px;
+                    background-color: #FFFDFD;
+                    list-style-type: square;
+
+                    li {
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .modal_box_footer {
+            @include box-sizing(calc(100% - $m * 2), calc(50px), 0px, 0, 0);
+            position: relative;
+        }
+
+        .short_detail {
+            @include box-sizing(calc(100% - $m * 2), calc(50px), 0px, 0, 0);
+        }
+
+        h6 {
+            font-weight: 700;
+        }
+
+        div.wrapperCenter {
+            @include center(50%);
+            @include box-sizing(calc(100%), calc(40px), 0px, 0, 0);
+            margin-left: 8px;
+            display: flex;
+
+            button.btn {
+                @include box-sizing(calc(50%), calc(40px), 0, 0, 4px);
+                border: none;
+                margin-left: 8px;
+                margin-right: 8px;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                background-color: #FFFDFD;
+            }
+        }
+    }
+}
+
+input.focus_input {
+    @include box-sizing(calc(100% - $m * 2), calc(40px), 8px, 8px, 0px);
+    appearance: none;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #FFFDFD;
+}
+
+.field__button--half{
+    @include box-sizing(calc(100% - $m * 2), calc(40px), 8px, 8px, 4px);
+}
+
+div.prescription_horizontal_divider{
+    @include box-sizing(calc(100% - $m * 2), calc(2), 0px, 0px, 0px);
+    background-color: #FFFDFD;
+}

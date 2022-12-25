@@ -1,0 +1,13 @@
+[2022-12-11 22:33:05,921] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/suggestion
+[2022-12-11 22:33:42,969] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/suggestion
+[2022-12-11 22:34:17,802] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/suggestion
+[2022-12-11 22:35:09,766] WARNING [django.request.log_response:241] Forbidden: /contract/doctor/session/suggestion
+[2022-12-11 22:35:25,573] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-11 23:01:54,344] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/session/suggestion
+[2022-12-11 23:01:56,733] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/session/suggestion
+[2022-12-11 23:02:33,195] WARNING [django.request.log_response:241] Not Found: /contract/doctor/session/suggestion/
+[2022-12-11 23:25:45,355] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/suggestion
+[2022-12-11 23:26:49,800] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/suggestion
+[2022-12-11 23:44:22,696] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/suggestion
+[2022-12-11 23:45:32,868] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/suggestion
+[2022-12-11 23:46:04,561] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/suggestion

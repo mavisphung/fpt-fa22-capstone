@@ -1,0 +1,27 @@
+[2022-12-05 12:29:29,770] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-05 12:29:41,328] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-05 12:30:11,968] WARNING [django.request.log_response:241] Forbidden: /appointments/doctor/204/checkin/
+[2022-12-05 12:51:57,658] WARNING [django.request.log_response:241] Forbidden: /appointments/
+[2022-12-05 12:52:15,415] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-05 12:52:21,547] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-12-05 12:53:30,283] WARNING [django.request.log_response:241] Bad Request: /appointments/doctor/204/checkin/
+[2022-12-05 13:36:44,255] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Doctor' object has no attribute 'account_id'
+[2022-12-05 13:36:44,258] ERROR [django.request.log_response:241] Internal Server Error: /appointments/205/
+[2022-12-05 13:41:35,138] WARNING [django.request.log_response:241] Not Found: /slot
+[2022-12-05 13:45:54,061] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 13:46:51,930] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 13:56:12,570] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 13:56:45,861] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 13:58:33,787] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 14:01:06,436] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 14:09:33,665] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 14:15:17,931] ERROR [shared.exception_handler.__handle_attribute_error:122] 'WorkingShift' object has no attribute 'filter'
+[2022-12-05 14:15:17,935] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 14:16:59,469] ERROR [shared.exception_handler.__handle_attribute_error:122] 'WorkingShift' object has no attribute 'filter'
+[2022-12-05 14:16:59,473] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 14:37:42,922] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 14:44:15,576] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 14:45:36,335] ERROR [shared.exception_handler.__handle_attribute_error:122] 'int' object has no attribute 'weekday'
+[2022-12-05 14:45:36,339] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot
+[2022-12-05 14:47:19,692] ERROR [shared.exception_handler.__handle_attribute_error:122] 'int' object has no attribute 'weekday'
+[2022-12-05 14:47:19,699] ERROR [django.request.log_response:241] Internal Server Error: /doctor/slot

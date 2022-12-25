@@ -1,0 +1,99 @@
+[2022-09-28 02:02:45,306] ERROR [shared.exception_handler.__handle_http404:112] Schedule matching query does not exist.
+[2022-09-28 02:02:45,311] WARNING [django.request.log_response:241] Not Found: /user/me/appointments/history/
+[2022-09-28 02:44:06,060] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=99 | run_date=2022-09-28 02:44:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-28 02:44:06,350] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=99 | run_date=2022-09-28 02:44:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-28 02:45:51,741] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-28 02:46:44,618] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-28 02:47:06,047] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=100 | run_date=2022-09-28 02:47:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-28 02:47:06,341] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=100 | run_date=2022-09-28 02:47:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-28 02:47:38,504] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-28 02:48:05,535] WARNING [django_apscheduler.jobstores.handle_execution_event:107] Job 'appointmentId=101 | run_date=2022-09-28 02:48:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-28 02:48:05,945] WARNING [django_apscheduler.jobstores.handle_submission_event:78] Job 'appointmentId=101 | run_date=2022-09-28 02:48:05+00:00' no longer exists! Skipping logging of job execution...
+[2022-09-28 02:58:18,774] ERROR [shared.exception_handler.__handle_http404:112] Schedule matching query does not exist.
+[2022-09-28 02:58:18,775] WARNING [django.request.log_response:241] Not Found: /user/me/appointments/history/
+[2022-09-28 03:00:58,681] WARNING [django.request.log_response:241] Forbidden: /appointments/doctor/
+[2022-09-28 03:03:31,628] ERROR [shared.exception_handler.__handle_http404:112] Schedule matching query does not exist.
+[2022-09-28 03:03:31,629] WARNING [django.request.log_response:241] Not Found: /appointments/35/
+[2022-09-28 03:04:19,721] WARNING [django.request.log_response:241] Not Found: /appointments/35ád/
+[2022-09-28 03:04:29,176] WARNING [django.request.log_response:241] Not Found: /appointments/ádf/
+[2022-09-28 07:15:21,476] WARNING [django.request.log_response:241] Not Found: /appointments/doctor/3
+[2022-09-28 07:17:29,531] WARNING [django.request.log_response:241] Not Found: /appointments/doctor/3
+[2022-09-28 07:18:02,995] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/3
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/appointments/doctor/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2022-09-28 07:19:00,381] WARNING [django.request.log_response:241] Forbidden: /appointments/doctor/3
+[2022-09-28 07:21:14,172] WARNING [django.request.log_response:241] Not Found: /appointments/doctor/3/
+[2022-09-28 07:22:36,080] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing 'add_job' ((2003, "Can't connect to MySQL server on 'capstone.czjd9ym4s3b2.ap-southeast-1.rds.amazonaws.com' ([Errno -2] Name does not resolve)")). Retrying with a new DB connection...
+[2022-09-28 07:22:36,229] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing 'add_job' ((2003, "Can't connect to MySQL server on 'capstone.czjd9ym4s3b2.ap-southeast-1.rds.amazonaws.com' ([Errno -2] Name does not resolve)")). Retrying with a new DB connection...
+[2022-09-28 07:40:32,242] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing 'add_job' ((2003, "Can't connect to MySQL server on 'capstone.czjd9ym4s3b2.ap-southeast-1.rds.amazonaws.com' ([Errno -3] Try again)")). Retrying with a new DB connection...
+[2022-09-28 07:48:11,415] WARNING [django.request.log_response:241] Bad Request: /appointments/doctor/91/checkin/
+[2022-09-28 07:48:20,480] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'strftime'
+[2022-09-28 07:48:20,482] ERROR [django.request.log_response:241] Internal Server Error: /appointments/doctor/92/checkin/
+[2022-09-28 07:49:51,629] WARNING [django.request.log_response:241] Bad Request: /appointments/doctor/92/checkin/
+[2022-09-28 07:50:30,554] WARNING [django.request.log_response:241] Not Found: /appointments/doctor/:appointmentId/checkout/
+[2022-09-28 07:52:18,449] WARNING [django.request.log_response:241] Bad Request: /appointments/doctor/92/checkin/
+[2022-09-28 07:53:09,231] WARNING [django.request.log_response:241] Bad Request: /appointments/doctor/92/checkout/
+[2022-09-28 08:14:54,571] ERROR [django.request.log_response:241] Internal Server Error: /async/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+[2022-09-28 08:17:31,509] ERROR [django.request.log_response:241] Internal Server Error: /async/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 218, in __call__
+    return call_result.result()
+  File "/usr/local/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 284, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+[2022-09-28 08:34:10,117] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2013, 'Lost connection to MySQL server during query')). Retrying with a new DB connection...
+[2022-09-28 08:34:15,136] WARNING [apscheduler.scheduler._process_jobs:955] Error getting due jobs from job store 'default': (2003, "Can't connect to MySQL server on 'capstone.czjd9ym4s3b2.ap-southeast-1.rds.amazonaws.com' ([Errno -3] Try again)")
+[2022-09-28 08:35:16,759] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing 'add_job' ((2003, "Can't connect to MySQL server on 'capstone.czjd9ym4s3b2.ap-southeast-1.rds.amazonaws.com' ([Errno -3] Try again)")). Retrying with a new DB connection...
+[2022-09-28 08:35:30,619] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing '_get_jobs' ((2013, 'Lost connection to MySQL server during query')). Retrying with a new DB connection...
+[2022-09-28 08:36:06,966] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing 'add_job' ((2003, "Can't connect to MySQL server on 'capstone.czjd9ym4s3b2.ap-southeast-1.rds.amazonaws.com' ([Errno -3] Try again)")). Retrying with a new DB connection...
+[2022-09-28 08:36:22,717] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing 'add_job' ((2003, "Can't connect to MySQL server on 'capstone.czjd9ym4s3b2.ap-southeast-1.rds.amazonaws.com' ([Errno -3] Try again)")). Retrying with a new DB connection...
+[2022-09-28 08:37:52,544] WARNING [django_apscheduler.util.func_wrapper:100] DB error executing 'add_job' ((2013, 'Lost connection to MySQL server during query')). Retrying with a new DB connection...
+[2022-09-28 08:50:59,061] WARNING [django.request.log_response:241] Forbidden: /appointments/
+[2022-09-28 08:51:16,405] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-28 08:51:33,207] ERROR [shared.exception_handler.__handle_http404:112] Schedule matching query does not exist.
+[2022-09-28 08:51:33,209] WARNING [django.request.log_response:241] Not Found: /appointments/
+[2022-09-28 08:53:55,655] ERROR [shared.exception_handler.__handle_http404:112] Schedule matching query does not exist.
+[2022-09-28 08:53:55,666] WARNING [django.request.log_response:241] Not Found: /appointments/
+[2022-09-28 08:55:10,537] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-09-28 09:01:42,488] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-28 09:08:55,295] ERROR [django.request.log_response:241] Internal Server Error: /appointments/
+[2022-09-28 12:55:35,327] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'time'
+[2022-09-28 12:55:35,330] ERROR [django.request.log_response:241] Internal Server Error: /appointments/

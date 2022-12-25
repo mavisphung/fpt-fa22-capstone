@@ -1,0 +1,17 @@
+[2022-06-24 02:39:39,243] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-06-24 10:43:57,230] WARNING [django.request.log_response:241] Bad Request: /verify-email/
+[2022-06-24 10:44:17,542] WARNING [django.request.log_response:241] Bad Request: /verify-email/
+[2022-06-24 10:57:48,287] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-24 13:18:45,119] ERROR [user.serializers.validate_email:30] Email validation failed
+[2022-06-24 13:18:45,148] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-24 13:19:22,399] ERROR [shared.utils.send_html_mail:108] EmailThread error: group argument must be None for now
+[2022-06-24 13:19:22,401] ERROR [django.request.log_response:241] Internal Server Error: /register/
+[2022-06-24 13:20:09,242] ERROR [user.serializers.validate_email:30] Email validation failed
+[2022-06-24 13:20:17,361] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-24 13:23:10,471] ERROR [shared.utils.send_html_mail:108] EmailThread error: group argument must be None for now
+[2022-06-24 13:23:10,549] ERROR [django.request.log_response:241] Internal Server Error: /register/
+[2022-06-24 13:25:26,104] ERROR [shared.utils.send_html_mail:108] EmailThread error: group argument must be None for now
+[2022-06-24 13:25:34,330] ERROR [django.request.log_response:241] Internal Server Error: /register/
+[2022-06-24 13:29:05,587] ERROR [shared.utils.send_html_mail:108] EmailThread error: group argument must be None for now
+[2022-06-24 13:29:39,345] ERROR [django.request.log_response:241] Internal Server Error: /register/
+[2022-06-24 13:34:42,144] WARNING [django.request.log_response:241] Unauthorized: /login/

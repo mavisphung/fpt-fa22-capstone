@@ -1,0 +1,129 @@
+.backgroundBody {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  // background-color: #0093e9;
+  // background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  overflow-y: hidden;
+}
+
+.container {
+  // max-width: 700px;
+  width: 90%;
+  height: 90vh;
+  background: white;
+
+  // border-radius: 5px;
+  .title {
+    position: relative;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: var(--black1);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #0093e9;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  .userDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .inputBox {
+      margin: 20px 0 12px 0;
+      width: 30%;
+      .titleLabel {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .inputDiv {
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+      }
+      .inputDiv:focus {
+        border-color: var(--green);
+      }
+    }
+  }
+  .genderDetails {
+    margin: 20px 0;
+    .genderTitle {
+      font-weight: 500;
+    }
+    .category {
+      display: flex;
+      width: 80%;
+      margin: 14px 0;
+      justify-content: space-between;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      input {
+        height: 18px;
+        width: 18px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .buttonSubmit {
+    height: 45px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btnRegister {
+      height: 100%;
+      width: 40%;
+      outline: none;
+      color: #fff;
+      border: none;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      background-color: #0093e9;
+      background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    }
+    .btnRegister:hover {
+      background-color: #0093e9;
+      background-image: linear-gradient(320deg, #0093e9 0%, #80d0c7 100%);
+    }
+  }
+}
+
+.titleLabel::after {
+  content: '*';
+  color: red;
+}
+
+.genderTitle::after {
+  content: '*';
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.2em !important;
+    margin-bottom: 8px !important;
+  }
+  .inputBox {
+    margin: 6px 0 10px 0 !important;
+  }
+  .buttonSubmit {
+    height: 40px !important;
+    margin: 20px 0 0 0 !important;
+  }
+}

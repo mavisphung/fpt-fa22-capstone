@@ -1,0 +1,13 @@
+[2022-09-12 11:58:18,764] ERROR [apscheduler.scheduler._process_jobs:987] Error submitting job "RunJobView.do_something (trigger: interval[0:00:05], next run at: 2022-09-12 11:58:18 UTC)" to executor "default"
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/apscheduler/schedulers/base.py", line 978, in _process_jobs
+    executor.submit_job(job, run_times)
+  File "/usr/local/lib/python3.9/site-packages/apscheduler/executors/base.py", line 71, in submit_job
+    self._do_submit_job(job, run_times)
+  File "/usr/local/lib/python3.9/site-packages/apscheduler/executors/pool.py", line 28, in _do_submit_job
+    f = self._pool.submit(run_job, job, job._jobstore_alias, run_times, self._logger.name)
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 167, in submit
+    raise RuntimeError('cannot schedule new futures after shutdown')
+RuntimeError: cannot schedule new futures after shutdown
+[2022-09-12 12:21:32,174] ERROR [django.request.log_response:241] Internal Server Error: /run-job/
+[2022-09-12 12:29:38,998] ERROR [django.request.log_response:241] Internal Server Error: /run-job/

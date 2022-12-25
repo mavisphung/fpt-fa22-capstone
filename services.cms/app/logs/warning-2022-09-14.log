@@ -1,0 +1,15 @@
+[2022-09-14 04:39:41,520] WARNING [django.request.log_response:241] Unauthorized: /appointments/
+[2022-09-14 04:40:43,090] WARNING [django.request.log_response:241] Bad Request: /appointments/
+[2022-09-14 06:06:15,115] ERROR [shared.exception_handler.__handle_attribute_error:122] 'NoneType' object has no attribute 'pk'
+[2022-09-14 06:06:15,123] ERROR [django.request.log_response:241] Internal Server Error: /user/me/appointments/
+[2022-09-14 11:24:28,644] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-09-14 11:47:02,361] WARNING [google.auth.compute_engine._metadata.ping:99] Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 111] Connection refused
+[2022-09-14 11:47:02,367] WARNING [google.auth.compute_engine._metadata.ping:99] Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2022-09-14 11:47:02,372] WARNING [google.auth.compute_engine._metadata.ping:99] Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2022-09-14 11:47:02,374] WARNING [google.auth._default._get_gce_credentials:290] Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-14 11:47:02,401] ERROR [django.request.log_response:241] Internal Server Error: /push-notification/
+[2022-09-14 11:53:44,137] WARNING [google.auth.compute_engine._metadata.ping:99] Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 111] Connection refused
+[2022-09-14 11:53:44,140] WARNING [google.auth.compute_engine._metadata.ping:99] Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2022-09-14 11:53:44,145] WARNING [google.auth.compute_engine._metadata.ping:99] Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2022-09-14 11:53:44,146] WARNING [google.auth._default._get_gce_credentials:290] Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-14 11:53:44,163] ERROR [django.request.log_response:241] Internal Server Error: /push-notification/

@@ -1,0 +1,16 @@
+[2022-09-30 06:51:59,503] WARNING [django.request.log_response:241] Forbidden: /doctor/shifts/
+[2022-09-30 13:08:58,658] WARNING [django.request.log_response:241] Not Found: /favicon.ico
+[2022-09-30 13:09:14,123] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-30 13:10:04,996] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-30 13:10:09,342] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-30 13:15:46,923] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-30 13:16:24,478] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-30 13:18:55,317] ERROR [shared.exception_handler.__handle_attribute_error:122] 'Response' object has no attribute 'get'
+[2022-09-30 13:18:55,321] ERROR [django.request.log_response:241] Internal Server Error: /fetch-distance/
+[2022-09-30 13:19:52,743] ERROR [django.request.log_response:241] Internal Server Error: /api/suggest/doctor/5/
+[2022-09-30 13:31:36,085] WARNING [django.request.log_response:241] Bad Request: /fetch-distance/
+[2022-09-30 13:34:41,461] WARNING [django.request.log_response:241] Bad Request: /fetch-distance/
+[2022-09-30 13:43:21,322] WARNING [django.request.log_response:241] Bad Request: /fetch-distance/
+[2022-09-30 14:08:19,120] WARNING [django.request.log_response:241] Bad Request: /fetch-distance/
+[2022-09-30 14:08:57,960] WARNING [django.request.log_response:241] Bad Request: /fetch-distance/
+[2022-09-30 14:09:15,108] WARNING [django.request.log_response:241] Bad Request: /fetch-distance/

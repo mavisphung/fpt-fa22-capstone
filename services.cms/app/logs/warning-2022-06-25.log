@@ -1,0 +1,371 @@
+[2022-06-25 04:18:11,591] ERROR [user.serializers.validate_email:31] Email validation failed
+[2022-06-25 04:18:11,624] WARNING [django.request.log_response:241] Bad Request: /register/
+[2022-06-25 04:25:05,484] ERROR [django.request.log_response:241] Internal Server Error: /user/activate/
+[2022-06-25 04:30:30,215] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 04:30:36,010] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 04:30:42,941] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 04:30:49,894] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 04:49:00,597] WARNING [django.request.log_response:241] Bad Request: /user/existed/
+[2022-06-25 04:49:30,392] WARNING [django.request.log_response:241] Bad Request: /user/existed/
+[2022-06-25 05:23:50,801] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:26:36,086] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:27:20,762] ERROR [django.request.log_response:241] Internal Server Error: /user/activate/
+[2022-06-25 05:28:24,976] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:29:46,931] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:30:54,190] ERROR [django.request.log_response:241] Internal Server Error: /user/activate/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/src/app/user/views.py", line 87, in create
+    serializer.is_valid(raise_exception = True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "/usr/src/app/user/serializers.py", line 209, in validate
+    raise CustomValidationError(message = ResponseMessage.EXPIRED_VERIFY_CODE)
+shared.exceptions.CustomValidationError: A server error occurred.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 135, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context)
+  File "/usr/src/app/shared/exception_handler.py", line 100, in __handle_custom_validation_error
+    message = exc.message
+AttributeError: 'Response' object has no attribute 'message'
+[2022-06-25 05:31:58,751] ERROR [django.request.log_response:241] Internal Server Error: /user/activate/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/src/app/user/views.py", line 87, in create
+    serializer.is_valid(raise_exception = True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "/usr/src/app/user/serializers.py", line 209, in validate
+    raise CustomValidationError(message = ResponseMessage.EXPIRED_VERIFY_CODE)
+shared.exceptions.CustomValidationError: A server error occurred.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 137, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context)
+  File "/usr/src/app/shared/exception_handler.py", line 102, in __handle_custom_validation_error
+    message = exc.message
+AttributeError: 'Response' object has no attribute 'message'
+[2022-06-25 05:33:01,358] WARNING [django.request.log_response:241] Unauthorized: /user/activate/
+[2022-06-25 05:33:26,990] WARNING [django.request.log_response:241] Unauthorized: /user/activate/
+[2022-06-25 05:33:32,721] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-25 05:33:42,021] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-25 05:33:50,076] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-25 05:34:03,118] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-25 05:34:05,063] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-25 05:34:06,363] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-25 05:34:07,097] ERROR [django.request.log_response:241] Internal Server Error: /login/
+[2022-06-25 05:35:22,442] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-25 05:35:32,087] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/parsers.py", line 65, in parse
+    return json.load(decoded_stream, parse_constant=parse_constant)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/utils/json.py", line 31, in load
+    return json.load(*args, **kwargs)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/local/lib/python3.9/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 5 column 1 (char 98)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 17, in post
+    serializer: CustomTokenObtainSerializer = self.get_serializer(data = request.data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/request.py", line 216, in data
+    self._load_data_and_files()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/request.py", line 279, in _load_data_and_files
+    self._data, self._files = self._parse()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/request.py", line 354, in _parse
+    parsed = parser.parse(stream, media_type, self.parser_context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/parsers.py", line 67, in parse
+    raise ParseError('JSON parse error - %s' % str(exc))
+rest_framework.exceptions.ParseError: JSON parse error - Expecting property name enclosed in double quotes: line 5 column 1 (char 98)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 147, in custom_exception_handler
+    return cached_exceptions[exception_name](exception, context)
+  File "/usr/src/app/shared/exception_handler.py", line 111, in __handle_parse_error
+    message = exc.detail
+AttributeError: 'Response' object has no attribute 'detail'
+[2022-06-25 05:35:55,683] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/parsers.py", line 65, in parse
+    return json.load(decoded_stream, parse_constant=parse_constant)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/utils/json.py", line 31, in load
+    return json.load(*args, **kwargs)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/local/lib/python3.9/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 5 column 1 (char 98)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 17, in post
+    serializer: CustomTokenObtainSerializer = self.get_serializer(data = request.data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/request.py", line 216, in data
+    self._load_data_and_files()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/request.py", line 279, in _load_data_and_files
+    self._data, self._files = self._parse()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/request.py", line 354, in _parse
+    parsed = parser.parse(stream, media_type, self.parser_context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/parsers.py", line 67, in parse
+    raise ParseError('JSON parse error - %s' % str(exc))
+rest_framework.exceptions.ParseError: JSON parse error - Expecting property name enclosed in double quotes: line 5 column 1 (char 98)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 147, in custom_exception_handler
+    return cached_exceptions[exception_name](exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 111, in __handle_parse_error
+    message = exc.data
+AttributeError: 'ParseError' object has no attribute 'data'
+[2022-06-25 05:36:10,203] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-25 05:36:49,381] WARNING [django.request.log_response:241] Bad Request: /login/
+[2022-06-25 05:37:01,702] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 19, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'type': [ErrorDetail(string='"asdasd" is not a valid choice.', code='invalid_choice')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 145, in custom_exception_handler
+    return cached_exceptions[exception_name](exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 34, in __handle_validation_error
+    data = exc.data
+AttributeError: 'ValidationError' object has no attribute 'data'
+[2022-06-25 05:37:34,778] WARNING [django.request.log_response:241] Bad Request: /login/
+[2022-06-25 05:37:52,366] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 19, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'type': [ErrorDetail(string='"asdasd" is not a valid choice.', code='invalid_choice')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 145, in custom_exception_handler
+    return cached_exceptions[exception_name](exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 34, in __handle_validation_error
+    data = exc.get_full_detail()
+AttributeError: 'ValidationError' object has no attribute 'get_full_detail'
+[2022-06-25 05:38:27,417] WARNING [django.request.log_response:241] Bad Request: /login/
+[2022-06-25 05:38:48,140] WARNING [django.request.log_response:241] Bad Request: /login/
+[2022-06-25 05:38:58,015] ERROR [django.request.log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/auth/views.py", line 19, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "/usr/src/app/auth/serializers.py", line 67, in validate
+    raise exceptions.AuthenticationFailed(
+rest_framework.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='Wrong email or password', code='authentication_failed')}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 145, in custom_exception_handler
+    return cached_exceptions[exception_name](exc, context)
+  File "/usr/src/app/shared/exception_handler.py", line 53, in __handle_authentication_failed
+    data = exc.data
+AttributeError: 'AuthenticationFailed' object has no attribute 'data'
+[2022-06-25 05:39:23,429] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-25 05:40:24,442] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-25 05:40:37,122] WARNING [django.request.log_response:241] Unauthorized: /user/activate/
+[2022-06-25 05:40:38,735] WARNING [django.request.log_response:241] Unauthorized: /user/activate/
+[2022-06-25 05:40:39,837] WARNING [django.request.log_response:241] Unauthorized: /user/activate/
+[2022-06-25 05:40:40,799] WARNING [django.request.log_response:241] Unauthorized: /user/activate/
+[2022-06-25 05:42:22,284] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:43:02,696] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:44:03,300] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:45:43,340] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:46:28,401] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:46:30,102] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:46:35,843] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:46:53,237] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:47:05,138] WARNING [django.request.log_response:241] Bad Request: /user/existed/
+[2022-06-25 05:47:11,892] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:49:07,567] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:49:23,027] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:21,288] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:24,326] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:26,193] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:27,263] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:29,479] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:30,619] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:31,450] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:32,497] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:33,473] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 05:59:34,362] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 09:12:24,588] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-06-25 09:12:38,786] ERROR [django.request.log_response:241] Internal Server Error: /user/resend-code/
+[2022-06-25 09:17:51,814] ERROR [django.request.log_response:241] Internal Server Error: /user/resend-code/
+[2022-06-25 09:18:37,462] ERROR [django.request.log_response:241] Internal Server Error: /user/resend-code/
+[2022-06-25 09:18:54,347] ERROR [django.request.log_response:241] Internal Server Error: /user/resend-code/
+[2022-06-25 09:18:56,117] ERROR [django.request.log_response:241] Internal Server Error: /user/resend-code/
+[2022-06-25 09:19:31,137] ERROR [django.request.log_response:241] Internal Server Error: /user/resend-code/
+[2022-06-25 09:22:31,916] ERROR [django.request.log_response:241] Internal Server Error: /user/resend-code/
+[2022-06-25 09:28:19,798] ERROR [django.request.log_response:241] Internal Server Error: /user/resend-code/
+[2022-06-25 09:33:17,269] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-06-25 09:33:21,800] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-06-25 10:00:12,103] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-06-25 10:00:14,728] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-06-25 10:00:17,100] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-06-25 10:00:19,073] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-06-25 10:01:47,336] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-06-25 10:04:16,548] WARNING [django.request.log_response:241] Bad Request: /user/resend-code/
+[2022-06-25 10:51:12,120] ERROR [django.request.log_response:241] Internal Server Error: /user/activate/
+[2022-06-25 10:56:39,131] ERROR [django.request.log_response:241] Internal Server Error: /user/activate/
+[2022-06-25 10:57:44,438] ERROR [django.request.log_response:241] Internal Server Error: /user/activate/
+[2022-06-25 11:03:36,622] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 11:04:35,076] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 11:04:40,854] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 11:06:14,848] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 11:08:05,529] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 11:08:08,621] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 11:10:36,958] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 11:12:00,185] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 11:12:44,835] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 11:15:04,959] WARNING [django.request.log_response:241] Bad Request: /user/activate/
+[2022-06-25 12:17:58,543] WARNING [django.request.log_response:241] Not Found: /user/change-password/
+[2022-06-25 12:18:44,614] WARNING [django.request.log_response:241] Bad Request: /user/change-password/
+[2022-06-25 12:19:20,845] WARNING [django.request.log_response:241] Bad Request: /user/change-password/
+[2022-06-25 12:20:08,521] WARNING [django.request.log_response:241] Bad Request: /user/change-password/
+[2022-06-25 12:27:24,192] WARNING [django.request.log_response:241] Bad Request: /user/change-password/
+[2022-06-25 12:28:05,757] WARNING [django.request.log_response:241] Bad Request: /user/change-password/
+[2022-06-25 12:28:35,590] ERROR [django.request.log_response:241] Internal Server Error: /user/change-password/
+[2022-06-25 12:28:51,117] WARNING [django.request.log_response:241] Bad Request: /user/change-password/
+[2022-06-25 12:29:13,403] WARNING [django.request.log_response:241] Unauthorized: /login/
+[2022-06-25 12:34:37,434] WARNING [django.request.log_response:241] Bad Request: /user/change-password/
+[2022-06-25 12:35:06,232] WARNING [django.request.log_response:241] Bad Request: /user/change-password/
+[2022-06-25 12:35:21,489] WARNING [django.request.log_response:241] Unauthorized: /login/

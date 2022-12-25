@@ -1,0 +1,44 @@
+[2022-09-21 11:33:32,233] WARNING [django.request.log_response:241] Unauthorized: /schedule
+[2022-09-21 11:33:44,558] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+Traceback (most recent call last):
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2022-09-21 13:38:41,649] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 13:40:05,635] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 13:42:29,151] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 13:53:16,364] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 13:53:44,349] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+Traceback (most recent call last):
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\Enviroment\python\version3\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2022-09-21 13:54:08,494] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 14:02:53,835] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 21:17:11,867] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'weekday'
+[2022-09-21 21:17:11,872] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 21:18:17,688] ERROR [shared.exception_handler.__handle_attribute_error:122] 'str' object has no attribute 'weekday'
+[2022-09-21 21:18:17,691] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 21:19:18,909] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 21:19:49,506] ERROR [django.request.log_response:241] Internal Server Error: /schedule
+[2022-09-21 03:19:15,489] WARNING [django.request.log_response:241] Not Found: /favicon.ico

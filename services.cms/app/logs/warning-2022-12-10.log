@@ -1,0 +1,18 @@
+[2022-12-10 08:56:33,403] WARNING [django.request.log_response:241] Unauthorized: /contract/doctor/32/cancel/
+[2022-12-10 08:57:06,922] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/32/cancel/
+[2022-12-10 08:58:48,618] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/32/cancel/
+[2022-12-10 08:59:39,723] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/32/cancel/
+[2022-12-10 09:00:04,912] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/32/cancel/
+[2022-12-10 09:00:34,126] ERROR [django.request.log_response:241] Internal Server Error: /contract/doctor/32/cancel/
+[2022-12-10 09:02:10,693] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/32/cancel/
+[2022-12-10 09:03:15,021] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/32/cancel/
+[2022-12-10 09:08:39,887] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/32/cancel/
+[2022-12-10 09:10:04,170] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/32/cancel/
+[2022-12-10 09:12:24,380] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/32/cancel/
+[2022-12-10 09:16:37,149] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/32/cancel/
+[2022-12-10 09:20:13,957] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/32/cancel/
+[2022-12-10 09:30:12,999] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-10 09:31:09,800] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-10 09:32:02,690] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-10 09:42:12,053] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
+[2022-12-10 09:42:23,012] WARNING [django.request.log_response:241] Bad Request: /contract/doctor/session/
